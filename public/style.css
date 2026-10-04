@@ -1,0 +1,357 @@
+/* 1. Bảng màu, font, khoảng cách: sửa ở đây là đổi cả trang */
+:root {
+  --bg: #fffbea; /* vàng kem */
+  --bg-alt: #eaf4dc; /* xanh lá rất nhạt */
+  --text: #1f2a1e;
+  --muted: #53624f;
+  --yellow: #f4c430; /* vàng đậm, dùng làm điểm nhấn */
+  --yellow-soft: #fde58a;
+  --green: #2f6b3a; /* xanh lá chính */
+  --green-dark: #1f4a28;
+  --green-light: #dcebc8;
+  --border: #e2d79a;
+  --code-bg: #1f3524;
+
+  --font: "Exo 2", system-ui, "Segoe UI", Roboto, sans-serif;
+  --radius: 14px; /* một độ bo góc dùng chung cho mọi khối */
+  --space: 72px; /* khoảng cách dọc chung giữa các phần */
+
+  /* Họa tiết meander màu xanh lá */
+  --meander: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='12' viewBox='0 0 16 12'%3E%3Cpath d='M0 11H12V1H3V8H8V4M12 11H16' fill='none' stroke='%232f6b3a' stroke-width='1.5'/%3E%3C/svg%3E");
+}
+
+/* 2. Reset cơ bản */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font);
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.65;
+}
+::selection {
+  background: var(--yellow);
+  color: var(--text);
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+}
+
+/* 3. Khung giữ nội dung ở giữa */
+.container {
+  width: min(1100px, 92%);
+  margin-inline: auto;
+}
+
+/* 4. Header */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: rgba(255, 251, 234, 0.92);
+  backdrop-filter: blur(6px);
+  border-bottom: 3px solid var(--yellow);
+}
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+}
+.logo {
+  font-size: 1.6rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  color: var(--green-dark);
+  text-decoration: none;
+}
+.logo span {
+  color: var(--yellow);
+}
+.nav a {
+  margin-left: 24px;
+  font-weight: 500;
+  color: var(--muted);
+  text-decoration: none;
+}
+.nav a:hover {
+  color: var(--green);
+}
+
+/* 5. Hero: hai cột */
+.hero {
+  position: relative;
+  padding: var(--space) 0 calc(var(--space) + 14px);
+  background: linear-gradient(180deg, var(--yellow-soft) -40%, var(--bg) 70%);
+}
+.hero__grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.tag {
+  display: inline-block;
+  padding: 4px 14px;
+  border-radius: 999px;
+  background: var(--green-light);
+  color: var(--green-dark);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.hero h1 {
+  margin: 18px 0 16px;
+  font-size: clamp(2.2rem, 5.5vw, 3.6rem);
+  font-weight: 800;
+}
+/* Chữ C và DSA: xanh lá + vạch vàng đánh dấu phía dưới */
+.hero h1 span {
+  color: var(--green);
+  background: linear-gradient(transparent 62%, var(--yellow) 62%);
+}
+.hero__desc {
+  max-width: 520px;
+  margin-bottom: 28px;
+  color: var(--muted);
+}
+.hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+/* Dải meander ở đáy hero */
+.hero::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 14px;
+  background: var(--meander) repeat-x;
+  background-size: 16px 12px;
+}
+
+/* Nút bấm */
+.btn {
+  display: inline-block;
+  padding: 12px 26px;
+  border: 2px solid var(--green);
+  border-radius: var(--radius);
+  background: var(--green);
+  color: #fffbea;
+  font-weight: 600;
+  text-decoration: none;
+  transition:
+    background 0.2s,
+    color 0.2s;
+}
+.btn:hover {
+  background: var(--green-dark);
+  border-color: var(--green-dark);
+}
+.btn--ghost {
+  background: transparent;
+  color: var(--green-dark);
+}
+.btn--ghost:hover {
+  background: var(--green-light);
+  color: var(--green-dark);
+  border-color: var(--green);
+}
+
+/* 6. Khung chat minh họa */
+.chat-preview {
+  background: #fff;
+  border: 2px solid var(--green-dark);
+  border-radius: var(--radius);
+  box-shadow: 8px 8px 0 var(--yellow); /* bóng lệch màu vàng */
+  overflow: hidden;
+}
+.chat-preview__bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 16px;
+  background: var(--green);
+  color: #fffbea;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+.chat-preview__bar .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--yellow);
+}
+.chat-preview__bar em {
+  margin-left: auto;
+  font-size: 0.75rem;
+  font-style: normal;
+  opacity: 0.85;
+}
+.chat-preview__body {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 18px;
+}
+.bubble {
+  max-width: 92%;
+  padding: 10px 14px;
+  border-radius: var(--radius);
+  font-size: 0.95rem;
+}
+.bubble--user {
+  align-self: flex-end; /* câu hỏi lệch về bên phải */
+  background: var(--yellow-soft);
+  border-bottom-right-radius: 4px;
+}
+.bubble--bot {
+  align-self: flex-start; /* câu trả lời lệch về bên trái */
+  background: var(--green-light);
+  border-bottom-left-radius: 4px;
+}
+.bubble pre {
+  margin-top: 10px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  background: var(--code-bg);
+  color: #f4e8a3;
+  font-family: Consolas, "Courier New", monospace;
+  font-size: 0.85rem;
+  overflow-x: auto;
+}
+
+/* 7. Các section */
+.section {
+  padding: var(--space) 0;
+}
+.section--alt {
+  background: var(--bg-alt);
+}
+
+.section h2 {
+  text-align: center;
+  font-size: clamp(1.6rem, 4vw, 2.1rem);
+  font-weight: 700;
+  color: var(--green-dark);
+  margin-bottom: 40px;
+}
+.section h2::after {
+  /* gạch meander dưới tiêu đề */
+  content: "";
+  display: block;
+  width: 128px;
+  height: 14px;
+  margin: 12px auto 0;
+  background: var(--meander) repeat-x;
+  background-size: 16px 12px;
+}
+
+/* Thẻ môn học */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+}
+.card {
+  padding: 26px;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-top: 5px solid var(--yellow);
+  border-radius: var(--radius);
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+}
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(47, 107, 58, 0.15);
+}
+.card h3 {
+  margin-bottom: 8px;
+  font-size: 1.15rem;
+  color: var(--green);
+}
+.card p {
+  color: var(--muted);
+}
+
+/* Các bước: ba thẻ ngang, tự đếm số I, II, III */
+.steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+  list-style: none;
+  counter-reset: step;
+}
+.steps li {
+  position: relative;
+  padding: 56px 24px 24px;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  counter-increment: step;
+}
+.steps li::before {
+  content: counter(step, upper-roman);
+  position: absolute;
+  top: 16px;
+  left: 24px;
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--yellow);
+  color: var(--green-dark);
+  font-weight: 800;
+  font-size: 0.9rem;
+}
+.steps h3 {
+  margin-bottom: 6px;
+  font-size: 1.1rem;
+  color: var(--green-dark);
+}
+.steps p {
+  color: var(--muted);
+}
+
+/* 8. Footer */
+.footer {
+  padding: 32px 0;
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.9rem;
+  border-top: 3px solid var(--yellow);
+}
+
+/* 9. Màn hình nhỏ: hero xếp một cột */
+@media (max-width: 860px) {
+  .hero__grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+  .chat-preview {
+    max-width: 520px;
+  }
+}
+@media (max-width: 600px) {
+  :root {
+    --space: 52px;
+  }
+  .nav a {
+    margin-left: 14px;
+  }
+}

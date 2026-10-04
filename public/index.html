@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stick – Trợ lý học C & DSA</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container header__inner">
+            <a href="#" class="logo">Stick<span>.</span></a>
+            <nav class="nav">
+                <a href="#mon-hoc">Môn học</a>
+                <a href="#cach-dung">Cách dùng</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO: chia hai cột (chữ bên trái, khung chat minh họa bên phải) -->
+        <section class="hero">
+            <div class="container hero__grid">
+                <div class="hero__text">
+                    <p class="tag">Bản demo</p>
+                    <h1>Hỏi Stick về <span>C</span> và <span>DSA</span></h1>
+                    <p class="hero__desc">
+                        Trợ lý AI dành cho sinh viên: giải thích con trỏ, mảng, danh sách liên kết,
+                        cây, sắp xếp... dựa trên chính tài liệu môn học.
+                    </p>
+                    <div class="hero__actions">
+                        <a href="#" class="btn" id="open-chat">Bắt đầu hỏi Stick</a>
+                        <a href="#mon-hoc" class="btn btn--ghost">Xem môn học</a>
+                    </div>
+                </div>
+
+                <!-- Khung chat chỉ để minh họa, chưa hoạt động -->
+                <div class="chat-preview" aria-hidden="true">
+                    <div class="chat-preview__bar">
+                        <span class="dot"></span> Stick · Trợ lý C &amp; DSA
+                        <em>Ví dụ minh họa</em>
+                    </div>
+                    <div class="chat-preview__body">
+                        <div class="bubble bubble--user">Con trỏ khác mảng ở điểm nào?</div>
+                        <div class="bubble bubble--bot">
+                            Mảng là một vùng nhớ liên tiếp, còn con trỏ là biến giữ địa chỉ.
+                            <pre><code>int a[3] = {1, 2, 3};
+int *p = a;   // p trỏ tới a[0]</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="mon-hoc">
+            <div class="container">
+                <h2>Stick giúp được gì?</h2>
+                <div class="cards">
+                    <article class="card">
+                        <h3>Lập trình C</h3>
+                        <p>Con trỏ, mảng, chuỗi, struct, cấp phát động, đọc ghi file.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Cấu trúc dữ liệu &amp; giải thuật</h3>
+                        <p>Stack, queue, linked list, cây, đồ thị, sắp xếp, tìm kiếm, độ phức tạp.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Trả lời có căn cứ</h3>
+                        <p>Stick chỉ trả lời dựa trên tài liệu của môn, và nói rõ khi không tìm thấy.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--alt" id="cach-dung">
+            <div class="container">
+                <h2>Cách dùng</h2>
+                <ol class="steps">
+                    <li>
+                        <h3>Mở khung chat</h3>
+                        <p>Bấm vào nút chat ở góc phải màn hình.</p>
+                    </li>
+                    <li>
+                        <h3>Đặt câu hỏi</h3>
+                        <p>Ví dụ: “Con trỏ khác mảng ở điểm nào?”</p>
+                    </li>
+                    <li>
+                        <h3>Kiểm chứng</h3>
+                        <p>Đọc câu trả lời kèm nguồn tài liệu để đối chiếu.</p>
+                    </li>
+                </ol>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>Stick – dự án demo cho sinh viên. Câu trả lời của AI có thể sai, hãy đối chiếu với giáo trình.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
