@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trò chuyện với Stick</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="chat.css" />
+</head>
+
+<body>
+    <div class="app">
+
+        <!-- Thanh bên: danh sách hội thoại -->
+        <aside class="sidebar" id="sidebar">
+            <a href="/" class="logo">Stick<span>.</span></a>
+            <button class="btn-new" id="new-chat">+ Cuộc trò chuyện mới</button>
+            <nav class="history" id="history" aria-label="Lịch sử trò chuyện"></nav>
+            <div class="sidebar__foot">
+                <a href="/">← Trang chủ</a>
+                <button id="clear-all">Xóa tất cả</button>
+            </div>
+        </aside>
+        <div class="scrim" id="scrim" hidden></div>
+
+        <!-- Khu vực chính -->
+        <main class="main">
+            <header class="topbar">
+                <button class="menu-btn" id="menu-btn" aria-label="Mở danh sách hội thoại">☰</button>
+                <span>Stick · Trợ lý C &amp; DSA</span>
+            </header>
+
+            <div class="scroll" id="scroll">
+                <section class="welcome" id="welcome">
+                    <h1>Xin chào, mình là <span>Stick</span></h1>
+                    <p>Hỏi mình bất cứ điều gì về lập trình C và cấu trúc dữ liệu &amp; giải thuật.</p>
+                    <div class="chips">
+                        <button class="chip">Con trỏ trong C là gì? Cho ví dụ.</button>
+                        <button class="chip">Khác nhau giữa stack và queue?</button>
+                        <button class="chip">Giải thích độ phức tạp Big-O</button>
+                        <button class="chip">Bài toán tháp Hà Nội trong DSA</button>
+                    </div>
+                </section>
+                <div class="thread" id="thread" aria-live="polite"></div>
+            </div>
+
+            <div class="composer-wrap">
+                <form class="composer" id="composer">
+                    <textarea id="input" rows="1" maxlength="1000" placeholder="Nhập câu hỏi cho Stick..."
+                        aria-label="Câu hỏi"></textarea>
+                    <button type="submit" id="send" aria-label="Gửi" disabled>↑</button>
+                </form>
+                <p class="disclaimer">Stick là AI và có thể trả lời sai. Hãy đối chiếu với giáo trình.</p>
+            </div>
+        </main>
+    </div>
+    <script src="chat.js"></script>
+</body>
+
+</html>

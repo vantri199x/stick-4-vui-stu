@@ -20,6 +20,7 @@
         <div class="container header__inner">
             <a href="#" class="logo">Stick<span>.</span></a>
             <nav class="nav">
+                <a href="chat.html">Trò chuyện</a>
                 <a href="#mon-hoc">Môn học</a>
                 <a href="#cach-dung">Cách dùng</a>
             </nav>
@@ -38,7 +39,7 @@
                         cây, sắp xếp... dựa trên chính tài liệu môn học.
                     </p>
                     <div class="hero__actions">
-                        <a href="#" class="btn" id="open-chat">Bắt đầu hỏi Stick</a>
+                        <a href="chat.html" class="btn">Bắt đầu hỏi Stick</a>
                         <a href="#mon-hoc" class="btn btn--ghost">Xem môn học</a>
                     </div>
                 </div>
@@ -107,7 +108,22 @@ int *p = a;   // p trỏ tới a[0]</code></pre>
             <p>Stick – dự án demo cho sinh viên. Câu trả lời của AI có thể sai, hãy đối chiếu với giáo trình.</p>
         </div>
     </footer>
+    <!-- Nút nổi mở chat -->
+    <button class="chat-fab" id="chat-fab" aria-label="Mở khung chat Stick">Hỏi Stick</button>
 
+    <!-- Khung chat (ẩn lúc đầu) -->
+    <section class="chat" id="chat" hidden aria-label="Trò chuyện với Stick">
+        <header class="chat__head">
+            <span class="dot"></span> Stick · Trợ lý C &amp; DSA
+            <button class="chat__close" id="chat-close" aria-label="Đóng khung chat">×</button>
+        </header>
+        <div class="chat__messages" id="chat-messages" aria-live="polite"></div>
+        <form class="chat__form" id="chat-form">
+            <input id="chat-input" type="text" maxlength="1000" autocomplete="off" placeholder="Hỏi về C hoặc DSA..."
+                required />
+            <button type="submit" id="chat-send">Gửi</button>
+        </form>
+    </section>
     <script src="app.js"></script>
 </body>
 
