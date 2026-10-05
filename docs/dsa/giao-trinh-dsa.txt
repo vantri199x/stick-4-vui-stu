@@ -1,0 +1,1881 @@
+BỘ CÔNG THƯƠNG
+TRƯỜNG ĐẠI HỌC CÔNG NGHIỆP VIỆT TRÌ
+
+THS. PHẠM THỊ THỦY (Chủ biên) THS. HÀ THỊ THU HIỀN
+
+
+
+GIÁO TRÌNH
+CẤU TRÚC DỮ LIỆU & GIẢI THUẬT
+(Lưu hành nội bộ)
+
+
+
+
+ 
+THS. PHẠM THỊ THỦY (Chủ biên) THS. HÀ THỊ THU HIỀN
+
+
+
+
+
+
+
+
+
+
+
+
+
+GIÁO TRÌNH
+CẤU TRÚC DỮ LIỆU & GIẢI THUẬT
+(Lưu hành nội bộ)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Năm 2025
+ 
+LỜI NÓI ĐẦU
+Cấu trúc dữ liệu và giải thuật là một trong những môn học cơ sở của sinh viên ngành Công nghệ thông tin. Các cấu trúc dữ liệu và các giải thuật được xem là hai yếu tố quan trọng nhất trong lập trình, đúng như câu nói nổi tiếng của giáo sư Niklaus Wirth: Chương trình = Cấu trúc dữ liệu + Giải thuật.
+Giáo trình Cấu trúc dữ liệu và Giải thuật được biên soạn nhằm đáp ứng nhu cầu học tập của sinh viên ngành Công nghệ thông tin. Ở đây sinh viên sẽ được làm quen với một số kiến thức cơ bản về cấu trúc dữ liệu và các giải thuật có liên quan, từ đó tạo điều kiện cho việc nâng cao kỹ năng lập trình, về phương pháp giải các bài toán, giúp sinh viên có khả năng nghiên cứu sâu thêm các môn chuyên ngành.
+Cấu trúc giáo trình gồm 8 chương:
+Chương 1. Phân tích và thiết kế giải thuật Chương 2. Giải thuật đệ quy
+Chương 3. Mảng và danh sách tuyến tính Chương 4. Danh sách móc nối
+Chương 5. Cấu trúc cây Chương 6. Đồ thị Chương 7. Sắp xếp Chương 8. Tìm kiếm
+Mặc dù đã rất cố gắng trong quá trình biên soạn nhưng không tránh khỏi thiếu sót và hạn chế. Rất mong nhận được sự đóng góp ý kiến quý báu của sinh viên và các bạn đọc để giáo trình ngày một hoàn thiện hơn.
+ 
+MỤC LỤC
+ 
+LỜI NÓI ĐẦU	3
+Chương 1 PHÂN TÍCH VÀ THIẾT KẾ GIẢI THUẬT	7
+1.1.	CÁC BƯỚC CƠ BẢN ĐỂ GIẢI QUYẾT BÀI TOÁN	7
+1.2.	PHƯƠNG PHÁP TIẾP CẬN GIẢI THUẬT	9
+1.2.1.	Phương pháp modul hóa	9
+1.2.2.	Phương pháp tinh chỉnh từng bước	10
+1.3.	PHÂN TÍCH, ĐÁNH GIÁ ĐỘ PHỨC TẠP CỦA GIẢI THUẬT	10
+1.3.1.	Độ phức tạp về thời gian của giải thuật	11
+1.3.2.	Xác định độ phức tạp về thời gian	12
+CÂU HỎI ÔN TẬP CHƯƠNG 1	13
+Chương 2 GIẢI THUẬT ĐỆ QUY	15
+2.1.	KHÁI NIỆM ĐỆ QUY	15
+2.2.	GIẢI THUẬT ĐỆ QUY VÀ THỦ TỤC ĐỆ QUY	15
+2.3.	THIẾT KẾ GIẢI THUẬT ĐỆ QUY	15
+2.3.1.	Hàm n!	16
+2.3.2.	Dãy số Fibonacci	16
+2.4.	CÁC VÍ DỤ VỀ GIẢI THUẬT ĐỆ QUI	17
+2.4.1.	Bài toán “Tháp Hà Nội”	17
+2.4.2.	Bài toán 8 quân hậu	19
+CÂU HỎI ÔN TẬP VÀ BÀI TẬP CHƯƠNG 2	21
+Chương 3 MẢNG VÀ DANH SÁCH TUYẾN TÍNH	22
+3.1.	KHÁI NIỆM VỀ MẢNG VÀ DANH SÁCH	22
+3.1.1.	Cấu trúc dữ liệu kiểu mảng	22
+3.1.2.	Danh sách liên kết	22
+3.2.	DANH SÁCH KIỂU NGĂN XẾP - STACK	23
+3.2.1.	Khái niệm	23
+3.2.2.	Lưu trữ ngăn xếp bằng mảng (lưu trữ kế tiếp)	24
+3.2.3.	Một số ứng dụng của ngăn xếp	26
+3.3.	DANH SÁCH KIỂU HÀNG ĐỢI - QUEUUE	29
+3.3.1.	Khái niệm	29
+3.3.2.	Lưu trữ hàng đợi bằng mảng (lưu trữ kế tiếp)	30
+CÂU HỎI ÔN TẬP VÀ BÀI TẬP CHƯƠNG 3	32
+Chương 4 DANH SÁCH MÓC NỐI	34
+4.1.	DANH SÁCH NỐI ĐƠN VÀ CÁC GIẢI THUẬT XỬ LÝ	34
+4.1.1.	Nguyên tắc	34
+4.1.2.	Các giải thuật xử lý	34
+4.2.	DANH SÁCH NỐI VÒNG VÀ NỐI KÉP	41
+4.2.1.	Danh sách nối vòng	41
+4.2.2.	Danh sách nối kép	42
+4.3.	ÁP DỤNG DANH SÁCH MÓC NỐI	42
+4.3.1.	Biểu diễn đa thức	42
+4.3.2.	Cài đặt ngăn xếp bởi danh sách nối đơn	43
+4.3.3.	Cài đặt hàng đợi bởi danh sách nối đơn	45
+CÂU HỎI ÔN TẬP VÀ BÀI TẬP CHƯƠNG 4	47
+Chương 5 CẤU TRÚC CÂY	48
+5.1.	ĐỊNH NGHĨA VÀ CÁC KHÁI NIỆM	48
+5.2.	CÂY NHỊ PHÂN	49
+5.2.1.	Định nghĩa và tính chất	49
+5.2.2.	Biểu diễn cây nhị phân	50
+5.3.	CÂY TỔNG QUÁT	54
+5.3.1.	Biểu diễn cây tổng quát	54
+5.3.2.	Phép duyệt trên cây tổng quát	56
+5.4.	ÁP DỤNG CẤU TRÚC CÂY	58
+5.4.1.	Cây biểu diễn biểu thức	58
+5.4.2.	Cây quyết định	59
+BÀI TẬP CHƯƠNG 5	60
+Chương 6 ĐỒ THỊ	62
+6.1.	ĐỊNH NGHĨA VÀ CÁC KHÁI NIỆM	62
+6.1.1.	Định nghĩa	62
+6.1.2.	Các khái niệm	62
+6.2.	BIỂU DIỄN ĐỒ THỊ	64
+6.2.1.	Biểu diễn đồ thị bằng ma trận lân cận kề	64
+6.2.2.	Biểu diễn đồ thị bằng danh sách lân cận kề	65
+6.3.	PHÉP DUYỆT ĐỒ THỊ	66
+6.3.1.	Duyệt theo chiều sâu (Deep First Search)	66
+6.2.3.	Cây khung và cây khung với giá cực tiểu	68
+6.4.1.	Bài toán bao đóng truyền ứng	69
+6.4.2.	Bài toán một nguồn, mọi đích	71
+6.4.3.	Bài toán sắp xếp Tôpô	73
+BÀI TẬP CHƯƠNG 6	75
+Chương 7 SẮP XẾP	78
+7.1.	MỘT SỐ PHƯƠNG PHÁP SẮP XẾP CƠ BẢN	78
+7.1.1.	Sắp xếp lựa chọn (Selection_Sort)	78
+7.1.2.	Sắp xếp chèn – thêm dần (Insertion_Sort)	79
+7.1.3.	Sắp xếp đổi chỗ (Exchange_Sort)	80
+7.2.	SẮP XẾP PHÂN ĐOẠN	82
+7.2.1.	Giới thiệu phương pháp	82
+7.2.2.	Giải thuật	82
+7.2.3.	Nhận xét và đánh giá	84
+7.3.	SẮP XẾP VUN ĐỐNG	85
+7.3.1.	Giới thiệu phương pháp	85
+7.3.2.	Định nghĩa “đống”	85
+7.3.3.	Phép tạo đống	86
+7.3.4.	Sắp xếp vun đống	87
+BÀI TẬP CHƯƠNG 7	89
+Chương 8 TÌM KIẾM	90
+8.1.	TÌM KIẾM TUẦN TỰ VÀ TÌM KIẾM NHỊ PHÂN	90
+8.1.1.	Bài toán tìm kiếm	90
+8.1.2.	Tìm kiếm tuần tự	90
+8.1.3.	Tìm kiếm nhị phân	91
+8.2.	CÂY NHỊ PHÂN TÌM KIẾM	92
+8.2.1.	Tìm kiếm trên cây nhị phân tìm kiếm	92
+8.2.2.	Chèn một phần tử vào cây nhị phân tìm kiếm	93
+8.2.3.	Loại bỏ một nút trên cây nhị phân tìm kiếm	95
+BÀI TẬP CHƯƠNG 8	95
+TÀI LIỆU THAM KHẢO	97
+ 
+Chương 1
+PHÂN TÍCH VÀ THIẾT KẾ GIẢI THUẬT
+1.1.	CÁC BƯỚC CƠ BẢN ĐỂ GIẢI QUYẾT BÀI TOÁN
+Trong thực tế, khi gặp phải một vấn đề cần phải giải quyết, ta cần đưa ra một phương pháp để giải quyết vấn đề đó. Khi muốn giải quyết vấn đề bằng cách sử dụng máy tính, ta cần phải đưa ra một giải pháp (hay còn gọi là giải thuật) phù hợp với việc thực thi bằng các chương trình máy tính.
+Giải thuật là một dãy các câu lệnh chặt chẽ và rõ ràng xác định một trình tự các thao tác trên một số đối tượng nào đó sao cho sau một số hữu hạn bước thực hiện ta đạt được kết quả mong muốn.
+Giải thuật đảm bảo một số tính chất quan trọng sau:
+•	Hữu hạn: giải thuật phải luôn luôn kết thúc sau một số hữu hạn bước.
+•	Xác định: ở mỗi bước giải thuật phải được xác định rõ ràng và phải được thực hiện chính xác, nhất quán.
+•	Hiệu quả: các thao tác trong giải thuật phải được thực hiện trong một khoảng thời gian cho phép.
+•	Phổ dụng: giải thuật phải áp dụng được cho lớp các bài toán cùng loại, chứ không phải chỉ áp dụng được cho một số trường hợp đặc biệt nào đó.
+•	Ngoài ra giải thuật còn phải có các giá trị nhập vào từ một tập nhất định nào đó (input), tạo ra những giá trị xuất (output).
+Tóm lại: một giải thuật phải giải quyết xong công việc khi ta cho dữ liệu vào. Có nhiều cách để thể hiện giải thuật: liệt kê từng bước (dùng ngôn ngữ tự nhiên liệt kê các bước cần thực hiện), dùng lưu đồ hoặc dùng ngôn ngữ giả (là sự kết hợp giữa ngôn ngữ tự nhiên và các cấu trúc của ngôn ngữ lập trình).
+Ví dụ 1: Tô màu bản đồ thế giới.
+Ta cần phải tô màu cho các nước trên bản đồ thế giới. Trong đó mỗi nước đều được tô một màu và hai nước láng giềng (cùng biên giới) thì phải được tô bằng hai màu khác nhau. Hãy tìm một phương án tô màu sao cho số màu sử dụng là ít nhất. Ta có thể xem mỗi nước trên bản đồ thế giới là một đỉnh của đồ thị, hai nước láng giềng của nhau thì hai đỉnh ứng với nó được nối với nhau bằng một cạnh. Bài toán lúc này trở thành bài toán tô màu cho đồ thị như sau: Mỗi đỉnh đều phải được tô màu, hai đỉnh có cạnh nối thì phải tô bằng hai màu khác nhau và ta cần tìm một phương án tô màu sao cho số màu được sử dụng là ít nhất.
+Ví dụ 2: Đèn giao thông
+Cho một ngã năm như hình 1.1, trong đó C và E là các đường một chiều theo chiều mũi tên, các đường khác là hai chiều. Hãy thiết kế một bảng đèn điều khiển giao thông
+ 
+tại ngã năm này một cách hợp lý, nghĩa là: phân chia các lối đi tại ngã năm này thành các nhóm, mỗi nhóm gồm các lối đi có thể cùng đi đồng thời nhưng không xảy ra tai nạn giao thông (các hướng đi không cắt nhau), và số lượng nhóm là ít nhất có thể được.
+Ta có thể xem đầu vào (input) của bài toán là tất cả các lối đi tại ngã năm này, đầu ra (output) của bài toán là các nhóm lối đi có thể đi đồng thời mà không xảy ra tai nạn giao thông, mỗi nhóm sẽ tương ứng với một pha điều khiển của đèn hiệu, vì vậy ta phải tìm kiếm lời giải với số nhóm là ít nhất để giao thông không bị tắc nghẽn vì phải chờ đợi quá lâu.
+
+Hình 1.1. Minh họa bài toán giao thông
+Trước hết ta nhận thấy rằng tại ngã năm này có 13 lối đi: AB, AC, AD, BA, BC, BD, DA, DB, DC, EA, EB, EC, ED. Tất nhiên, để có thể giải được bài toán ta phải tìm một cách nào đó để thể hiện mối liên quan giữa các lối đi này. Những lối nào không thể đi đồng thời, những lối nào có thể đi đồng thời. Ví dụ cặp AB và EC có thể đi đồng thời, nhưng AD và EB thì không, vì các hướng giao thông cắt nhau. Ở đây ta sẽ dùng một sơ đồ trực quan như sau: tên của 13 lối đi được viết lên mặt phẳng, hai lối đi nào nếu đi đồng thời sẽ xảy ra đụng nhau, ta nối lại bằng một cung. Ta sẽ có một sơ đồ như hình
+1.2.	Như vậy, trên sơ đồ này, hai lối đi có cạnh nối lại với nhau là hai lối đi không thể cho đi đồng thời.
+Với cách biểu diễn như vậy ta có một đồ thị, tức là ta đã mô hình hoá bài toán giao thông ở trên theo mô hình toán là đồ thị; trong đó mỗi lối đi trở thành một đỉnh của đồ thị, hai lối đi không thể cùng đi đồng thời được nối với nhau bằng một đoạn ta gọi là cạnh của đồ thị. Bây giờ ta phải xác định các nhóm, với số nhóm ít nhất, mỗi nhóm gồm các lối đi có thể đi đồng thời, nó ứng với một pha của đèn hiệu điều khiển giao thông. Giả sử, ta dùng màu để tô lên các đỉnh của đồ thị này sao cho:
+Các lối đi cho phép cùng đi đồng thời sẽ có cùng một màu, hai đỉnh có cạnh nối nhau sẽ không được tô cùng màu.
+Số nhóm là ít nhất: ta phải tính sao cho số màu được dùng là ít nhất. Tóm lại, ta phải giải quyết bài toán sau:
+ 
+ 
+Hình 1.2. Minh họa cách giải bài toán
+“Tô màu” cho đồ thị ở hình 1.2 sao cho:
+•	Hai đỉnh có cạnh nối với nhau (hai đỉnh kề nhau) không cùng màu.
+•	Số màu được dùng là ít nhất.
+Hai bài toán thực tế “tô màu bản đồ thế giới” và “đèn giao thông” xem ra rất khác biệt nhưng sau khi mô hình hóa, chúng thực chất chỉ là một, đó là bài toán “tô màu đồ thị”.
+Đối với một bài toán đã được hình thức hoá, chúng ta có thể tìm kiếm cách giải trong thuật ngữ của mô hình đó và xác định có hay không một chương trình có sẵn để giải. Nếu không có một chương trình như vậy thì ít nhất chúng ta cũng có thể tìm được những gì đã biết về mô hình và dùng các tính chất của mô hình để xây dựng một giải thuật tốt.
+1.2.	PHƯƠNG PHÁP TIẾP CẬN GIẢI THUẬT
+1.2.1.	Phương pháp modul hóa
+Các bài toán được giải trên máy tính ngày càng đa dạng và phức tạp. Giải thuật và chương trình để giải chúng cũng ngày càng có quy mô lớn.
+Tuy nhiên, mọi việc sẽ đơn giản hơn nếu có thể phân chia bài toán lớn thành các bài toán nhỏ. Điều đó cũng có nghĩa là nếu coi bài toán của ta như một modul chính thì cần chia nó thành các modul con, tiếp tục chia các modul đó thành các modul nhỏ hơn nữa tới khi thu được những modul ứng với phần việc cơ bản mà ta đã biết cách giải quyết. Như vậy việc tổ chức lời giải của bài toán sẽ thể hiện theo cấu trúc phân cấp có dạng như sau:
+
+Hình 1.3. Cấu trúc phân cấp
+ 
+Chiến thuật giải quyết bài toán theo tinh thần như vậy chính là chiến thuật “chia để trị”, người ta dùng cách thiết kế “từ đỉnh xuống” hay thiết kế “từ khái quát đến chi tiết”. Đó chính là cách phân tích tổng quát toàn bộ vấn đề, xuất phát từ dữ kiện và các mục tiêu đặt ra để đề cập đến những công việc chủ yếu, sau đó mới đi vào giải quyết các phần cụ thể một cách chi tiết hơn.
+Ví dụ: Xây dựng chương trình quản lý điểm của sinh viên.
+Cách thiết kế giải thuật theo kiểu top – down giúp cho việc giải quyết bài toán được định hướng rõ ràng, tránh sa đà ngay vào các chi tiết phụ, là nền tảng cho việc lập trình có cấu trúc. Ngoài ra phương pháp modul hóa cho phép chia bài toán thành các phần độc lập tạo điều kiện làm việc theo nhóm và giúp cho việc tìm hiểu, chỉnh sửa dễ dàng. Tuy nhiên việc phân tích bài toán thành các bài toán con đôi khi mất rất nhiều thời gian và công sức hơn cả nhiệm vụ lập trình.
+1.2.2.	Phương pháp tinh chỉnh từng bước
+Là phương pháp thiết kế giải thuật gắn liền với lập trình. Nó phản ánh tinh thần của quá trình modul hóa bài toán và thiết kế kiểu top – down.
+Thoạt đầu chương trình thể hiện giải thuật được trình bày bằng ngôn ngữ tự nhiên, phản ánh ý chính của công việc cần làm. Ở những bước sau những ý đó sẽ được chi tiết hóa dần dần tương ứng với những công việc nhỏ hơn và hướng dần đến ngôn ngữ lập trình mà ta đã chọn. Ở các bước trung gian thường dùng giả mã (ngôn ngữ tự nhiên pha tạp với ngôn ngữ lập trình). Càng ở các bước sau sự tinh chỉnh càng rõ, các đặc tả công việc cần xử lý sẽ được thay thế bởi các câu lệnh của ngôn ngữ lập trình. Như vậy quá trình thiết kế giải thuật và phát triển chương trình sẽ được thể hiện dần dần từ dạng ngôn ngữ tự nhiên, qua giả mã rồi đến ngôn ngữ lập trình và đi từ mức “làm cái gì” đến mức “làm thế nào”; dữ liệu từ dạng cấu trúc đến dạng lưu trữ cài đặt cụ thể.
+Ví dụ: Sắp xếp một dãy n số nguyên theo chiều tăng dần.
+1.3.	PHÂN TÍCH, ĐÁNH GIÁ ĐỘ PHỨC TẠP CỦA GIẢI THUẬT
+Đối với mỗi vấn đề cần giải quyết, ta có thể tìm ra nhiều thuật toán khác nhau. Có những thuật toán thiết kế đơn giản, dễ hiểu, dễ lập trình và sửa lỗi tuy nhiên thời gian thực hiện lớn và tiêu tốn nhiều tài nguyên máy tính. Ngược lại, có những thuật toán thiết kế và lập trình rất phức tạp, nhưng cho thời gian chạy nhanh hơn, sử dụng tài nguyên máy tính hiệu quả hơn. Khi đó, câu hỏi đặt ra là ta nên lựa chọn giải thuật nào để thực hiện?
+Đối với những chương trình chỉ được thực hiện một vài lần thì thời gian chạy không phải là tiêu chí quan trọng nhất, mà thời gian lập trình và hoàn thiện thuật toán đáng giá hơn. Vì vậy, đối với những chương trình này thì nên lựa chọn những giải thuật đơn giản.
+ 
+Đối với những chương trình được thực hiện nhiều lần, nhất là đối với loại bài toán mà khối lượng dữ liệu đưa vào khá lớn thì thời gian chạy của chương trình đáng giá hơn rất nhiều so với thời gian được sử dụng để thiết kế và xây dựng nó. Lúc đó yêu cầu đặt ra lại là tốc độ, hơn nữa khối lượng dữ liệu quá lớn mà dung lượng bộ nhớ lại có giới hạn thì không thể bỏ qua yêu cầu về tiết kiệm bộ nhớ được. Chúng ta cần phải cân đối giữa yêu cầu về thời gian và không gian nhớ.
+Sau đây, chúng ta sẽ chú ý đến việc phân tích thời gian thực hiện giải thuật – một trong các tiêu chí để đánh giá tính hiệu quả của giải thuật hay được đề cập tới.
+Có thể thấy, thời gian thực hiện một giải thuật phụ thuộc vào rất nhiều yếu tố. Một yếu tố cần chú ý trước tiên đó là kích thước của dữ liệu đưa vào. Ví dụ, thời gian sắp xếp một dãy số phải chịu ảnh hưởng của số lượng các số thuộc dãy đó. Nếu gọi n là số lượng này (kích thước của dữ liệu vào) thì thời gian thực hiện T của một giải thuật phải được biểu diễn như một hàm của n: T(n).
+Ngoài ra, thời gian thực hiện một giải thuật còn phụ thuộc vào kiểu lệnh, tốc độ xử lý của máy tính và ngôn ngữ viết chương trình, chương trình dịch ngôn ngữ ấy. Tuy nhiên những yếu tố này không đồng đều với mọi loại máy, vì vậy không thể dựa vào chúng khi xác lập T(n).
+1.3.1.	Độ phức tạp về thời gian của giải thuật
+Nếu thời gian thực hiện của một giải thuật là T1(n) = cn2 và thời gian thực hiện một giải thuật khác là T2(n) = kn (với c và k là hằng số), thì khi n khá lớn, thời gian thực hiện giải thuật T2 ít hơn so với giải thuật T1. Vì vậy nếu nói thời gian thực hiện giải thuật T(n) tỉ lệ với n2 hay với n cho ta ý niệm về tốc độ thực hiện giải thuật đó khi n khá lớn. Cách đánh giá thời gian thực hiện giải thuật độc lập với máy tính và các yếu tố liên quan tới máy tính như vậy sẽ dẫn tới khái niệm “độ phức tạp về thời gian của giải thuật”.
+Thời gian thực hiện một giải thuật là T(n) = cn2 (c là hằng) thì ta nói độ phức tạp về thời gian của giải thuật này có cấp là n2, ký hiệu là O(n2). Nghĩa là tồn tại hằng số dương c và n0 sao cho T(n) ≤ cn2 với n ≥ n0
+Thông thường các hàm thể hiện độ phức tạp về thời gian của giải thuật có dạng: log2n, n, nlog2n, n2, n3, 2n, n!, nn. Các hàm như 2n, n!, nn được gọi là hàm loại mũ. Một giải thuật mà thời gian thực hiện của nó có cấp là các hàm mũ thì tốc độ rất chậm. Các hàm như log2n, n, nlog2n, n2, n3 được gọi là các hàm loại đa thức. Một giải thuật mà thời gian thực hiện của nó có cấp là các hàm đa thức thì thường chấp nhận được.
+Trong nhiều chương trình, thời gian thực hiện không chỉ phụ thuộc vào kích thước dữ liệu vào mà còn phụ thuộc vào tính chất của nó. Khi tính chất dữ liệu vào thỏa mãn một số đặc điểm nào đó thì thời gian thực hiện chương trình có thể là lớn nhất hoặc nhỏ nhất. Khi đó, ta định nghãi thời gian thực hiện chương trình T(n) trong trường hợp xấu nhất hoặc tốt nhất. Đó là thời gian thực hiện lớn nhất hoặc nhỏ nhất trong tất cả các bộ
+ 
+dữ liệu vào có kích thước n. Ta cũng định nghĩa thời gian thực hiện trung bình của chương trình trên mọi bộ dữ liệu vào kích thước n. Trong thực tế, ước lượng thời gian thực hiện trung bình khó hơn nhiều so với thời gian thực hiện trong trường hợp xấu nhất hoặc tốt nhất, bời vì việc phân tích thuật toán trong trường hợp trung bình khó hơn về mặt toán học, đồng thời khái niệm “trung bình” không có ý nghĩa thực sự rõ ràng.
+1.3.2.	Xác định độ phức tạp về thời gian
+Một số quy tắc xác định độ phức tạp của giải thuật
+Quy tắc tổng: Giả sử T1(n), T2(n) là thời gian thực hiện của hai đoạn chương trình P1 và P2 mà T1(n) = O(f(n)); T2(n) = O(g(n)) thì thời gian thực hiện P1 và P2 kế tiếp nhau sẽ là:
+T1(n) + T2(n)=O(max(f(n), g(n)))
+Ví dụ: Trong một chương trình có 3 bước thực hiện mà thời gian thực hiện từng bước lần lượt là O(n2), O(n3) và O(nlog2n) thì thời gian thực hiện 2 bước đầu là O(max(n2, n3) = O(n3). Thời gian thực hiện chương trình sẽ là O(max(n3, nlog2n) = O(n3)
+Nếu g(n) ≤ f(n) với mọi n ≥ n0 thì O(f(n) + g(n)) cũng là O(f(n)). Ví dụ: O(n4 + n2) = O(n4)
+Quy tắc nhân: Giả sử T1(n), T2(n) là thời gian thực hiện của hai đoạn chương trình P1 và P2 mà T1(n) = O(f(n)); T2(n) = O(g(n)) thì thời gian thực hiện P1 và P2 lồng nhau sẽ là:
+T1(n) . T2(n) = O(f(n).g(n))
+Ví dụ: for (i=1; i<=n; i++) for(j=1; j<=n; j++)
+Có thời gian thực hiện được đánh giá là O(n.n) = O(n2)
+Chú ý: Khi đánh giá thời gian thực hiện giải thuật ta chỉ cần chú ý tới các buwóc tương ứng với một phép toán mà ta gọi là phép toán tích cực, đó là phép toán thuộc giải thuật mà thời gian thực hiện nó không ít hơn thời gian thực hiện các phép toán khác.
+ 
+Ví dụ, tính giá trị của ex theo công thức
+int	EXP1(int x, int n)
+{	s = 1;
+ 
+e x 1 x / 1 x 2 / 2 ... xn / n!
+ 
+for (i=1; i<=n; i++)
+{	p = 1;
+for (j=1; j<=i; j++)
+p = p * x / j; s = s + p;
+}
+ 
+return s;
+}
+Có thể nói phép toán tích cực ở đây là p = p*x / j. Ta thấy nó được thực hiện 1 + 2 + … + n = n(n + 1)/2 lần. Vậy thời gian thực hiện giải thuật là T(n) = O(n2)
+Một số quy tắc chung trong việc phân tích và tính toán thời gian thực hiện chương
+trình:
+•	Thời gian thực hiện các câu lệnh gán, đọc, ghi, … là O(1)
+•	Thời gian thực hiện chuỗi tuần tự các lệnh theo quy tắc cộng, có nghĩa là thời
+gian thực hiện của cả nhóm lệnh tuần tự được tính là thời gian thực hiện câu lệnh lớn nhất.
+•	Thời gian thực hiện câu lệnh rẽ nhánh if được tính bằng thời gian thực hiện các lệnh khi điều kiện kiểm tra thỏa mãn và thời gian thực hiện kiểm tra điều kiện. Thời gian thực hiện việc kiểm tra điều kiện là O(1)
+•	Thời gian thực hiện 1 vòng lặp được tính là tổng thời gian thực hiện các lệnh ở thân vòng lặp qua tất cả các bước lặp và thời gian để kiểm tra điều kiện dừng (thường làO(1)). Thời gian thực hiện này thường được tính theo quy tắc nhân số lần thực hiện bước lặp và thời gian thực hiện các lệnh ở thân vòng lặp. Các vòng lặp phải được tính thời gian thực hiện một cách riêng rẽ.
+CÂU HỎI ÔN TẬP CHƯƠNG 1
+1.	Trình bày khái niệm thuật toán? Các đặc điểm của thuật toán?
+2.	Việc chia bài toán thành các bài toán nhỏ có những thuận lợi gì?
+3.	Nêu nguyên tắc của phướng pháp thiết kế kiểu top – down. Cho ví dụ minh họa
+3.	Tóm tắt ý tưởng chủ đạo của phương pháp tinh chỉnh từng bước
+4.	Thời gian thực hiện một chương trình thường phụ thuộc vào những yếu tố nào? Phân tích cụ thể từng yếu tố.
+5.	Nêu các quy tắc chung trong việc phân tích và đánh giá thời gian thực hiện chương trình
+6.	Với đoạn chương trình dưới đây hãy xác định độ phức tạp về thời gian của giải thuật
+a)	sum = 0;
+for (i=1; i <= n; i++)
+sum = sum + i;
+b)	for (i=1; i <= n; i++)
+for (j=1; j <= n; j++)
+{	c[i, j] = 0;
+for (k=1; k <= n; i++)
+c[i, j] = c[i, j] + a[i, k] * b[k, i];
+ 
+}
+c)	for (i=1; i < n; i++)
+{	for (j=n-1; j >= i; j -- )
+if ( x[j] > x[j+1])
+{	tg = x[j];
+x[j] = x[j+1]; x[j+1] = tg;
+}
+}
+ 
+
+
+2.1.	KHÁI NIỆM ĐỆ QUY
+ 
+Chương 2
+GIẢI THUẬT ĐỆ QUY
+ 
+Một đối tượng được gọi là đệ qui nếu nó hoặc một phần của nó được định nghĩa thông qua chính nó. Một số ví dụ về định nghĩa đệ qui là:
+Ví dụ 1 – Định nghĩa số tự nhiên
+•	0 là số tự nhiên
+•	Nếu k là số tự nhiên thì k + 1 cũng là số tự nhiên
+Như vậy từ phát biểu ban đầu 0 là số tự nhiên, suy ra 0 + 1 = 1 là số tự nhiên, 1
++ 1 = 2 là số tự nhiên, …
+Ví dụ 2 – Định nghĩa hàm n giai thừa: n!
+•	0! = 1
+•	Nếu n > 0 thì n! = n×(n-1)!
+Như vậy khi n=1 ta có 1!=1×0!=1×1=1, khi n=2 ta có 2!=2×1!=2×1=2, … Ví dụ 3 – Định nghĩa xâu ký tự
+•	Xâu rỗng là 1 xâu ký tự
+•	Một xâu ghép với một chữ cái bất kỳ tạo thành một xâu mới
+Như vậy xâu rỗng là một xâu ký tự, ta ghép xâu rỗng với một chữ cái bất kỳ đều tạo thành một xâu ký tự, tức là chữ cái bất kỳ có thể coi là xâu ký tự. Tiếp tục ghép một chữ cái bất kỳ với một chữ cái bất kỳ khác sẽ tạo thành một xâu ký tự, …
+2.2.	GIẢI THUẬT ĐỆ QUY VÀ THỦ TỤC ĐỆ QUY
+Nếu lời giải của một bài toán T được thực hiện bằng lời giải của bài toán T’ có dạng giống như T thì đó là một lời giải đệ qui. Giải thuật tương ứng với lời giải đó gọi là giải thuật đệ qui, thủ tục diễn đạt cho giải thuật đó là thủ tục đệ qui.
+Đặc điểm của thủ tục đệ qui:
+•	Thủ tục có thể gọi chính nó.
+•	Mỗi lần có lời gọi đệ qui thì kích thước bài toán phải nhỏ hơn.
+•	Có một trường hợp đặc biệt – trường hợp suy biến, khi trường hợp này xảy ra bài toán sẽ đơn giản tới mức có thể tự giải quyết, quá trình gọi đệ qui kết thúc.
+Thủ tục đệ qui có hai dạng:
+•	Đệ qui trực tiếp: Nếu một thủ tục chứa lời gọi đến chính nó.
+•	Đệ qui gián tiếp: Nếu một thủ tục chứa lời gọi đến một thủ tục khác, mà thủ tục này lại gọi đến thủ tục ban đầu.
+2.3.	THIẾT KẾ GIẢI THUẬT ĐỆ QUY
+Để thiết kế một giải thuật đệ qui cần phải trả lời các câu hỏi sau:
+ 
+•	Có thể định nghĩa bài toán dưới dạng một bài toán cùng loại nhưng nhỏ hơn như thế nào?
+•	Thế nào là kích thước của bài toán được giảm đi ở mỗi lần gọi đệ qui?
+•	Trường hợp đặc biệt nào của bài toán sẽ được coi là suy biến?
+Khi bài toán đang xét hoặc dữ liệu đang xử lý được định nghĩa dưới dạng đệ qui thì việc thiết kế giải thuật đệ qui rất thuận lợi.
+2.3.1.	Hàm n!
+n! 1 if n  0
+n(n 1)! if n  0
+Giải thuật đệ qui được viết dưới dạng hàm int giaithua(int n)
+{
+if (n = = 0) return 1;
+else return n × giaithua(n-1);
+}
+Trong chương trình trên, điểm dừng của thuật toán đệ qui là khi n=0. Khi đó giá trị của hàm giaithua(0) có thể tính ngay lập tức, không cần gọi hàm đệ qui khác. Nếu điều kiện dừng không thỏa mãn, sẽ có một lời gọi đệ qui hàm giaithua(n-1), tham số này nhỏ hơn tham số ban đầu 1 đơn vị (tức là bài toán tính n! đã được qui về bài toán nhỏ hơn là tính (n-1)!
+2.3.2.	Dãy số Fibonacci
+Dãy số Fibonacci bắt nguồn từ bài toán cổ về việc sinh sản của các cặp thỏ. Bài toán được đặt ra như sau:
+•	Các con thỏ không bao giờ chết.
+•	Hai tháng sau khi ra đời một cặp thỏ mới sẽ sinh ra một cặp thỏ con (một đực, một cái).
+•	Khi đã sinh con rồi thì cứ mỗi tháng tiếp theo chúng lại sinh được một cặp con mới.
+Giả sử bắt đầu từ một cặp mới ra đời thì đến tháng thứ n sẽ có bao nhiêu cặp? Ta thấy số cặp thỏ ứng với n = 1, 2, 3, … là:
+1    1    2    3    5    8    13   21 …
+Có thể tính số cặp thỏ F(n) theo công thức sau
+ 
+F (n)  1 if
+ 
+n  2
+Fn -1 if n  2
+ 
+F(n - 2)
+Giải thuật đệ qui được viết dưới dạng hàm
+ 
+int Fibonacci(int n)
+{
+if (n = = 0 || n = = 1) return 1;
+else return Fibonacci(n-1) + Fibonacci(n-2);
+}
+Nhận xét về chương trình đệ qui:
+•	Định nghĩa bằng đệ qui có thể thực hiện một số lượng lớn các thao tác tính toán thông qua một đoạn chương trình ngắn gọn, cho phép xác định một tập vô hạn các đối tượng bằng một phát biểu hữu hạn.
+•	Khi một thủ tục đệ qui gọi chính nó, tập các đối tượng được sử dụng trong thủ tục như các biến, hằng, cấu trúc, … sẽ được tạo ra. Ngoài ra, việc chuyển giao điều khiển từ các thủ tục cũng cần lưu trữ các thông số dùng cho việc trả lại điều khiển cho thủ tục ban đầu.
+•	Việc sử dụng đệ qui đôi khi tạo ra các tính toán thừa, không cần thiết do tính chất tự động gọi thủ tục khi chưa gặp điều kiện dừng của đệ qui.
+2.4.	CÁC VÍ DỤ VỀ GIẢI THUẬT ĐỆ QUI
+2.4.1.	Bài toán “Tháp Hà Nội”
+Phát biểu: Có 3 cái cọc và n cái đĩa, mỗi đĩa có kích thước khác nhau và có lỗ ở giữa để có thể xuyên chúng vào các cọc. Ban đầu tất cả các đĩa đều nằm trên cọc A, kích thước đĩa nhỏ dần từ dưới lên trên.
+Yêu cầu: Chuyển n đĩa từ cọc A sang cọc C với điều kiện:
+-	Mỗi lần chỉ được chuyển một đĩa.
+-	Đĩa có kích thước to luôn phải nằm dưới đĩa nhỏ.
+-	Được phép sử dụng một cọc trung gian (giả sử cọc B) để chuyển đĩa từ cọc A sang cọc C.
+Cách giải
+-	Trường hợp một đĩa (n = 1): Chuyển đĩa từ cọc A sang cọc C
+-	Trường hợp hai đĩa (n = 2)
+Chuyển đĩa thứ nhất từ cọc A sang cọc B Chuyển đĩa thứ hai từ cọc A sang cọc C Chuyển đĩa thứ nhất từ cọc B sang cọc C
+-	Tổng quát:
+Bước 1: Chuyển n -1 đĩa bên trên từ cọc A sang cọc B Bước 2: Chuyển đĩa thứ n từ cọc A sang cọc C
+Bước 3: Chuyển n -1 đĩa từ cọc B sang cọc C Có thể minh họa quá trình chuyển như sau:
+ 
+Trạng thái ban đầu
+
+Bước 1: Chuyển n-1 đĩa bên trên từ cọc A sang cọc B
+
+Bước 2: Chuyển đĩa thứ n từ cọc A sang cọc C
+
+Bước 3: Chuyển n-1 đĩa từ cọc B sang cọc A
+
+Như vậy bài toán “Tháp Hà Nội” tổng quát với n đĩa được dẫn đến bài toán tương tự với kích thước nhỏ hơn, đó là chuyển n-1 đĩa. Điểm dừng của thuật toán khi n=1.
+Ta có thể viết giải thuật đệ qui của bài toán “Tháp Hà Nội” như sau: void Chuyen (int n, char a, char c)
+{
+printf(“Chuyen dia thu %d tu coc %c sang coc %c”, n, a, c); return;
+}
+void ThapHaNoi (int n, char a, char c, char b)
+{	if (n = = 1)
+Chuyen(1, a, c);
+else
+ 
+{	ThapHaNoi (n-1, a, b, c); Chuyen(n, a, c);
+ThapHaNoi (n-1, b, c, a);
+}
+return;
+}
+Hàm Chuyen thực hiện thao tác in ra 1 dòng cho biết chuyển đĩa thứ mấy từ cọc nào sang cọc nào
+Hàm ThapHaNoi để kiểm tra nếu số đĩa bằng 1 thì thực hiện chuyển trực tiếp từ cọc A sang cọc C. Nếu số đĩa lớn hơn 1 thì thực hiện 3 lệnh
+•	ThapHaNoi (n-1, a, b, c) để chuyển n-1 đĩa từ cọc A sang cọc B sử dụng cọc C làm cọc trung gian.
+•	Chuyen (n, a, c) để chuyển đĩa thứ n từ cọc A sang cọc C.
+•	ThapHaNoi (n-1, b, c, a) để chuyển n-1 đĩa từ cọc B sang cọc C sử dụng cọc A làm cọc trung gian.
+Bài toán tháp Hà Nội có độ phức tạp là 2n – 1 (Chứng minh: bằng quy nạp)
+2.4.2.	Bài toán 8 quân hậu
+Một bàn cờ quốc tế là một bảng hình vuông gồm 8 hàng 8 cột. Quân hậu là một quân cờ có thể ăn được bất kỳ quân nào nằm trên cùng một hàng, cùng một cột hay cùng một đường chéo. Bài toán đặt ra là hãy xếp 8 quân hậu trên bàn cờ sao cho không có quân hậu nào có thể ăn được quân hậu nào. Điều đó cũng có nghĩa là trên mỗi hàng, mỗi cột, mỗi đường chéo chỉ có thể có một quân hậu.
+
+Hình 2.1: Các nước chiếu của quân hậu
+Để tìm lời giải cho bài toán trên ta có thể xét mọi trường hợp ứng với mọi vị trí của 8 quân hậu trên bàn cờ rồi lọc ra các trường hợp chấp nhận được. Phương pháp “thử từng bước” thoạt nghe có vẻ hơi lạ nhưng lại thể hiện một giải pháp hiện thực, nó cho
+ 
+phép tìm ra tất cả các cách sắp xếp để không có quân hậu nào ăn được nhau (có 92 cách xếp).
+Nét đặc trưng của phương pháp là các bước đi tới lời giải hoàn toàn được làm thử. Nếu có một lựa chọn chấp nhận được thì ghi nhớ các thông tin cần thiết và tiến hành bước thử tiếp theo. Nếu không có một lựa chọn nào thích hợp thì làm lại bước trước, xóa bớt các ghi nhớ và quay về chu trình thử với các lựa chọn còn lại. Hành động này gọi là quay lui, giải thuật thể hiện phương pháp này gọi là giải thuật quay lui.
+Đối với bài toán 8 quân hậu: do mỗi cột chỉ có thể có một quân hậu nên lựa chọn đối với quân hậu thứ i, ứng với cột i là đặt nó vào hàng nào để đảm bảo “an toàn”, nghĩa là quân hậu thứ i không cùng hàng, không cùng đường chéo với i–1 quân hậu đã được xếp trước đó. Như vậy, ta sẽ dùng biến i để biểu thị chỉ số cột, biến j biểu thị chỉ số hàng. Đối với mỗi ô trong cột sẽ có 1 hàng và 2 đường chéo đi qua nó là đường chéo trái và đường chéo phải. Ta sẽ dùng 3 mảng kiểu boolean để biểu thị cho các hàng, các đường chéo trái và các đường chéo phải (có tất cả 15 đường chéo trái và 15 đường chéo phải):
+int a[8];    int b[15], c[15];
+Trong đó
+a[j] = 0: Hàng j chưa bị chiếm bởi quân hậu nào
+b[k] = 0: đường chéo trái k chưa bị chiếm bởi quân hậu nào c[k] = 0: đường chéo phải k chưa bị chiếm bởi quân hậu nào
+Lưu ý: Nếu các ô (i, j) cùng nằm trên 1 đường chéo trái thì có cùng giá trị i+j, cùng nằm trên đường chéo phải thì có cùng giá trị i–j. Nếu đánh số các đường chéo trái và phải từ 0 đến 14 thì ô (i, j) sẽ nằm trên đường chéo trái (i+j) và nằm trên đường chéo phải (i–j+7).
+Do vậy để kiểm tra xem ô (i, j) có an toàn không, ta chỉ cần kiểm tra xem hàng j và các đường chéo (i+j), (i–j+7) đã bị chiếm chưa, tức là kiểm tra a[i], b[i+j], c[i–j+7]. Ngoài ra ta cần có mảng x để lưu giữ chỉ số hàng của quân hậu trong cột i: int x[8] Với thao tác đặt hậu vào vị trí hàng j trên cột i, ta cần thực hiện:
+x[i] = j;	a[j] = 1;	b[i+j] = 1;	c[i–j+7] = 1;
+Với thao tác bỏ hậu ra khỏi hàng j trên cột i, ta cần thực hiện: a[j] = 0;	b[i+j] = 0;	c[i–j+7] = 0;
+Điều kiện để kiểm tra xem vị trí tại hàng j trên cột i có an toàn không (a[j] == 0) && (b[i+j] == 0) && (c[i–j+7] == 0)
+void DatHau (int i, int *q)
+{	int j = 0; do
+{	*q = 0;
+if ((a[j] == 0) && (b[i+j] == 0) && (c[i–j+7] == 0))
+ 
+{	x[i] = j;
+a[j] = 1;
+b[i+j] = 1;
+c[i–j+7] = 1;
+if (i<7)
+{	DatHau (i+1, q); if (*q ==0)
+{	a[j] = 0;
+b[i+j] = 0;
+c[i–j+7] = 0;	}
+} else
+*q = 1;
+}	j ++;
+} while (*q ==0) && (j<8);
+}
+CÂU HỎI ÔN TẬP VÀ BÀI TẬP CHƯƠNG 2
+2.1.	Một chương trình đệ qui khi gọi chính nó thì bài toán khi đó có kích thước
+như thế nào so với bài toán ban đầu? Để chương trình đệ qui không bị lặp vô hạn thì cần phải làm gì?
+2.2.	Hãy cho biết tại sao khi chương trình có thể viết dưới dạng lặp hoặc cấu trúc khác thì không nên sử dụng đệ qui?
+2.3.	Giải thuật tính ước số chung lớn nhất của hai số nguyên dương p và q (p > q) được mô tả như sau;
+Gọi r là số dư trong phép chia p cho q Nếu r = 0 thì q là ước số chung lớn nhất
+Nếu r ≠ 0 thì gán cho p giá trị của q, gán cho q giá trị của r, rồi lặp lại quá trình Hãy xây dựng một định nghĩa đệ qui cho hàm USCLN (p, q)
+Viết một giải thuật đệ qui và một giải thuật lặp thể hiện hàm đó
+Hãy nêu rõ các đặc điểm của một giải thuật đệ qui được thể hiện trong trường hợp này
+Trường hợp người ta cho nhầm giá trị q lớn hơn p thì giải thuật có xử lý được không?
+2.4.	Viết chương trình đệ qui tính tổng các số lẻ trong khoảng từ 1 đến 2n+1.
+2.5.	Hãy viết thủ tục đệ qui thực hiện in ngược một dòng ký tự cho trước. Ví dụ cho dòng “PASCAL” thì in ra “LACSAP”.
+2.6.	Hãy cho biết các bước thực hiện chuyển đĩa trong bài toán tháp Hà Nội với số lượng đĩa là 3.
+ 
+Chương 3
+MẢNG VÀ DANH SÁCH TUYẾN TÍNH
+3.1.	KHÁI NIỆM VỀ MẢNG VÀ DANH SÁCH
+3.1.1.	Cấu trúc dữ liệu kiểu mảng
+Có thể nói mảng là cấu trúc dữ liệu căn bản và được sử dụng rộng rãi nhất trong tất cả các ngôn ngữ lập trình. Mảng là 1 tập hợp có thứ tự, bao gồm một số cố định các phần tử có cùng kiểu dữ liệu, được lưu trữ kế tiếp nhau. Các phần tử của mảng có thể được truy cập ngẫu nhiên thông qua chỉ số, ví dụ để truy nhập phần tử thứ i của mảng a ta viết a[i].
+Cấu trúc bộ nhớ máy tính cũng được tổ chức thành các ô nhớ, và được truy cập thông qua địa chỉ các ô nhớ. Do vậy, việc lưu trữ dữ liệu trong mảng có sự tương thích hoàn toàn với bộ nhớ máy tính, có thể coi bộ nhớ máy tính như mảng 1 chiều và địa chỉ các ô nhớ tương ứng với chỉ số của mảng. Chính vì vậy nên việc sử dụng cấu trúc dữ liệu mảng trong các ngôn ngữ lập trình có thể làm cho chương trình hiệu quả hơn và chạy nhanh hơn.
+Mảng là cấu trúc dữ liệu dễ sử dụng, tốc độ truy cập cao. Tuy nhiên nhược điểm chính của mảng là không linh hoạt về kích thước. Nghĩa là khi ta đã khai báo 1 mảng thì kích thước của nó là cố định, không thể thay đổi trong quá trình thực hiện chương trình. Điều này rất bất tiện khi ta chưa biết trước số phần tử cần xử lý. Nếu khai báo mảng với kích thước lớn sẽ tốn bộ nhớ và ảnh hưởng đến hiệu suất của chương trình. Nếu khai báo mảng với kích thước nhỏ sẽ dẫn đến thiếu bộ nhớ. Ngoài ra, việc bố trí lại các phần tử trong mảng cũng khá phức tạp, bởi vì mỗi phần tử đã có vị trí cố định trong mảng, để bố trí 1 phần tử sang vị trí khác ta phải “dồn” các phần tử có liên quan.
+3.1.2.	Danh sách liên kết
+Danh sách liên kết là 1 tập có thứ tự, bao gồm một số biến động các phần tử. Mỗi phần tử trong danh sách liên kết có chứa thông tin về phần tử tiếp theo, qua đó ta có thể truy nhập đến phần tử này. Nói cách khác mỗi phần tử trong danh sách liên kết là 1 phần của 1 nút có chứa liên kết tới nút tiếp theo.
+Danh sách liên kết có thể được xem như là một sự bố trí tuần tự các phần tử trong một tập. Bắt đầu từ một nút, ta coi đó là phần tử đầu tiên trong danh sách. Từ nút này, theo liên kết mà nó trỏ tới, ta có nút thứ 2, được coi là phần tử thứ 2 trong danh sách, … cứ tiếp tục như vậy cho đến hết danh sách. Nút cuối cùng có thể có liên kết NULL tức là không trỏ tới nút nào, hoặc có thể trỏ về nút đầu tiên để tạo thành một vòng.
+Tập hợp những người đến khám bệnh cho ta hình ảnh một danh sách. Họ sẽ được khám theo một thứ tự. Số người có lúc tăng lên (do có người mới đến), có lúc giảm đi (do có người không chờ lâu được nên bỏ về).
+ 
+Một danh sách mà quan hệ lân cận giữa các phần tử được hiển thị ra gọi là danh sách tuyến tính. Vectơ chính là trường hợp đặc biệt của danh sách tuyến tính, đó là hình ảnh của danh sách tuyến tính xét tại một thời điểm nào đó. Như vậy danh sách tuyến
+tính là một danh sách rỗng hoặc có dạng (a1, a2, …, an) với ai (1  i  n) là các dữ liệu
+nguyên tử. Trong danh sách tuyến tính tồn tại một phần tử đầu a1, 1 phần tử cuối an, ai
+được gọi là phần tử thứ i của danh sách. Đối với mỗi phần tử ai bất kỳ với (1  i  n 1)
+thì có 1 phần tử ai+1 gọi là phần tử sau ai, với (2  i  n) thì có một phần tử ai-1 gọi là
+phần tử trước ai, n được gọi là độ dài hoặc kích thước của danh sách, có giá trị thay đổi. Cấu trúc 1 danh sách liên kết:
+Đầu danh sách	Cuối danh sách
+
+3.2.	DANH SÁCH KIỂU NGĂN XẾP - STACK
+3.2.1.	Khái niệm
+Ngăn xếp là một kiểu danh sách tuyến tính đặc biệt mà phép bổ sung hoặc loại bỏ 1 phần tử luôn luôn được thực hiện ở 1 đầu của danh sách gọi là đỉnh (top). Nói cách khác, ngăn xếp là 1 cấu trúc dữ liệu có 2 thao tác cơ bản: bổ sung phần tử (Push) và loại bỏ phần tử (Pop), trong đó việc loại bỏ sẽ tiến hành loại bỏ phần tử mới nhất được đưa vào danh sách. Chính vì vậy ngăn xếp còn được gọi là kiểu dữ liệu có nguyên tắc LIFO (Last In First Out – vào sau ra trước).
+Ví dụ về cách lưu trữ kiểu LIFO như của ngăn xếp là: một chồng sách trên mặt bàn hay một chồng đĩa trong hộp, … Khi thêm 1 cuốn sách vào chồng sách, cuốn sách sẽ nằm ở trên đỉnh của chồng sách. Khi lấy sách ra khỏi chồng sách, cuốn nằm trên cùng sẽ được lấy ra đầu tiên, tức là cuốn mới nhất được đưa vào sẽ được lấy ra trước tiên.
+Ví dụ minh họa sự thay đổi của ngăn xếp thông qua các thao tác bổ sung và loại bỏ phần tử trong ngăn xếp.
+Giả sử ta có một ngăn xếp S lưu trữ các ký tự. Ban đầu ngăn xếp rỗng
+
+Khi thực hiện lệnh Push(S, A), Push(S, B), Push(S, C) ngăn xếp có dạng
+ 
+ 	 
+Khi thực hiện lệnh Pop(S) sẽ loại bỏ phần tử đỉnh ngăn xếp, ngăn xếp có dạng
+
+
+Khi thực hiện lệnh Push(S, D) ngăn xếp có dạng
+
+
+Nếu tiếp theo thực hiện 2 lệnh Pop(S) sẽ loại bỏ phần tử D, B khỏi ngăn xếp, ngăn xếp có dạng
+
+
+3.2.2.	Lưu trữ ngăn xếp bằng mảng (lưu trữ kế tiếp)
+Sử dụng 1 mảng 1 chiều S để biểu diễn ngăn xếp. Thiết lập phần tử đầu tiên của mảng s[0] làm đáy của ngăn xếp. Các phần tử tiếp theo được đưa vào ngăn xếp lưu tại vị trí s[1], s[2]. Nếu hiện tại ngăn xếp có n phần tử thì s[n-1] là phần tử mới nhất được đưa vào ngăn xếp.
+Sử dụng con trỏ top lưu giữ đỉnh hiện tại của ngăn xếp, có giá trị là n-1; nếu ngăn xếp rỗng top có giá trị là -1.
+Khi bổ sung 1 phần tử vào ngăn xếp thì nó sẽ được lưu tại vị trí kế tiếp trong mảng và giá trị của con trỏ top tăng lên 1.
+ 
+Khi loại bỏ 1 phần tử khỏi ngăn xếp, phần tử của mảng tại vị trí top sẽ được lấy ra và giá trị của biến top giảm 1.
+Có 2 vấn đề xảy ra khi thực hiện các thao tác trên trong ngăn xếp. Khi ngăn xếp đã đầy, tức là khi biến top đạt tới phần tử cuối cùng của mảng thì không thể tiếp tục thêm phần tử mới vào mảng. Khi ngăn xếp rỗng, tức là chưa có phần tử nào thì ta không thể lấy được phần tử ra khỏi ngăn xếp. Như vậy, ngoài thao tác đưa phần tử vào ngăn xếp và lấy phần tử ra khỏi ngăn xếp, cần có thao tác kiểm tra ngăn xếp có rỗng hoặc có đầy không.
+Khai báo mảng cho 1 ngăn xếp chứa các số nguyên với tối đa 100 phần tử như
+ 
+sau:
+ 
+
+#define MAX 100 typedef	struct
+{	int	top;
+int	nut[MAX];
+ 
+} stack;
+Các thao tác trên ngăn xếp được cài đặt như sau:
+Thao tác khởi tạo ngăn xếp
+void	StackInit (stack *s)
+{	s –> top = –1; return;
+}
+Thao tác kiểm tra ngăn xếp rỗng
+int	StackEmpty (stack *s)
+{	s –> top == –1; return;
+}
+Thao tác kiểm tra ngăn xếp đầy
+int	StackFull (stack *s)
+{	s –> top = = MAX – 1;
+return;
+}
+Thao tác bổ sung 1 phần tử vào ngăn xếp
+void	Push (stack *s, int x)
+{	if (StackFull (s))
+{	printf ( “Ngan xep day” ); return;
+ 
+} else
+ 
+
+{	s –>  top ++;
+s –> nut[s –> top] = x; return;
+ 
+}
+}
+Thao tác lấy 1 phần tử ra khỏi ngăn xếp
+int	Pop (stack *s)
+{	if (StackEmpty (s))
+{	printf ( “Ngan xep rong” ); return;
+} else
+{	s –> nut[s –> top] – –; return;
+}
+}
+3.2.3.	Một số ứng dụng của ngăn xếp
+a)	Đảo ngược xâu ký tự
+Bài toán đảo ngược xâu ký tự yêu cầu hiển thị các ký tự của 1 xâu ký tự theo chiều ngược lại. Tức là ký tự cuối cùng của xâu sẽ được hiển thị trước, tiếp theo là ký tự sát ký tự cuối, …, và ký tự đầu tiên sẽ được hiển thị cuối cùng.
+Ví dụ:	Xâu ban đầu là: stack Chuỗi đảo ngược là: kcats
+Để giải quyết bài toán, ta chỉ cần duyệt từ đầu đến cuối xâu, lần lượt cho các ký tự vào ngăn xếp. Khi đó, ký tự đầu tiên của xâu sẽ được cho vào trước tiên, tiếp theo đến ký tự thứ 2, …, ký tự cuối sẽ được cho vào sau cùng. Sau khi đã cho toàn bộ các ký tự của xâu vào ngăn xếp, lần lượt lấy các phần tử ra khỏi ngăn xếp và hiển thị trên màn hình. Theo tính chất của ngăn xếp, ký tự cho vào sau cùng sẽ được lấy ra trước tiên. Do đó, ký tự cuối cùng của xâu sẽ được lấy ra đầu tiên, …, ký tự đầu tiên của xâu sẽ được lấy ra sau cùng. Như vậy, toàn bộ các ký tự trong xâu đã được đảo ngược thứ tự.
+b)	Đổi cơ số
+Ta biết rằng dữ liệu lưu trữ trong bộ nhớ của máy tính điện tử đều được biểu diễn dưới dạng nhị phân. Nghĩa là các số xuất hiện trong chương trình đều phải chuyển đổi từ hệ thập phân sang hệ nhị phân trước khi thực hiện các phép xử lý.
+ 
+Khi đổi một số nguyên X từ hệ thập phân sang hệ nhị phân người ta thực hiện phép chia nguyên liên tiếp của X cho 2 đến khi nhận được thương là 0 thì lấy dãy số dư theo chiều ngược lại.
+
+
+Như vậy, trong các biến đổi này các số dư được tạo ra sau lại được hiển thị trước. Cơ chế sắp xếp này chính là cơ chế của ngăn xếp. Để thực hiện biến đổi ta sẽ dùng một ngăn xếp để lưu trữ số dư qua từng phép chia. Khi thực hiện phép chia thì nạp số dư vào ngăn xếp, sau đó lấy chúng lần lượt từ ngăn xếp ra để hiển thị.
+Ví dụ: với số (22)10
+
+									
+ 
+1
+							0		0
+					1		1		1
+Push	→
+	1		1		1		1
+	0		0		0		0		0
+
+
+c)	Chuyển đổi biểu thức dạng trung tố sang hậu tố
+Thông thường, trong các biểu thức số học, với phép toán 2 ngôi như phép cộng, phép trừ, phép nhân, phép chia, phép lũy thừa, … dấu phép toán (toán tử) luôn được đặt ở giữa 2 toán hạng gọi là biểu thức dạng trung tố.
+ 
+Để tính giá trị biểu thức ta phải tính giá trị các phép toán trong ngoặc trước, lưu các kết quả này như một kết quả trung gian, sau đó sử dụng chúng như toán hạng. Vì vậy thứ tự các dấu ngoặc rất quan trọng, thực hiện trên máy tính là phức tạp. Trong trường hợp không muốn dùng dấu ngoặc thì phải theo qui ước về thứ tự ưu tiên thực hiện các phép toán. Đối với các phép toán cùng một thứ tự thì sẽ thực hiện theo thứ tự từ trái sang phải.
+Ví dụ: 2 biểu thức: a) A + B * C	b) (A + B) * C là 2 biểu thức hoàn toàn khác nhau
+Nhà toán học Ba Lan đã phát hiện ra rằng: nếu biểu diễn biểu thức số học theo ký pháp hậu tố hoặc tiền tố (gọi chung là ký pháp Ba Lan) thì việc sử dụng dấu ngoặc là không cần thiết, có thể tính dễ dàng nhờ máy tính thông qua ngăn xếp.
+Biểu thức dạng hậu tố: Toán tử nằm ngay sau 2 toán hạng
+Để chuyển từ biểu thức dạng trung tố sang biểu thức dạng hậu tố ta thực hiện như sau: trước tiên thêm đầy đủ cặp dấu ( ) vào biểu thức trung tố, sau đó duyệt biểu thức trung tố từ trái qua phải:
+•	Nếu gặp dấu mở ngoặc: Bỏ qua
+•	Nếu gặp toán hạng: Đưa vào biểu thức mới
+•	Nếu gặp toán tử: Nạp vào ngăn xếp
+•	Nếu gặp đóng ngoặc: Lấy toán tử từ đỉnh của ngăn xếp đưa vào biểu thức mới
+Ví dụ chuyển biểu thức dạng trung tố sang hậu tố 3 * ((5 – 2) * (7 + 1) – 6) Bước 1: Thêm đầy đủ các cặp dấu ( ) ta được biểu thức dạng trung tố:
+(3 * ((( 5 – 2) * ( 7 + 1)) – 6))
+Bước 2: Duyệt biểu thức trung tố từ trái sang phải theo nguyên tắc trên
+
+Stt	Ký tự đọc	Ngăn xếp	Biểu thức mới
+1	(		
+2	3		3
+3	*	*	3
+4	(	*	3
+5	(	*	3
+6	(	*	3
+7	5	*	3 5
+8	–	* –	3 5
+9	2	* –	3 5 2
+10	)	*	3 5 2 –
+11	*	* *	3 5 2 –
+ 
+12	(	* *	3 5 2 –
+13	7	* *	3 5 2 – 7
+14	+	* * +	3 5 2 – 7
+15	1	* * +	3 5 2 – 7 1
+16	)	* *	3 5 2 – 7 1 +
+17	)	*	3 5 2 – 7 1 + *
+18	–	* –	3 5 2 – 7 1 + *
+19	6	* –	3 5 2 – 7 1 + * 6
+20	)	*	3 5 2 – 7 1 + * 6 –
+21	)		3 5 2 – 7 1 + * 6 – *
+Biểu thức dạng hậu tố: 3 5 2 – 7 1 + * 6 – *
+d)	Tính giá trị biểu thức dạng hậu tố
+Biểu thức dạng hậu tố không cần dùng bất kỳ dấu ngoặc nào. Cách tính giá trị của biểu thức dạng này cần đến 1 số bước lưu kết quả trung gian để khi gặp toán tử lại lấy ra để tính toán tiếp, rất phù hợp với việc sử dụng ngăn xếp.
+Để tính giá trị của biểu thức hậu tố ta duyệt biểu thức từ trái qua phải:
+•	Nếu gặp toán hạng: Đưa vào ngăn xếp
+•	Nếu gặp toán tử: Lấy ra 2 toán hạng từ đỉnh ngăn xếp, sử dụng 2 toán hạng và toán tử để tính toán rồi đưa kết quả vào ngăn xếp
+Ví dụ, tính giá trị của biểu thức dạng hậu tố: 3 5 2 – 7 1 + * 6 – *
+
+Kết quả cuối cùng chính là giá trị của biểu thức hậu tố là 54
+3.3.	DANH SÁCH KIỂU HÀNG ĐỢI - QUEUUE
+3.3.1.	Khái niệm
+Hàng đợi là cấu trúc dữ liệu gần giống với ngăn xếp, nhưng hoạt động theo nguyên tắc FIFO (First In First Out – Vào trước ra trước).
+ 
+Đối với hàng đợi thì phần tử mới được đưa vào nằm ở cuối hàng, phần tử được lấy ra là phần tử đã được lưu trong hàng đợi lâu nhất. Còn ngăn xếp thì phần tử mới được đưa vào nằm ở đỉnh ngăn xếp, phần tử được lấy ra là phần tử mới nhất được đưa vào
+Ví dụ về hàng đợi có rất nhiều trong thực tế: một hàng người xếp hàng chờ vào rạp chiếu phim, hay một tập các tác vụ chờ phục vụ bởi hệ điều hành, …
+Có thể định nghĩa hàng đợi là một danh sách tuyến tính đặc biệt mà việc lấy ra một phần tử (Get) được thực hiện ở một đầu (gọi là đầu hàng), còn việc bổ sung một phần tử (Put) được thực hiện ở đầu còn lại (gọi là cuối hàng).
+Giả sử ta có hàng đợi Q lưu trữ các ký tự Ban đầu hàng đợi Q ở trạng thái rỗng
+Đầu hàng	
+(Lấy phần tử ra)							 Cuối hàng
+(Bổ sung phần tử)
+Thực hiện lệnh bổ sung phần tử A: Put (Q, A) hàng đợi có dạng
+
+Đầu hàng		A						 Cuối hàng
+Thực hiện lệnh Put (Q, B); Put (Q, C) hàng đợi có dạng
+
+Đầu hàng		A	B	C				 Cuối hàng
+Khi thực hiện lệnh Get (Q) để lấy ra 1 phần tử trong hàng đợi thì phần tử được lưu trữ trong hàng đợi lâu nhất sẽ được lấy ra, đó là phần tử đầu tiên ở đầu hàng, hàng đợi có dạng
+Đầu hàng			B	C				 Cuối hàng
+Tiếp theo thực hiện lệnh Put (Q, D), hàng đợi có dạng
+
+Đầu hàng			B	C	D			 Cuối hàng
+Nếu thực hiện tiếp lệnh Get (Q) phần tử ở đầu hàng là B sẽ được lấy ra
+
+Đầu hàng				C	D			 Cuối hàng
+3.3.2.	Lưu trữ hàng đợi bằng mảng (lưu trữ kế tiếp)
+Đối với ngăn xếp, việc bổ sung và loại bỏ một phần tử đều được thực hiện ở đỉnh của ngăn xếp, do vậy ta chỉ cần sử dụng 1 biến top để lưu trữ đỉnh này. Tuy nhiên, đối với hàng đợi việc bổ sung và loại bỏ được thực hiện ở 2 đầu riêng biệt, vì vậy ta cần sử dụng 2 biến là head và tail để lưu giữ điểm đầu và điểm cuối của hàng đợi. Các phần tử thuộc hàng đợi là các phần tử nằm giữa điểm đầu và điểm cuối.
+ 
+
+0			max
+	head	tail	
+Để lấy ra 1 phần tử của hàng đợi, điểm đầu (head) tăng lên 1 và phần tử ở đầu hàng được lấy ra. Để bổ sung 1 phần tử vào hàng đợi, phần tử này được bổ sung vào cuối hàng và điểm cuối (tail) tăng lên 1
+Ta thấy rằng, biến tail luôn tăng khi bổ sung phần tử, biến head luôn tăng khi lấy phần tử, do đó sau một số hữu hạn thao tác các biến này sẽ tiến đến cuối mảng, cho dù phần đầu mảng có thể còn trống do một số phần tử của hàng đợi đã được lấy ra, ta vẫn không thể bổ sung thêm phần tử vào hàng đợi. Để giải quyết vấn đề này, ta sử dụng phương pháp quay vòng. Khi biến tail tiến đến cuối mảng và phần đầu mảng còn trống thì ta sẽ cho biến này quay trở lại đầu mảng, tổ chức theo hình tròn. Tương tự, ta cũng cho biến head quay lại đầu mảng khi nó tiến tới cuối mảng.
+Khai báo hàng đợi
+Chứa các số nguyên với tối đa 100 phần tử # define   MAX 100
+typedef	struct
+{	int	head, tail, count; int	node[MAX];
+} queue;
+Biến count cho biết số phần tử hiện tại của hàng đợi (để kiểm tra hàng đợi đầy hay rỗng)
+Khởi tạo hàng đợi
+void	QueueInit (queue *q)
+{	q  head = 0; q  tail = 0;
+q  count = 0; return;
+}
+Kiểm tra hàng đợi rỗng
+int	QueueEmpty (queue *q)
+{
+return(q  count <= 0);
+}
+Thêm 1 phần tử vào hàng đợi
+void	Put (queue *q, int x)
+ 
+{	if (q  count == MAX)
+printf(“hang doi day”);
+else
+{	if (q  tail == MAX – 1)
+q  tail = 0;
+else	q  tail = q  tail + 1; q  node[q  tail] = x;
+q  count = q  count + 1;
+}
+return;
+}
+Lấy 1 phần tử ra khỏi hàng đợi
+int	Get (queue *q)
+{	int x;
+if (QueueEmpty(q))
+printf(“hang doi rong”);
+else
+{	x = q  node[q  head]; if (q  head == MAX – 1)
+q  head = 0;
+else	q  head = q  head + 1; q  count = q  count - 1;	}
+return x;  }
+CÂU HỎI ÔN TẬP VÀ BÀI TẬP CHƯƠNG 3
+3.1.	Nêu các ưu điểm và nhược điểm của danh sách liên kết so với mảng
+3.2.	Sự khác biệt giữa danh sách kiểu ngăn xếp và danh sách kiểu hàng đợi
+3.3.	Cho biểu thức dạng trung tố: (A + B – C) * D / E – (F – G)
+a)	Biểu diễn biểu thức dưới dạng biểu thức hậu tố
+b)	Tính giá trị của biểu thức hậu tố với A=9, B=3, C=2, D=8, E=4, F=5, G=1
+3.4.	Cho biểu thức dạng trung tố: (A * B – C ) / (D – E + F)
+a)	Biểu diễn biểu thức dưới dạng biểu thức trung tố
+b)	Tính giá trị của biểu thức hậu tố A=9, B=3, C=2, D=8, E=4, F=1
+3.5.	Cho một Queue được lưu trữ trong bộ nhớ bởi vectơ Q có 6 ô nhớ, được hoạt động theo cấu trúc vòng tròn. Thoạt đầu Queue có dạng
+1	2	3	4	5	6
+	A	B	C		
+ 
+↑	↑
+Head = 2	Tail = 4
+Hãy vẽ tình trạng của Queue và nêu rõ các giá trị tương ứng của Head và Tail sau mỗi lần thực hiện các phép toán dưới đây.
+a)	Bổ sung phần tử E vào Queue
+b)	Loại hai phần tử ra khỏi Queue
+c)	Bổ sung các phần tử I, J, K vào Queue
+ 
+Chương 4
+DANH SÁCH MÓC NỐI
+4.1.	DANH SÁCH NỐI ĐƠN VÀ CÁC GIẢI THUẬT XỬ LÝ
+Lưu trữ kế tiếp đối với danh sách tuyến tính đã bộc lộ rõ nhược điểm trong trường hợp thực hiện thường xuyên các phép bổ sung hoặc loại bỏ phần tử, trường hợp xử lý đồng thời nhiều danh sách hoặc trường hợp các ma trận thưa, …
+Việc sử dụng con trỏ hoặc mối nối để tổ chức danh sách tuyến tính (gọi là danh sách móc nối) là một giải pháp nhằm khắc phục các nhược điểm đó. Sau đây ta xét cấu trúc của một danh sách móc nối
+4.1.1.	Nguyên tắc
+Ở đây mỗi phần tử của danh sách được lưu trữ trong một phần tử nhớ mà ta gọi là nút (node). Mỗi nút bao gồm một số từ máy kế tiếp. Các nút này có thể nằm bất kỳ ở chỗ nào trong bộ nhớ. Trong mỗi nút, ngoài phần thông tin ứng với một phần tử, còn chứa địa chỉ của phần tử đứng sau nó trong danh sách.
+Riêng nút cuối cùng thì không có nút đứng sau nó nên mối nối ở nút này phải là một “địa chỉ đặc biệt” chỉ dùng để đánh dấu nút kết thúc danh sách chứ không như địa chỉ ở các nút khác, ta gọi là “mối nối không” ký hiệu là NULL.
+Để có thể truy nhập được vào mọi nút trong danh sách, tất nhiên phải truy nhập được vào nút đầu tiên, nghĩa là cần có một con trỏ P trỏ vào nút đầu tiên này.
+Nếu dùng mũi tên để chỉ mối nối, ta sẽ có hình ảnh của một danh sách nối đơn như sau:
+
+
+Ta có thể khai báo một danh sách móc nối mà mỗi nút chứa một phần tử là số nguyên như sau:
+struct node
+
+{	int		item;
+	struct	node	*next;
+};
+typedef	struct node	*listnode;
+Đầu tiên, ta khai báo một cấu trúc node gồm 2 thành phần: thành phần thứ nhất (item) là biến nguyên chứa dữ liệu, thành phần thứ 2 (next) là một con trỏ chứa địa chỉ của nút kế tiếp. Tiếp theo, ta định nghĩa một kiểu dữ liệu con trỏ tới nút có tên là listnode.
+4.1.2.	Các giải thuật xử lý
+Với tính chất động của danh sách móc nối, các nút của danh sách không được tạo ra ngay từ đầu mà chỉ được tạo ra khi cần thiết. Do vậy, thao tác đầu tiên cần có trên
+ 
+danh sách là tạo và cấp phát bộ nhớ cho 1 nút. Tương ứng với nó là thao tác giải phóng bộ nhớ và hủy 1 nút khi không dùng đến nữa.
+Thao tác tiếp theo cần xem xét là việc chèn 1 nút đã tạo vào danh sách. Do cấu trúc đặc biệt của danh sách móc nối, việc chèn 1 nút mới vào đầu, cuối, hoặc giữa danh sách có một số điểm khác biệt. Do vậy cần xem xét cả 3 trường hợp. Tương tự, việc loại bỏ 1 nút khỏi danh sách cũng sẽ được xem xét trong cả 3 trường hợp. Cuối cùng là thao tác duyệt danh sách.
+a)	Tạo, cấp phát và giải phóng bộ nhớ cho 1 nút
+listnode    p;   // Khai báo biến p
+p = (listnode) malloc (sizeof (struct node));  // Cấp phát bộ nhớ cho p free (p);   // Giải phóng bộ nhớ đã cấp phát cho nút p
+b)	Chèn 1 nút vào đầu danh sách
+Giả sử ta có 1 danh sách mà đầu danh sách được trỏ tới bởi con trỏ p
+
+
+Các bước để chèn 1 nút mới vào đầu danh sách như sau:
+•	Tạo và cấp phát bộ nhớ cho 1 nút mới, được trỏ bởi con trỏ q. Gán giá trị thích hợp cho phần tử của nút mới
+
+•	Cho con trỏ tiếp của nút mới trỏ đến phần tử đầu tiên của nút
+
+•	Cho p trỏ đến nút mới tạo
+
+void	Insert_Begin (listnode *p, int x)
+{
+listnode q;
+q =(listnode) malloc (sizeof (structnode)); q –> item = x;
+q –> next = *p;
+ 
+*p = q;
+}
+c)	Chèn 1 nút vào cuối danh sách
+Giả sử ta có 1 danh sách mà đầu danh sách được trỏ tới bởi con trỏ p
+
+
+Các bước để chèn 1 nút mới vào cuối danh sách như sau:
+•	Tạo và cấp phát bộ nhớ cho 1 nút mới, được trỏ bởi con trỏ q. Gán giá trị thích hợp cho phần tử của nút mới
+
+
+•	Khai báo thêm 1 biến con trỏ mới r, ban đầu r cùng với p đều trỏ đến đầu danh sách, sau đó lần lượt dịch chuyển r theo các nút kế tiếp cho tới khi đến nút cuối danh sách
+
+
+•	Cho con trỏ tiếp của nút cuối (được trỏ tới bởi r) trỏ đến nút mới tạo là q, và cho con trỏ tiếp của q trỏ tới NULL
+
+
+void	Insert_End (listnode *p, int x)
+{
+listnode	q, r;
+q =(listnode) malloc (sizeof (struct node)); q –> item = x;
+q –> next = NULL;
+if ( *p = = NULL) *p = q;
+ 
+else {	r = *p;
+while (r –> next != NULL) r = r –> next; r –> next = q;
+}
+}
+d)	Chèn 1 nút vào giữa danh sách (sau nút r)
+Giả sử ta có 1 danh sách mà đầu danh sách được trỏ tới bởi con trỏ p và 1 nút r trong danh sách (giả sử r không phải nút cuối cùng của danh sách, vì như vậy ta chỉ cần thực hiện thao tác chèn 1 nút vào cuối danh sách)
+
+Các bước để chèn 1 nút mới vào sau nút r trong danh sách như sau:
+•	Tạo và cấp phát bộ nhớ cho 1 nút mới, được trỏ bởi con trỏ q. Gán giá trị thích hợp cho phần tử của nút mới
+
+
+•	Cho con trỏ tiếp của nút mới trỏ đến nút kế tiếp của nút r
+
+•	Cho con trỏ tiếp của nút r trỏ đến q
+
+void	Insert_Middle (listnode *p, int position, int x)
+{	int	count = 1,	found = 0; listnode	q, r;
+r = *p;
+while ((r != NULL) && (found = = 0))
+{	if (count = = position)
+{	q = (listnode) malloc (sizeof (struct node));
+ 
+q –> item = x;
+q –> next = r –> next;
+r –> next = q; found = 1;	}
+count ++;
+r = r –> next;	}
+if (found = = 0)
+printf (“Khong tim thay vi tri can chen”);	}
+e)	Xóa 1 nút ở đầu danh sách
+Giả sử ta có 1 danh sách mà đầu danh sách được trỏ tới bởi con trỏ p
+
+
+Các bước để xóa 1 nút ở đầu danh sách như sau (danh sách không được rỗng)
+•	Dùng 1 con trỏ tạm q trỏ đến đầu danh sách
+
+
+•	Dịch chuyển con trỏ p qua phần tử đầu tiên đến phần tử kế tiếp
+
+•	Ngắt liên kết của biến q với nút tiếp theo, giải phóng bộ nhớ cho q
+
+
+void	Remove_Begin (listnode *p)
+{	listnode q;
+if (*p = = NULL) return; q = *p;
+*p = *p –> next;
+q –> next = NULL; free (q);	}
+ 
+f)	Xóa 1 nút ở cuối danh sách
+Giả sử ta có 1 danh sách mà đầu danh sách được trỏ tới bởi con trỏ p
+
+Các bước để xóa 1 nút ở cuối danh sách như sau:
+•	Dùng 2 biến tạm là q và r. Lần lượt dịch chuyển q và r từ đầu danh sách tới cuối danh sách, trong đó q luôn dịch chuyển sau r 1 nút. Khi r tới nút cuối cùng thì q đến nút gần cuối cùng của danh sách
+
+
+•	Cho con trỏ tiếp của nút gần cuối cùng (đang được trỏ bởi q) trỏ tới NULL. Giải phóng bộ nhớ cho nút cuối cùng (đang được trỏ bởi r)
+
+void	Remove_End (listnode *p)
+{	listnode q, r;
+if (*p = = NULL) return;
+if ( (*p) –> next = = NULL)
+{	Remove_Begin (*p); return;	}
+r = *p;
+while ( r –> next != NULL)
+{	q = r;
+r = r –> next; } q –> next = NULL; free (r);	}
+g)	Xóa 1 nút ở giữa danh sách (sau nút r)
+Giả sử ta có 1 danh sách mà đầu danh sách được trỏ tới bởi con trỏ p và 1 nút r trong danh sách.
+
+Giả thiết rằng nút r không phải là nút cuối cùng của danh sách, vì như vậy sẽ không có nút đứng sau nút r
+ 
+Các bước để xóa 1 nút sau nút r trong danh sách như sau:
+•	Sử dụng 1 biến tạm q trỏ đến nút đứng sau nút r
+
+
+•	Cho con trỏ tiếp của nút r trỏ đến nút đứng sau nút q. Ngắt liên kết của nút q và giải phóng bộ nhớ cho q.
+
+void	Remove_Middle (listnode *p, int position)
+{	int	count = 1, found = 0; listnode	q, r;
+r = *p;
+while ( (r != NULL) && (found = 0) )
+{	if (count == position)
+{	q = r –> next;
+r –> next = q –> next; q –> next = NULL; free (q);
+found = 1;	} count ++;
+r = r –> next;	} if (found == 0)
+printf (“khong tim thay vi tri can xoa”);
+}
+h)	Duyệt toàn bộ danh sách
+Thao tác duyệt danh sách cho phép duyệt qua toàn bộ các phần tử của danh sách, từ phần tử đầu tiên cho tới phần tử cuối cùng.
+Để thực hiện thao tác này, cần 1 biến tạm ra trỏ tới đầu danh sách. Từ vị trí này, theo liên kết của các nút, thực hiện duyệt qua từng phần tử trong danh sách. Trong quá trình duyệt, tại mỗi nút ta có thể thực hiện các thao tác cần thiết như lấy thông tin phần tử, sửa thông tin, so sánh, …
+nút r trong danh sách.
+ 
+ 
+void	Review (listnode *p)
+{	r = p;
+while (r –> next != NULL)
+{	// Thực hiện các thao tác cần thiết r = r –> next;
+}
+}
+4.2.	DANH SÁCH NỐI VÒNG VÀ NỐI KÉP
+4.2.1.	Danh sách nối vòng
+Trong danh sách liên kết đơn, nút cuối cùng của danh sách sẽ có liên kết trỏ đến một giá trị NULL, cho biết danh sách đã kết thúc. Nếu liên kết này không trỏ đến NULL mà trỏ về nút đầu tiên thì ta sẽ có một danh sách liên kết vòng (hay còn gọi là danh sách nối vòng). Hình ảnh của một danh sách nối vòng như sau:
+
+Ưu điểm của danh sách nối vòng là bất kỳ nút nào cũng có thể coi là đầu của danh sách. Có nghĩa là ta có thể tiến hành duyệt danh sách từ một nút bất kỳ. Tuy nhiên nhược điểm của loại danh sách này là có thể không biết khi nào thì đã dueetj qua toàn bộ các phần tử của danh sách. Điều này dẫn đến 1 quá trình duyệt vô hạn, không có điểm dừng. Để khắc phục nhược điểm này, trong quá trình duyệt luôn phải kiểm tra xem đã trở về nút ban đầu hay chưa. Việc kiểm tra này có thể dựa trên giá trị phần tử hoặc bằng cách thêm vào 1 nút đặc biệt.
+Có thể sử dụng danh sách nối vòng để giải quyết bài toán: có 1 nhóm N người, muốn chọn ra 1 thủ lĩnh. N người xếp thành vòng tròn, bắt đầu từ 1 người nào đó, duyệt qua vòng, đến người thứ M thì loại người đó khỏi vòng, quá trình lại bắt đầu. Tới khi còn 1 người, người đó là thủ lĩnh.
+Việc sử dụng danh sách nối vòng có thể cung cấp 1 lời giải hiệu quả cho bài toán. Bằng cách N người sẽ lần lượt được đưa vào 1 danh sách nối vòng. Quá trình duyệt bắt đầu từ người đầu tiên, và đếm đến M lần duyệt thì loại nút ra khỏi danh sách, tiếp tục quá trình duyệt. Danh sách nối vòng sẽ thu hẹp dần, đến khi chỉ còn 1 nút thì kết thúc quá trình duyệt.
+ 
+4.2.2.	Danh sách nối kép
+Trong danh sách liên kết đơn, mỗi nút chỉ có 1 liên kết trỏ tới nút kế tiếp. Điều này có nghĩa là danh sách liên kết đơn chỉ cho phép duyệt theo 1 chiều, trong khi thao tác duyệt theo chiều ngược lại đôi khi cũng rất cần thiết. Để giải quyết vấn đề này, ta có thể tạo ra cho mỗi nút có 2 liên kết: 1 liên kết để trỏ tới nút đứng trước nó và 1 liên kết để trỏ tới nút đứng sau nó. Những danh sách như vậy gọi là danh sách liên kết kép hay danh sách nối kép, ta có thể thực hiện duyệt danh sách theo 2 chiều.
+Hình ảnh của 1 danh sách nối kép như sau
+
+
+Việc khai báo 1 danh sách nối kép cũng tương tự như việc khai báo 1 danh sách nối đơn, chỉ khác là mỗi nút của danh sách nối kép có 2 liên kết
+struct node
+{	int item;
+struct node *left; struct node *right;
+};
+typedef struct node *doublelistnode;
+4.3.	ÁP DỤNG DANH SÁCH MÓC NỐI
+4.3.1.	Biểu diễn đa thức
+Biểu diễn 1 đa thức có dạng: a0 + a1x1 + a2x2 + a3x3 + … + anxn Trong đó:  ai là hệ số của đa thức có kiểu số thực
+xi: i là lũy thừa của x có kiểu số nguyên
+Ta có thể dùng mảng để biểu diễn đa thức này, tuy nhiên việc sử dụng mảng có một số nhược điểm như sau:
+•	Bậc của đa thức là chưa biết trước, do đó kích thước của mảng là chưa xác định, trong khi ta phải khai báo một mảng với số phần tử tối đa nào đó.
+•	Đối với các hệ số ai = 0 thì ta có thể bỏ qua số hạng aixi trong biểu diễn đa thức. Tuy nhiên, nếu sử dụng mảng thì do phần tử ai đã khai báo trong mảng nên ta vẫn phải dùng và gán cho nó giá trị 0.
+Khi sử dụng danh sách liên kết để biểu diễn đa thức sẽ khắc phục được các nhược điểm trên. Mỗi nút của danh sách cần có 3 thành phần:
+
+heso	mu	next
+•	Trường heso kiểu thực lưu trữ giá trị của hệ số khác 0
+•	Trường mu kiểu nguyên lưu trữ số mũ tương ứng
+ 
+•	Trường next kiểu con trỏ trỏ đến số hạng tiếp theo Danh sách có dạng
+
+Ví dụ với đa thức 5 + 6x2 + 7x5 + 3x10 có thể biểu diễn bởi danh sách như sau:
+
+Khai báo cho danh sách này như sau: struct node
+{	double heso; int mu;
+struct node *next;
+};
+typedef struct node *listnode;
+4.3.2.	Cài đặt ngăn xếp bởi danh sách nối đơn
+Ta có thể sử dụng danh sách liên kết đơn để biểu diễn ngăn xếp. Theo tính chất của danh sách liên kết đơn, việc bổ sung hay loại bỏ 1 phần tử khỏi danh sách được thực hiện đơn giản và nhanh nhất khi phần tử đó nằm ở đầu danh sách. Vì vậy, ta sẽ chọn cách lưu trữ của ngăn xếp theo thứ tự: phần tử đầu danh sách là đỉnh ngăn xếp, phần tử cuối cùng của danh sách là đáy ngăn xếp.
+
+Để bổ sung 1 phần tử vào ngăn xếp, ta tạo ra 1 nút mới thêm nó vào đầu danh sách. Để loại bỏ 1 phần tử ra khỏi ngăn xếp, ta lấy giá trị nút đầu tiên và loại nút đó khỏi danh sách.
+Như vậy, ta có thể thấy ngăn xếp được cài đặt bằng danh sách liên kết có kích thước không giới hạn (tùy thuộc vào bộ nhớ máy tính), bất kỳ lúc nào ta cũng có thể bổ sung 1 nút mới vào đỉnh của ngăn xếp, thao tác Push, Pop cũng khá đơn giản. Tuy nhiên, thao tác truy cập tới 1 phần tử ở giữa ngăn xếp hay đếm số phần tử của ngăn xếp lại phức tạp hơn so với việc sử dụng mảng để cài đặt ngăn xếp.
+Khai báo 1 ngăn xếp bằng danh sách liên kết như sau: struct node
+{	int item;
+ 
+struct node	*next;
+};
+typedef struct node	*stacknode; typedef struct
+{	stacknode	top;
+} stack;
+Khởi tạo ngăn xếp (thực hiện việc gán giá trị NULL cho nút đầu của ngăn xếp, cho biết ngăn xếp đang ở trạng thái rỗng)
+void	StackInit (stack *s)
+{	s –> top = NULL; return;
+}
+Kiểm tra ngăn xếp rỗng
+int	StackEmpty (stack *s)
+{	s –> top == NULL;
+return;
+}
+Bổ sung 1 phần tử vào ngăn xếp void	Push (stack *s, int x)
+{	stacknode	p;
+p = (stacknode) malloc (sizeof (struct node)); p –> item = x;
+p –> next = s –> top; s –> top = p;
+return;
+}
+Thao tác lấy 1 phần tử ra khỏi ngăn xếp void	Pop (stack *s)
+{	stacknode	p;
+if (StackEmpty (s))
+Printf (“Ngan xep rong”);
+else
+{	p = s –> top;
+s –> top = s –> top –> next; return p –> item;
+}
+}
+ 
+4.3.3.	Cài đặt hàng đợi bởi danh sách nối đơn
+Để cài đặt hàng đợi bằng danh sách liên kết, ta cũng sử dụng 1 danh sách liên kết đơn và 2 con trỏ head và tail lưu trữ nút đầu và nút cuối của danh sách. Việc bổ sung phần tử mới sẽ được tiến hành ở cuối danh sách và việc lấy phần tử ra sẽ được tiến hành ở đầu danh sách.
+
+Khai báo 1 hàng đợi bằng danh sách nối đơn như sau: struct node
+{	int	item; struct node *next;
+};
+typedef struct node *queuenode; typedef struct
+{	queuenode	head; queuenode		tail;
+} queue;
+Khởi tạo hàng đợi (gán giá trị NULL cho nút đầu và nút cuối của hàng đợi, cho biết hàng đợi đang ở trạng thái rỗng)
+void	QueueInit(queue *q)
+{	q –> head = q –> tail = NULL; return;
+}
+Kiểm tra hàng đợi rỗng
+int	QueueEmpty(queue *q)
+{	return (q –> head = = NULL);
+}
+Thêm 1 phần tử vào hàng đợi (Để thêm 1 phần tử vào cuối hàng đợi, ta tạo và cấp phát ô nhớ cho 1 nút mới, gán giá trị thích hợp cho nút này, sau đó cho con trỏ tiếp của nút cuối hàng đợi trỏ đến nó. Nút này bây giờ trở thành nút cuối cùng của hàng đợi. Nếu hàng đợi chưa có phần tử nào thì nó cũng chính là nút đầu tiên của hàng đợi).
+void  Put (queue *q, int x)
+{    queuenode	p;
+ 
+p = (queuenode) malloc (sizeof(struct node)); p –> item = x;
+p –> next = NULL;
+q –> tail –> next = p;
+q –> tail = q –> tail –> next;
+if ( q –> head == NULL) q –> head = q –> tail; return;
+}
+Lấy 1 phần tử ra khỏi hàng đợi (để lấy 1 phần tử ra khỏi hàng đợi, trước tiên ta phải kiểm tra xem hàng đợi có rỗng hay không, sau đó tiến hành lấy phần tử tại vị trí nút đầu tiên và cho nút đầu chuyển về nút kế tiếp)
+int   Get(queue * q)
+{    queuenode  p;
+if (QueueEmpty (q))
+{ printf (“Hang doi rong”); return 0;
+ 
+}
+else
+
+
+
+
+
+}
+ 
+
+
+{	p = q –> head;
+q –> head = q –> head –> next; return p –> item;
+}
+ 
+CÂU HỎI ÔN TẬP VÀ BÀI TẬP CHƯƠNG 4
+4.1.	Nêu các bước để thêm một nút vào đầu, giữa và cuối danh sách nối đơn.
+4.2.	Nêu các bước để xóa một nút ở đầu, giữa và cuối danh sách nối đơn.
+4.3.	Viết chương trình để nhập vào một xâu sau đó in ra xâu đảo ngược sử dụng ngăn xếp.
+4.4.	Viết chương trình đổi một số nguyên từ hệ thập phân sang nhị phân sử dụng ngăn xếp.
+4.5.	Hạn chế của cài đặt ngăn xếp bằng mảng so với danh sách nối đơn?
+4.6.	Viết chương trình minh họa việc sử dụng danh sách nối đơn với các chức năng:
+a)	Khởi tạo danh sách
+b)	Thêm phần tử
+c)	Xóa phần tử
+d)	In danh sách
+ 
+Chương 5 CẤU TRÚC CÂY
+5.1.	ĐỊNH NGHĨA VÀ CÁC KHÁI NIỆM
+Cây là một cấu trúc dữ liệu có vai trò quan trọng trong việc phân tích và thiết kế các thuật toán. Dữ liệu kiểu cây có thể được lưu trữ và biểu diễn trong nhiều lĩnh vực của đời sống. Ví dụ, một cuốn gia phả lưu trữ thông tin về các thành viên trong một dòng họ, trong đó các thành viên thứ bậc khác nhau được phân thành các cấp khác nhau trong biểu diễn hình cây của gia phả. Hay sơ đồ tổ chức của một đơn vị cũng thường được biểu diễn thông qua cấu trúc cây, các đơn vị con nằm ở cấp dưới đơn vị trực tiếp quản lý, các đơn vị ngang hàng nằm cùng cấp. Trong lĩnh vực máy tính, cách lưu trữ dữ liệu của hệ điều hành cũng áp dụng kiểu lưu trữ cấu trúc cây, các tệp tin được lưu trữ trong các cây thư mục, trong đó các thư mục con nằm trong các thư mục cha.
+Có thể định nghĩa: Cây là một tập hữu hạn các nút và các cạnh. Mỗi nút đều có một định danh và mang thông tin. Giữa các nút có quan hệ phân cấp (gọi là quan hệ cha con). Cạnh dùng để liên kết các nút với nhau.
+Một số tính chất quan trọng của cây
+•	Có đúng 1 đường đi nối 2 nút bất kỳ trong cây
+•	Trong cây có 1 nút đặc biệt gọi là nút gốc (root) – thường nằm ở vị trí cao nhất, tiếp theo là các nút kế tiếp. Mỗi nút đều có thể coi là nút gốc của cây con bao gồm chính nó và các nút bên dưới nó. Như vậy có thể thấy rằng, cây bao gồm gốc và các cây con nối với gốc.
+•	Mỗi nút trong cây (trừ nút gốc) có đúng 1 nút nằm trên nó gọi là nút cha. Các nút nằm ngay dưới nút đó gọi là các nút con. Các nút nằm cùng cấp gọi là các nút anh em.
+•	Cấp của 1 nút là số các con của nút đó. Nút mà không có nút con nào thì cấp bằng 0, gọi là nút lá hay nút tận cùng. Cấp của cây bằng cấp cao nhất của các nút có trên cây.
+•	Chiều cao của 1 nút là độ dài đường đi dài nhất từ nút đó đến nút lá. Chiều cao của cây bằng chiều cao của nút gốc
+•	Mức của 1 nút là độ dài của đường đi từ nút gốc đến nút đó. Mức của nút gốc bằng 1
+•	Cây có thứ tự (cây được sắp) là cây mà các cây con của mỗi nút được sắp theo một trật tự nhất định, ngược lại là cây không có thứ tự. Trong một cây có thứ tự, nếu 1 nút có 3 nút con là a, b, c mà a ở bên trái b thì ta nói a là anh liền kề của b. Mọi nút con của nút a sẽ ở bên trái mọi nút con của nút b.
+ 
+5.2.	CÂY NHỊ PHÂN
+5.2.1.	Định nghĩa và tính chất
+Định nghĩa: Cây nhị phân là dạng đặc biệt, quan trọng của cấu trúc cây, mỗi nút trên cây chỉ có nhiều nhất 2 nút con. Đối với cây con của một nút người ta phân biệt cây con trái và cây con phải (cây nhị phân là cây có thứ tự).
+Một số dạng của cây nhị phân
+
+
+
+Hình 5.1. Một số dạng đặc biệt của cây nhị phân
+Cây a) b) c) d) được gọi là cây nhị phân suy biến vì thực chất nó có dạng của một danh sách tuyến tính. Cây a) là cây lệch trái; cây b) là cây lệch phải; cây c) và d) là cây zic zắc
+ 
+Cây e) được gọi là cây nhị phân hoàn chỉnh: là cây mà các nút ứng với các mức trừ mức cuối cùng đều đạt tối đa và ở mức cuối các nút đều đạt về phía trái.
+Cây f) được gọi là cây nhị phân đầy đủ: là 1 trường hợp đặc biệt của cây nhị phân hoàn chỉnh, là cây mà các nút không phải là lá đều có 2 con và các nút lá có cùng mức.
+Cây g) là cây nhị phân gần đầy: các nút ứng với các mức trừ mức cuối cùng đều đạt tối đa, nhưng ở mức cuối không đạt về phía trái
+Trong các cây nhị phân có cùng số lượng nút như nhau thì cây nhị phân suy biến có chiều cao lớn nhất, còn cây nhị phân hoàn chỉnh hay cây nhị phân gần đầy thì có chiều cao nhỏ nhất, đây là dạng cây cân đối nhất.
+Một số tính chất của cây nhị phân:
+•	Số lượng tối đa các nút ở mức i trên 1 cây nhị phân là: 2i-1 (i  1)
+•	Số lượng tối đa các nút trên 1 cây nhị phân có chiều cao h là: 2h – 1 (h  1)
+•	Nếu 1 cây nhị phân hoàn chỉnh có n nút thì chiều cao của nó là: h = log2(n+1)
+5.2.2.	Biểu diễn cây nhị phân
+5.2.2.1.	Lưu trữ kế tiếp bằng mảng
+Nếu có một cây nhị phân đầy đủ, ta có thể dễ dàng đánh số cho các nút trên cây đó theo thứ tự lần lượt từ mức 1 trở đi, hết mức này đến mức khác và từ trái sang phải đối với các nút ở mỗi mức.
+Với cây f) ở hình 5.1 có thể đánh số như sau
+
+Hình 5.2. Cây nhị phân đầu đủ được đánh số
+Ở hình trên ta thấy ngay một qui luật quan hệ như sau:
+Con của nút thứ i là các nút thứ 2×i và 2×i + 1 hoặc cha của nút thứ j là nút j/2
+Ta có thể lưu trữ cây nhị phân đầy đủ bằng một vectơ V theo nguyên tắc: nút thứ i của cây được lưu trữ ở V[i]. Đó chính là cách lưu trữ kế tiếp đối với cây nhị phân. Với cách lưu trữ này nếu biết được địa chỉ nút cha ta sẽ tính được địa chỉ của nút con và ngược lại. Hình ảnh lưu trữ của cây ở hình 5.2 như sau:
+
+ 
+Với cây nhị phân hoàn chỉnh thì cách lưu trữ này vẫn thích hợp. Còn đối với các dạng cây nhị phân khác thì cách lưu trữ này dẫn đến việc lãng phí ô nhớ do có nhiều phần tử nhớ bị bỏ trống. Ví dụ với cây lệch trái ở hình 5.1. a) thì phải sử dụng 1 vectơ gồm 31 phần tử mà chỉ có 5 phần tử khác rỗng. Hình ảnh lưu trữ như sau
+
+Ngoài ra, nếu cây luôn biến động, nghĩa là thường xuyên thực hiện phép bổ sung hay loại bỏ nút trên cây thì cách lưu trữ này cũng rất khó khăn.
+b)	Lưu trữ móc nối bằng danh sách liên kết
+Mỗi nút của danh sách gồm:
+phần item chứa giá trị của nút
+con trỏ left trỏ đến nút con bên trái con trỏ right trỏ đến nút con bên phải struct node
+{	int item;
+struct node	* left;
+struct node	*right;
+};
+typedef	struct node	*treenode; treenode	root;
+Nếu nút có ít hơn 2 nút con thì 1 trong 2 con trỏ hoặc cả 2 con trỏ left, right gán giá trị NULL
+
+Hình 5.3. Cây nhị phân
+ 
+ 
+Hình 5.4. Dạng lưu trữ móc nối của cây nhị phân ở hình 5.3.
+Để có thể truy nhập vào các nút trên cây cần có một con trỏ T, trỏ tới nút gốc của cây đó. Quy ước, nếu cây nhị phân rỗng thì T = NULL
+Với cách biểu diễn này từ nút cha có thể truy nhập trực tiếp vào nút con, nhưng ngược lại thì không làm được.
+c)	Phép duyệt cây nhị phân
+Thông thường ta hay phải thực hiện các phép xử lý trên mỗi nút của cây theo một thứ tự nào đó. Phép xử lý các nút trên cây mà ta sẽ gọi chung là phép toán “thăm” các nút một cách hệ thống, sao cho mỗi nút chỉ được thăm một lần, gọi là phép duyệt cây.
+Nếu hình dung một nút với hai con, ta thấy khi đi qua nút ấy và các con của nó theo đường mũi tên như hình 5.5. ta sẽ gặp nút ấy tới 3 lần. Từ đó cũng hình thành 3 phép duyệt khác nhau đối với cây nhị phân.
+
+Hình 5.5. Duyệt nhị phân
+Duyệt theo thứ tự trước
+1)	Nếu cây rỗng thì không làm gì
+2)	Nếu cây không rỗng thì
+•	Thăm gốc
+•	Duyệt cây con trái theo thứ tự trước
+•	Duyệt cây con phải theo thứ tự trước void PreOrder (treenode root)
+{	if (root != NULL)
+ 
+{	printf (“%d”, root . item); PreOrder (root . left); PreOrder (root . right);
+}
+}
+Duyệt theo thứ tự giữa
+1)	Nếu cây rỗng thì không làm gì
+2)	Nếu cây không rỗng thì
+•	Duyệt cây con trái theo thứ tự giữa
+•	Thăm gốc
+•	Duyệt cây con phải theo thứ tự giữa void InOrder (treenode root)
+{	if (root != NULL)
+{	InOrder (root . left); printf (“%d”, root . item); InOrder (root . right);
+}
+}
+Duyệt theo thứ tự sau
+1)	Nếu cây rỗng thì không làm gì
+2)	Nếu cây không rỗng thì
+•	Duyệt cây con trái theo thứ tự sau
+•	Duyệt cây con phải theo thứ tự sau
+•	Thăm gốc
+void PostOrder (treenode root)
+{	if (root != NULL)
+{	PostOrder (root . left); PostOrder (root . right); printf (“%d”, root . item);
+}
+}
+Ví dụ 1: Với cây ở hình 5.3. thì dãy các tên ứng với nút được thăm trong các phép duyệt sẽ là:
+Duyệt theo thứ tự trước:	A B D C E G F H I Duyệt theo thứ tự giữa:	D B A E G C H F I
+Duyệt theo thứ tự sau:	D B G E H I F C A
+ 
+ 
+Hình 5.6. Cây cây nhị phân biểu thức
+Ví dụ 2: Với cây nhị phân ở hình 5.6. thì dãy các tên ứng với nút được thăm trong các phép duyệt sẽ là:
+a)	Duyệt theo thứ tự trước: + + x * y – z t / u v
+b)	Duyệt theo thứ tự giữa:  x + y * z – t + u / v
+c)	Duyệt theo thứ tự sau:	x y z t – * + u v / + Nhận xét:	a) chính là dạng biểu thức tiền tố
+c) chính là dạng biểu thức hậu tố
+b) là dạng biểu thức trung tố nhưng thiếu dấu ngoặc
+5.3.	CÂY TỔNG QUÁT
+5.3.1.	Biểu diễn cây tổng quát
+Đối với cây tổng quát cấp m nào đó có thể sử dụng cách biểu diễn móc nối tương tự như đối với cây nhị phân. Như vậy ứng với mỗi nút phải dành ra m trường mối nối để trỏ tới các con của nút đó, vì vậy số “mối nối không” sẽ rất nhiều. Nếu cây có n nút sẽ có tới n(m-1)+1 “mối nối không” trong số n.m mối nối.
+Một trong các phương pháp khác khá hiện thực là biểu diễn cây tổng quát bằng cây nhị phân. Như vậy quan hệ giữa các nút trên cây tổng quát chỉ được thể hiện qua hai đặc điểm thôi. Với bất kỳ một nút trên cây tổng quát, nếu có thì chỉ có:
+•	Một nút con cực trái (con cả)
+•	Một nút em kế cận phải
+Cây nhị phân biểu diễn cây tổng quát theo 2 quan hệ này được gọi là cây nhị phân tương đương
+ 
+ 
+Hình 5.7. Cây tổng quát
+Xét cây ở hình 5.7:
+Nút gốc A có con cực trái là B, không có em kế cận Nút B có con cực trái là E, có em kế cận là C
+Nút C có con cực trái là G, có em kế cận là D
+Nút D có con cực trái là H, không có em kế cận phải
+…
+Có thể biểu diễn cây tổng quát trên bằng cây nhị phân tương đương trong hình
+5.8. Ta thấy nối phải của gốc cây bao giờ cũng là “mối nối không” vì gốc của 1 cây không có em kế cận phải.
+ 
+Hình 5.8. Cây nhị phân tương đương
+Nhưng nếu xét cả một rừng thì tình trạng trên lại không xuất hiện
+ 
+ 
+Hình 5.9. Rừng cây
+
+Hình 5.10. Cây nhị phân tương đương biểu diễn rừng trong hình 5.9
+5.3.2.	Phép duyệt trên cây tổng quát
+Phép duyệt trên cây tổng quát cũng được đặt ra tương tự như đối với cây nhị phân. Tuy nhiên, cần xem xét một số vấn đề:
+<1> Sự nhất quán về thứ tự các nút được thăm giữa phép duyệt cây ấy và phép duyệt cây nhị phân tương đương của nó.
+<2> Sự nhất quán giữa định nghĩa phép duyệt cây tổng quát với định nghĩa phép duyệt cây nhị phân.
+Định nghĩa các phép duyệt của một cây tổng quát T như sau:
+Duyệt theo thứ tự trước
+Nếu T rỗng thì không làm gì Nếu T không rỗng thì
+•	Thăm gốc của T
+•	Duyệt cây con thứ nhất T1 của gốc T theo thứ tự trước
+•	Duyệt các cây con còn lại T2, T3, … Tk của gốc T theo thứ tự trước
+Duyệt theo thứ tự giữa
+ 
+Nếu T rỗng thì không làm gì Nếu T không rỗng thì
+•	Duyệt cây con thứ nhất T1 của gốc T theo thứ tự giữa
+•	Thăm gốc của T
+•	Duyệt các cây con còn lại T2, T3, … Tk của gốc T theo thứ tự giữa
+Duyệt theo thứ tự sau
+Nếu T rỗng thì không làm gì Nếu T không rỗng thì
+•	Duyệt cây con thứ nhất T1 của gốc T theo thứ tự sau
+•	Duyệt các cây con còn lại T2, T3, … Tk của gốc T theo thứ tự sau
+•	Thăm gốc của T
+
+Hình 5.11. Cây tổng quát
+Với cây tổng quát ở hình 5.11 thì dãy tên các nút được thăm như sau
+•	Duyệt theo thứ tự trước:	A B C E H I F J D G
+•	Duyệt theo thứ tự giữa:	B A H E I C J F G D
+•	Duyệt theo thứ tự sau:	B H I E J F C G D A
+Với định nghĩa nêu trên, thì điểm cần xem xét 2) đã được đảm bảo, nghĩa là với cây nhị phân thì dù áp đặt vào nó phép duyệt của cây nhị phân hay phép duyệt của cây tổng quát thì dãy tên các nút được thăm là hoàn toàn như nhau. Còn với điểm cần xem xét 1) thì sao?
+ 
+ 
+Hình 5.12. Cây nhị phân tương đương với cây hình 5.11
+Dãy tên các nút được thăm khi duyệt nó theo phép duyệt cây nhị phân như sau:
+•	Duyệt theo thứ tự trước:	A B C E H I F J D G
+•	Duyệt theo thứ tự giữa:	B H I E J F C G D A
+•	Duyệt theo thứ tự sau:	I H J F E G D C B A
+Như vậy với thứ tự trước thì phép duyệt cây tổng quát và phép duyệt cây nhị phân tương đương đều cho một dãy tên như nhau. Phép duyệt cây tổng quát theo thứ tự sau cho dãy tên giống với phép duyệt cây nhị phân tương đương theo thứ tự giữa. Còn phép duyệt cây tổng quát theo thứ tự giữa thì cho dãy tên không giống với bất kỳ dãy nào trên cây nhị phân tương đương.
+Chính vì vậy đối với cây tổng quát, người ta thường chỉ nêu hai phép duyệt: duyệt theo thứ tự trước và duyệt theo thứ tự sau.
+5.4.	ÁP DỤNG CẤU TRÚC CÂY
+5.4.1.	Cây biểu diễn biểu thức
+Cây biểu diễn biểu thức là cây nhị phân gắn nhãn, biểu diễn cấu trúc của 1 biểu
+thức.
+Như ta đã biết: một biểu thức số học với phép toán 2 ngôi như: +, - , *, /, ^ có thể
+được biểu diễn rất tự nhiên bởi một cây nhị phân. Ở đó gốc chứa toán tử, cây con trái biểu diễn toán hạng bên trái, cây con bên phải biểu diễn toán hạng bên phải
+Nếu ta đưa phép toán một ngôi:
+	Với phép phủ định (lấy giá trị âm), giá trị tuyệt đối (| |), căn bậc 2 ( 4) , các
+hàm mũ (ex), hàm lượng giác (sin(x), cos(x), …) thì cây con bên trái rỗng
+	Với phép lấy đạo hàm (x’), giai thừa (n!) thì cây con bên phải rỗng Ví dụ 1: Biểu diễn cây biểu thức: (a*(b+c)) / (d*e+f) như hình sau
+ 
+ 
+
+Ví dụ 2: Biểu diễn cây biểu thức a * (- b) / (4! + 2)
+
+5.4.2.	Cây quyết định
+Cây còn được dùng khá phổ biến để biểu diễn lời giải của những bài toán mà đặc điểm thể hiện xuất hiện nhiều tình huống, nhiều khả năng đòi hỏi phải có một quyết định lựa chọn. Cây biểu diễn như vậy gọi là cây quyết định.
+Xét bài toán 8 đồng tiền vàng. Giả sử có 8 đồng tiền vàng a, b, c, d, e, f, g, h mà trong đó biết chắc chắn rằng có một đồng tiền có trọng lượng không chuẩn (có thể nặng hơn, hoặc nhẹ hơn 7 đồng tiền còn lại). Vấn đề đặt ra là: tìm cách xác định đồng tiền không chuẩn đó chỉ sau 3 lần cân (sử dụng cân Roberval - cân 2 đĩa như ở các cửa hàng vàng bạc)
+Nếu ký hiệu: H để chỉ đồng tiền không chuẩn nặng hơn, L để chỉ đồng tiền không chuẩn nhẹ hơn đồng tiền chuẩn. Ta sẽ có cây quyết định biểu diễn lời giải cho bài toán trên như sau:
+ 
+ 
+Hình 5.13. Cây quyết định
+Cây quyết định trên được giải thích như sau:
+Nếu a + b + c < d + e + f nghĩa là đồng tiền không chuẩn phải nằm trong 6 đồng này chứ không phải là g và h. Nếu a + d < b + e thì sự đổi chỗ giữa d và b từ đĩa cân bên này sang đĩa cân bên kia và bớt đi c, f đã không làm thay đổi tình huống; vì vậy c, f và b, d cũng không phải là đồng tiền cần tìm; chỉ còn lại a và e. Lúc này ta so sánh a với một đồng chuẩn (giả sử là đồng b): nếu a = b, tức là e là đồng không chuẩn mà trước đó a + d < b + e nên ta có kết luận đồng e sẽ nặng hơn đồng tiền chuẩn.
+Như vậy dọc trên cây này, tùy theo “quyết định” mà sẽ đi tới khả năng này hay khả năng khác của lời giải. Dù ở tình huống nào, số lần cân cũng chỉ là 3, đây chính là số lần cân tối thiểu.
+BÀI TẬP CHƯƠNG 5
+5.1.	Cho cây có cấu trúc như sau:
+
+Hãy trả lời các câu hỏi
+ 
+a)	Kể tên các nút lá trên cây?
+b)	Cha của nút G là nút nào?
+c)	Con của nút C là những nút nào?
+d)	Những nút nào là anh em của nút B?
+e)	Mức, chiều cao của nút D là bao nhiêu?
+f)	Cấp của nút B là bao nhiêu?
+g)	Cấp, chiều cao của cây là bao nhiêu?
+h)	Trên cây có những nút nào có chiều cao là 3
+5.2.	Vẽ cây nhị phân biểu diễn các biểu thức sau đây và viết chúng dưới dạng tiền tố, hậu tố
+a)	(a * b + c) / (d – e * f)
+b)	a / (b + c) + d * e – a * c
+5.3.	Với cây trong hình 5.13.
+a)	Duyệt cây tổng quát theo thứ tự trước, giữa, sau
+b)	Chuyển cây tổng quát sang cây nhị phân tương đương
+c)	Duyệt cây nhị phân tương đương theo thứ tự trước, giữa, sau
+5.4.	Cho cây nhị phân
+
+a)	Hãy minh họa phần bộ nhớ khi thực hiện lưu trữ kế tiếp bằng mảng đối với cây trên
+b)	Hãy minh họa cách lưu trữ móc nối bằng danh sách liên kết đối với cây trên.
+5.5.	Dựng cây nhị phân tương đương với rừng sau:
+
+ 
+Chương 6 ĐỒ THỊ
+6.1.	ĐỊNH NGHĨA VÀ CÁC KHÁI NIỆM
+6.1.1.	Định nghĩa
+Đồ thị G (V, E) bao gồm một tập hữu hạn các nút (đỉnh) V và một tập các cặp đỉnh (cung, cạnh) E
+Nếu (v1, v2) là 1 cặp đỉnh thuộc E thì ta nói: có một cung nối từ v1 đến v2. Nếu cung (v1, v2) khác cung (v2, v1) thì G là đồ thị có hướng, ngược lại là đồ thị vô hướng.
+
+a)	Đồ thị có hướng	b) Đồ thị vô hướng
+Hình 6.1. Đồ thị có hướng và đồ thị vô hướng
+Mạch điện, mạng lưới giao thông, mạng lưới máy tính, … là các ví dụ thực tế của đồ thị. Cây là một trường hợp đặc biệt của đồ thị.
+6.1.2.	Các khái niệm
+Nếu (v1, v2) là một cung trong tập E của đồ thị thì v1 và v2 gọi là 2 đỉnh lân cận của nhau  .
+Một đường đi từ đỉnh vp đến đỉnh vq trong đồ thị G là một dãy các đỉnh vp, vi1, vi2, … vin, vq mà (vp, vi1), (vi1, vi2), …, (vin, vq) là các cung trong E. Số lượng các cung trên đường đi ấy gọi là độ dài của đường đi. Trên hình 6.1 a) đường đi từ đỉnh 1 đến đỉnh 4 là dãy các đỉnh 1, 3, 4, có độ dài là 2.
+Một đường đi đơn là đường đi mà mọi đỉnh trên đó đều khác nhau.
+Một chu trình là một đường đi đơn mà đỉnh đầu và đỉnh cuối trùng nhau. Ví dụ trong hình 6.1. a) 1, 3, 4, 1 là một chu trình
+Trong đồ thị G, hai đỉnh vi, vj gọi là liên thông nếu có một đường đi từ vi đến vj (nếu đồ thị G là vô hướng thì cũng có đường đi từ vj đến vi)
+Một đồ thị G gọi là liên thông nếu đối với mọi cặp đỉnh phân biệt vi, vj trong V đều tồn tại đường đi từ vi đến vj. Ví dụ
+ 
+ 
+a)	Đồ thị vô hướng liên thông   b) Đồ thị vô hướng không liên thông
+
+c) Đồ thị có hướng liên thông   d) Đồ thị có hướng không liên thông
+Hình 6.2. Các dạng đồ thị
+Đối với đố thị vô hướng, bậc của 1 đỉnh là số cung nối với đỉnh đó.
+Đối với đồ thị có hướng: Bậc ngoài của 1 đỉnh là số cạnh xuất phát từ đỉnh đó.
+Bậc trong của 1 đỉnh là số cạnh đi tới đỉnh đó
+Đồ thị có trọng số: là đồ thị mà mỗi cung được gắn 1 giá trị cụ thể thể hiện một thông tin nào đó liên quan đến cung (gọi là trọng số). Ví dụ mạng lưới giao thông đường bộ giữa các tỉnh với trọng số ứng với mỗi tuyến đường giữa hai thành phố là độ dài của tuyến đường đó, hoặc giá cước vận chuyển theo tấn/km, hoặc thông lượng xe trong ngày,
+…
+
+Hình 6.3. Đồ thị trọng số
+ 
+6.2.	BIỂU DIỄN ĐỒ THỊ
+Có nhiều cấu trúc được sử dụng để biểu diễn đồ thị. Việc lựa chọn cấu trúc nào là tùy thuộc vào các ứng dụng và các phép xử lý cần tác động lên đồ thị trong ứng dụng ấy.
+6.2.1.	Biểu diễn đồ thị bằng ma trận lân cận kề
+Đồ thị G = (V,E) với V gồm n đỉnh.
+Ma trận lân cận A biểu diễn G là 1 ma trận vuông cấp n, các phần tử có giá trị là 0 hoặc 1, được xác định như sau
+ 
+
+Aij
+ 
+1 if
+
+ 
+(vi ,vj ) E
+ 
+0 if (vi ,vj )E
+Nghĩa là Aij = 1 nếu tồn tại cung nối từ vi đến vj, ngược lại Aij = 0
+
+Đồ thị có hướng	Ma trận lân cận kề
+Hình 6.4. Biểu diễn đồ thị có hướng bằng ma trận kề
+Với đồ thị có hướng số phần tử có giá trị 1 trong ma trận lân cận kề đúng bằng với số cạnh của đồ thị.
+Ưu điểm nổi bật của ma trận lân cận kề là dựa vào ma trận này ta dễ dàng xác định được các cạnh đi tới hoặc xuất phát từ 1 đỉnh cho trước.
+Xét đỉnh vi trong đồ thị: mỗi phần tử có giá trị 1 trong hàng i của ma trận kề tương ứng với 1 cạnh xuất phát từ đỉnh vi, mỗi phần tử có giá trị 1 trong cột i của ma trận kề tương ứng với 1 cạnh đi đến đỉnh vi.
+Ma trận kề cũng có thể sử dụng để biểu diễn đồ thị vô hướng theo nguyên tắc trên. Trong đồ thị vô hướng thì cạnh (u, v) và (v, u) là một nên ma trận lân cận kề của đồ thị vô hướng là ma trận đối xứng qua đường chéo chính, nghĩa là Aij = Aji .
+ 
+ 
+Đồ thị vô hướng	Ma trận lân cận kề
+Hình 6.5. Biểu diễn đồ thị vô hướng bằng ma trận kề
+Để biểu diễn đồ thị có trọng số bằng ma trận lân cận kề, ta thay các phần tử có giá trị 1 trong ma trận bằng chính trọng số của cạnh tương ứng, với các phần tử có giá trị 0 ta thay bằng giá trị  cho biết không có cạnh nối 2 đỉnh tương ứng.
+
+Hình 6.6. Biểu diễn đồ thị trọng số bằng ma trận kề
+Ưu điểm của phương pháp biểu diễn đồ thị bằng ma trận lân cận kề là ta có thể dễ dàng biết kiểm tra có tồn tại cung nối giữa 2 đỉnh vi, vj hay không và có trọng số bao nhiêu. Tuy nhiên với phương pháp này, kích thước ma trận lân cận kề luôn là n×n bất kể đồ thị có bao nhiêu cạnh. Vì vậy dẫn tới việc lãng phí ô nhớ đối với đồ thị vô hướng, đồ thị thưa.
+6.2.2.	Biểu diễn đồ thị bằng danh sách lân cận kề
+Trong cách biểu diễn này, n hàng của ma trận lân cận kề được thay bằng n danh sách móc nối
+Với mỗi đỉnh của G có 1 danh sách liên kết tương ứng. Các nút trong danh sách i biểu diễn các đỉnh lân cận của nút i.
+Mỗi nút trong danh sách gồm 2 trường:
+•	1 trường chứa chỉ số của các đỉnh lân cận với đỉnh i,
+•	1 trường chứa con trỏ, trỏ tới nút kế tiếp trong danh sách
+ 
+ 
+
+Hình 6.7. Biểu diễn đồ thị bằng danh sách lân cận kề
+Mỗi danh sách có 1 nút “đầu danh sách”. Các nút đầu này được tổ chức kế tiếp (dưới dạng vectơ) để truy nhập được nhanh.
+Với đồ thị G gồm n đỉnh, e cung. Nếu G là đồ thị vô hướng thì cần n nút đầu và 2*e nút danh sách. Nếu G là đồ thị chỉ cần e nút danh sách.
+Thứ tự các nút trong từng danh sách thực ra không quan trọng.
+6.3.	PHÉP DUYỆT ĐỒ THỊ
+Duyệt đồ thị là thăm tất cả các đỉnh của đồ thị, mỗi đỉnh đúng 1 lần theo một trình tự nào đó. Tương tự như duyệt cây, có nhiều phương pháp duyệt đồ thị tùy theo trình tự thăm các nút trong quá trình duyệt. Có 2 phương pháp duyệt phổ biến nhất là duyệt theo chiều sâu và duyệt theo chiều rộng.
+6.3.1.	Duyệt theo chiều sâu (Deep First Search)
+Quá trình duyệt theo chiều sâu bắt đầu từ một đỉnh nào đó của đồ thị. Sau khi thăm đỉnh này, quá trình duyệt theo chiều sâu được lặp lại với tất cả các đỉnh kề của nó. Tuy nhiên, đồ thị có thể tồn tại các chu trình, do vậy ta phải đánh dấu các đỉnh đã duyệt để tránh duyệt lại đỉnh này một lần nữa.
+Phương pháp duyệt theo chiều sâu, quá trình duyệt sẽ thực hiện duyệt hết một nhánh của đồ thị mới chuyển sang nhánh khác.
+Với đồ thị trong hình 6.7. quá trình duyệt theo chiều sâu bắt đầu từ đỉnh a sẽ cho thứ tự duyệt như sau:
+•	Sau khi thăm đỉnh a, tiến hành thăm đỉnh b (kề với đỉnh a), tiếp theo thăm đỉnh d (kề với đỉnh b), không có đỉnh nào kề với đỉnh d, do đó quay lại bước trước
+•	Đỉnh b chỉ có 1 đỉnh kề là d (đã thăm), do đó quay lại bước trước
+•	Đỉnh a còn 1 đỉnh kề là c (chưa thăm), do đó tiến hành thăm đỉnh c Như vậy thứ tự các đỉnh trong quá trình duyệt là: a, b, d, c
+Quá trình duyệt sẽ chỉ duyệt theo các cạnh dẫn tới các đỉnh chưa thăm, các cạnh dẫn tới các đỉnh thăm rồi sẽ được bỏ qua. Ví dụ trong đồ thị trên, khi duyệt đến đỉnh c, cạnh (c, b) sẽ được bỏ qua vì đỉnh b đã thăm rồi.
+ 
+Để kiểm tra việc duyệt mỗi đỉnh đúng một lần, chúng ta sử dụng một mảng Visited gồm n phần tử (tương ứng với n đỉnh). Ban đầu các đỉnh chưa được duyệt Visited[i] = 0; nếu đỉnh thứ i đã được duyệt thì được đánh dấu Visited[i] = 1. Thuật toán duyệt theo chiều sâu bắt đầu từ đỉnh v nào đó sẽ duyệt tất cả các đỉnh liên thông với v
+void	DFS(int v)
+{	Thăm đỉnh v; Visited[v] = 1;
+for với mỗi đỉnh u kề với đỉnh v
+{	if (Visited[u] == 0) DFS (u);
+}
+}
+Thủ tục DFS sẽ thăm tất cả các đỉnh cùng thành phân liên thông với v, mỗi đỉnh đúng 1 lần. Tất cả các đỉnh được thăm, cùng với các cung liên qua tới các đỉnh đó gọi là một bộ phân liên thông của G. Như vậy với phép duyệt DFS ta có thể xác định được G có liên thông hay không, hoặc tìm được các bộ phân liên thông của G nếu G là đồ thị không liên thông.
+6.3.2.	Duyệt theo chiều rộng
+Giả sử đồ thị G=(V,E) các đỉnh ban đầu được đánh dấu chưa duyệt. Bắt đầu từ 1 đỉnh v ta duyệt như sau: thăm đỉnh v (đánh dấu là đã duyệt), tiếp đến là thăm các đỉnh kề với đỉnh v, rồi tiếp tục thăm các đỉnh kề với các đỉnh vừa thăm, …
+Quá trình duyệt theo chiều rộng không duyệt theo từng “nhánh” của đồ thị mà duyệt theo độ sâu của các đỉnh so với đỉnh ban đầu. Ta bắt đầu từ 1 đỉnh, tiếp đến duyệt các đỉnh có khoảng cách với đỉnh ban đầu là 1, rồi đến các đỉnh có khoảng cách với đỉnh ban đầu là 2, …
+Với đồ thị trong hình 6.7 quá trình duyệt theo chiều rộng bắt đầu từ đỉnh a sẽ cho thứ tự duyệt như sau:
+•	Sau khi thăm đỉnh a, tiến hành thăm các đỉnh kề với a là b và c.
+•	Tiếp theo, thăm các đỉnh kề với đỉnh b là d
+•	Đỉnh kề với đỉnh c là b đã được thăm rồi nên bỏ qua Như vậy thứ tự các đỉnh trong quá trình duyệt là: a, b, c, d
+Với đồ thị G = (V,E) vô hướng, V gồm n đỉnh, sử dụng hàng đợi để lưu trữ các đỉnh cần được thăm (có 2 con trỏ F và R trỏ tới lối trước và lối sau) và mảng 1 chiều để đánh dấu các đỉnh đã được thăm, ban đầu Visited[i] đều có giá trị bằng 0. Nếu đỉnh i được thăm sẽ được đánh dấu với Visited[i] = 1
+ 
+void	BFS (int v)
+{	Visited[i]=0; queue = NULL;
+Đưa v vào hàng đợi;
+Visited[v]=1; while (queue != NULL)
+{	Lấy phần tử v ra khỏi hàng đợi; Với mỗi đỉnh w kề với đỉnh u if (Visited[w] == 0)
+{
+Đưa w vào hàng đợi; Visited[w] =1;
+}
+}
+}
+6.2.3.	Cây khung và cây khung với giá cực tiểu
+Trong 1 đồ thị G liên thông có thể thực hiện phép duyệt đồ thị từ 1 đỉnh bất kỳ đều thăm được hết mọi đỉnh, các cung của G chia 2 tập: T bao gồm các cung dùng tới khi duyệt, Tập b gồm các cung còn lại. Tất cả các cung trong T cùng với các đỉnh tương ứng tạo thành 1 cây gồm mọi đỉnh của G gọi là cây khung. Với cây khung T, nếu bổ sung thêm cung (v, w) tạo thành chu trình
+Một ứng dụng của cây khung là việc xác định cây khung với giá cực tiểu của một đồ thị liên thông có trọng số. Giá của 1 cây khung là tổng trọng số ứng với các cung của cây ấy. Nếu các đỉnh của đồ thị G biểu diễn các thành phố, cung biểu diễn đường nối giữa hai thành phố và trọng số biểu diễn giá tiền xây dựng hoặc độ dài đường đi, … thì việc chọn một cây khung với giá cực tiểu là tương ứng với việc xây dựng một mạng đường giao thông có khả năng liên thông mọi thành phố với tổng chi phí là ít nhất hoặc tổng độ dài là ngắn nhất, …
+Có nhiều giải thuật khác nhau để xây dựng cây khung với giá cực tiểu, dưới đây ta sẽ nêu giải thuật Kruskal. Với cách tiếp cận này, cây khung với giá cực tiểu T sẽ được xây dựng dần dần từng cung một. Các cung được xét để đưa vào T dựa theo thứ tự không giảm của giá tương ứng với chúng. Một cung được đưa vào T nếu nó không tạo nên một chu trình với các cung đã có trong T. vì G liên thông với số đỉnh n > 0, nên sẽ có n-1 cung được chọn để đưa vào T
+Giải thuật Kruskal
+{    T = ;
+while (T chứa ít hơn n-1 cung)
+ 
+{	Chọn 1 cung (v, w) từ E có giá thấp nhất; Loại (v,w) khỏi E;
+if ((v,w) không tạo nên chu trình trong T) Đưa (v,w) vào T;
+else	Loại bỏ (v, w);
+}
+}
+6.4.	CÁC BÀI TOÁN ỨNG DỤNG
+Như ta đã biết đồ thị thường được dùng để biểu diễn mạng đường giao thông, nếu được gán thêm trọng số vào cung thì các trọng số đó sẽ mang ý nghĩa thực tiễn. Ví dụ, với một người đi từ thành phố A đến thành phố B, thì thường đặt ra 2 câu hỏi sau đây:
+•	Có đường đi từ A tới B không?
+•	Nếu có nhiều đường đi từ A tới B thì đường nào ngắn nhất?
+Hai bài toán trên là trường hợp riêng của bài toán đặt ra dưới đây, đối với một đồ thị mà độ dài đường đi được coi là tổng các trọng số của các cung trên đường đi đó. Đỉnh xuất phát của đường đi được gọi là nguồn, đỉnh tận cùng được gọi là đích. Đồ thị ta xét ở đay là đồ thị có hướng (với đồ thị vô hướng có thể xem xét một cung ứng với 2 cung có hướng) và trọng số là dương.
+6.4.1.	Bài toán bao đóng truyền ứng
+Nhằm giải quyết bài toán 1) nêu ở trên, bằng cách sử dụng ma trận lân cận kề của
+đồ thị.
+Ta coi ma trận lân cận kề như một ma trận đại số Bool, có thể tác động lên ma
+trận đó các phép toán logic đối với ma trận Bool.
+Đối với ma trận Bool A và B, kích thước n  n
+Ma trận tổng C  A  B được tính như sau: c  a  b 1  i  n
+ 
+ij	ij
+ 
+ij 
+1
+ 
+j  n
+ 
+
+Ma trận tích
+ 
+
+D  A  B tính như sau:
+ 
+
+dij
+ 
+ (aik
+ 
+
+ bkj
+ 
+1  i  n
+
+ 
+k 1
+ 
+1  j  n
+ 
+Ta đã biết với ma trận lân cận A, nếu aij = 1 nghĩa là có 1 cung (tức là có 1 đường đi độ dài 1) từ đỉnh i đến đỉnh j.
+Xét A2  A  A nếu a2 1 thì ít nhất cũng có một đường đi có độ dài 2 từ đỉnh i đến đỉnh j
+Từ đó suy ra Ar  A  Ar 1 với r = 3, 4, … nghĩa là nếu	r 1 thì ít nhất có
+một đường đi độ dài r từ đỉnh i đến đỉnh j
+ 
+Như vậy mà trận
+ 
+
+ 
+P  A  A2 ... An  A(k)
+k 1
+ 
+sẽ cho biết có hay không đường
+ 
+đi có độ dài lớn nhất là n từ đỉnh i đến đỉnh j. P được gọi là ma trận đường đi của đồ thị G.
+Ví dụ: với đồ thị
+
+Ta sẽ có
+
+Việc tính P dễ dàng thực hiện được bởi giải thuật Floyd – Warshall void	Floyd (int A[ ], int P[ ], int n)
+{	P = A; // gán lần lượt các phần tử của A cho các phần tử của P for (k = 1; k <= n; k++)
+for (i = 1; i<= n; i++)
+for (j=1; j<=n; j++)
+P[i, j] = P[i, j] || (P[i, k] && P[k, j]);
+return;
+}
+Với ma trận P nêu trên, đồ thị G’ (là bao đóng truyền ứng) của đồ thị G sẽ là
+ 
+ 
+Chú ý:
+•	Ma trận đường đi chỉ cho ta biết có hay không ít nhất một đường đi
+giữa một cặp đỉnh và có hay không một chu trình tại 1 đỉnh nào đó, chứ nó không chỉ ra được mọi con đường có thể có. Ma trận đường đi không cho ta đầy đủ thông tin về đồ thị như là ma trận lân cận kề
+•	Nếu ta chỉ quan tâm tới việc có hay không đường đi từ nút này tới một
+1
+nút khác thì ta chỉ cần tính Pn-1 là đủ Pn1  A  A2 ... An
+6.4.2.	Bài toán một nguồn, mọi đích
+Cho đồ thị định hướng G (V, E), một hàm trọng số w(e) cho các cung e của G, và một đỉnh nguồn V0.
+Bài toán đặt ra là: Xác định đường đi ngắn nhất từ V0 đến mọi đỉnh còn lại của
+G. Gọi S là tập các đỉnh (kể cả V0) theo đó các đường đi ngắn nhất đã được xác lập. Đối với một đỉnh w không thuộc S, gọi DIST(w) là độ dài của đường đi ngắn nhất từ V0, qua các đỉnh chỉ trong S và kết thúc ở w. Ta có một số nhận xét sau
+1)	Nếu đường đi ngắn nhất tiếp theo, hướng tới một đỉnh w thì đường đi đó bắt đầu từ V0, kết thúc ở w và chỉ đi qua những đỉnh đã thuộc S.
+2)	Đích của đường đi sinh ra tiếp theo phải là một đỉnh w nào đó hiện chưa thuộc S, mà có DIST(w) ngắn nhất so với giá trị của DIST ứng với mọi đỉnh khác cũng đang không thuộc S.
+3)	Nếu đã chọn được một đỉnh w như ở 2) và đã sinh ra được một đường đi ngắn nhất từ V0 tới w thì w trở thành một phần tử của S.
+Với quan điểm này thì giá trị của DIST(w) có thể thay đổi. Nếu nó thay đổi thì nó phải được lập từ một đường đi ngắn hơn, bắt đầu từ V0 tới u rồi đến w. Các đỉnh trung gian trên đường từ V0 đến u và từ u tới w đã phải thuộc S và đường đi từ V0 đến u phải là đường đi ngắn nhất, đường đi từ u tới w thì có thể chọn sao cho nó không chứa một đỉnh trung gian nào. Như vậy DIST(w) sẽ thay đổi (không tăng) = DIST(u) + độ dài (u, w)
+Dijkstra dựa theo quan điểm này đưa ra giải thuật Shortest-Path. Giả thiết đồ thị G gồm n đỉnh được đánh số từ 1 đến n. Tập S được thể hiện dưới dạng một vectơ với
+ 
+S[i] = 0 nếu đỉnh i không thuộc S, S[i] = 1 nếu i thuộc S. Với đồ thị có trọng số được biểu diễn bởi ma trận lân cận COST với COST[i, j] là trọng số của cung (i, j); COST[i, j] = + ∞ nếu cung (i, j) không có, COST[i, j] = 0 nếu i = j.
+Ví dụ: với đồ thị
+
+Hình 6.8. Đồ thị trọng số
+Với đồ thị hình 6.8 thì ma trận COST có dạng
+
+Giả sử V0 là đỉnh (5) ta có bảng kết quả sau
+
+Bước
+lặp	S	Đỉnh
+chọn	(1)	(2)	(3)	(4)	(5)	(6)	(7)	(8)
+Khởi
+đầu	–	5	∞	∞	∞	1500	0	250	∞	∞
+1	5	6	∞	∞	∞	1250	0	250	1150	1650
+2	5,6	7	∞	∞	∞	1250	0	250	1150	1650
+3	5,6,7	4	∞	∞	2450	1250	0	250	1150	1650
+ 
+4	5,6,7,4	8	3350	∞	2450	1250	0	250	1150	1650
+5	5,6,7,4,8	3	3350	3250	2450	1250	0	250	1150	1650
+6	5,6,7,4,8,3	2	3350	3250	2450	1250	0	250	1150	1650
+	5,6,7,4,8,3,2									
+6.4.3.	Bài toán sắp xếp Tôpô
+Thông thường với một công việc lớn bao giờ ta cũng phải chia nó thành từng việc nhỏ để thực hiện. Có những phần việc có thể thực hiện độc lập, nhưng cũng có phần việc chỉ thực hiện được khi một số phần việc khác đã làm xong.
+Ví dụ, một sinh viên ngành tin học muốn đạt được một cấp nào đó, trong quá trình học anh ta sẽ phải hoàn thành một số môn học quy định:
+Mã môn học	Tên môn học	Môn cần học trước
+M1	Tin học đại cương	Không
+M2	Cấu trúc dữ liệu và giải thuật	M1, M9
+M3	Otomat và ngôn ngữ hình thức	M8
+M4	Trí tuệ nhân tạo	M2
+M5	Đồ họa máy tính	M2, M10
+M6	Hệ điều hành	M1
+M7	Phân tích thiết kế hệ thống	M2
+M8	Đại số tuyến tính	M9
+M9	Giải tích	Không
+M10	Ngôn ngữ lập trình	M1
+Ta thấy, những môn như “Tin học đại cương” hay “Giải tích” có thể hoàn thành độc lập. Nhưng môn “Cấu trúc dữ liệu và giải thuật” thì không thể bắt đầu nếu như trước đó sinh viên chưa học môn “Tin học đại cương” và “Giải tích”. Như vậy giữa M1, M2, M9 có một quan hệ “được học trước”. M1 và M9 được học trước M2, quan hệ đó được gọi là quan hệ “thứ tự bộ phận”. Đó là một quan hệ giữa các phần tử của một tập S, ké hiệu là < đọc là “đứng trước” và quan hệ đó thỏa mãn tính chất sau đối với các phần tử phân biệt x, y, z của S
+1)	Nếu x < y và y < z thì x < z (tính bắc cầu)
+2)	Nếu x < Y thì không có y < x (tính phản chứng)
+3)	Không có x < x (tính không phản xạ)
+Do ý nghĩa thực tế ta luôn giả thiết S là hữu hạn. Một thứ tự bộ phận có thể minh họa bằng đồ thị định hướng trong đó các đỉnh ứng với các phần tử, các cung ứng với quan hệ thứ tự. Như ở ví dụ trên: các môn học được biểu diễn bởi các đỉnh và quan hệ
+ 
+“được học trước” biểu diễn bởi cung định hướng, nghĩa là cung (i, j) thể hiện Mi được học trước Mj.
+Nếu như một sinh viên, trong một khoảng thời gian nhất định chỉ có thể hoàn thành được một môn học thì anh ta sẽ phải sắp xếp các môn học theo một thứ tự tuyến tính để sao cho khi học một môn nào đó, thì các môn cần học trước đã hoàn thành rồi. Sinh viên đó có thể học theo trình tự:
+M1, M9, M10, M6, M8, M2, M3, M4, M5, M7
+Một thứ tự tuyến tính với đặc điểm như vậy gọi là thứ tự tôpô, cách sắp xếp một tập đối tượng có thứ tự bộ phận thành thứ tự tôpô gọi là sắp xếp tôpô.
+Như vậy với một đồ thị định hướng, không có chu trình thì sắp xếp tôpô là một quá trình định ra một thứ tự tuyến tính cho các đỉnh của đồ thị ấy, sao cho nếu có một cung từ đỉnh i đến đỉnh j thì i cũng xuất hiện trước j trong thứ tự tuyến tính.
+Trong thực tế có những yêu cầu liên quan đến sắp xếp tôpô. Ví dụ, đối với một công việc cần làm trên công trường thì bài toán sắp xếp tôpô sẽ là: sắp xếp công việc có liên quan với nhau sao cho mọi công việc được thực hiện thuận lợi theo tiến trình của thời gian cụ thể là việc nào cần làm trước để chuận bị cho việc khác thì phải thực hiện trước. Chẳng hạn, phải xẻ gỗ rồi mới đóng cốt pha, rồi mới trộn bê tông …
+Phương pháp đơn giản để thực hiện sắp xếp tôpô: Ta bắt đầu chọn một đỉnh mà không có cung nào đi tới nó, đỉnh này sẽ được đưa ra. Sau đó, loại nó và các cung xuất phát từ nó ra khỏi đồ thị. Quá trình được lặp lại với phần còn lại của đồ thị cho tới khi các đỉnh đó được chọn ra hết. Nếu cùng lúc có nhiều đỉnh đều không có cung tới nó, thì chọn tùy ý một đỉnh nào đó trong số các đỉnh ấy.
+Ví dụ, với đồ thị hình 6.9 thì các bước thực hiện sắp xếp tôpô thể hiện trong hình
+6.10
+
+Hình 6.9. Đồ thị trước sắp xếp
+Đỉnh được đưa ra	Phần còn lại của đồ thị
+ 
+ 
+
+Như vậy dãy đưa ra là V1, V2, V4, V3, V5, V6. Có thể biểu diễn dưới dạng đồ thị như sau:
+
+Hình 6.10. Đồ thị sau sắp xếp Tô pô
+BÀI TẬP CHƯƠNG 6
+6.1.	Cho đồ thị định hướng G1
+ 
+ 
+a)	Hãy lập ma trận lân cận kề của G1
+b)	Hãy lập danh sách lân cận kề của G1
+6.2.	Cho đồ thị không định hướng G2 có trọng số
+
+a)	Hãy dựng cây khung theo chiều sâu của G2
+b)	Hãy dựng cây khung theo chiều rộng của G2
+c)	Dựa vào giải thuật Kruskal, nêu các bước dựng cây khung có giá cực tiểu của G2
+d)	Lập ma trận lân cận COST, dựa vào giải thuật Dijkstra xác định đường đi ngắn nhất từ đỉnh 1 tới các đỉnh còn lại của đồ thị G2
+6.3.	Cho đồ thị có định hướng G3.
+
+a)	Hãy lập ma trận lân cận A
+b)	Tính A(2), A(3), A(4), P
+c)	Vẽ đồ thị ứng với P
+6.4.	Một đội thợ phải thực hiện 7 công việc kế tiếp nhau. Các công việc này được đánh số từ 1 đến 7, giữa chúng có quan hệ “làm trước” ký hiệu là <. Cụ thể là:
+
+2 < 1, 2 < 6
+3 < 6
+ 
+4 < 2
+5 < 3, 5 < 6
+7 < 5
+a)	Hãy biểu diễn tập các công việc này bằng đồ thị
+b)	Áp dụng quy tắc sắp xếp Tôpô để đưa ra một vài thứ tự Tôpô khác nhau
+ 
+Chương 7 SẮP XẾP
+Sắp xếp là quá trình bố trí lại các phần tử của 1 tập hợp theo thứ tự nào đó. Mục đích chính của sắp xếp là làm cho thao tác tìm kiếm phần tử trên tập đó được dễ dàng hơn. Ví dụ về tập các đối tượng được sắp phổ biến trong thực tế là: danh bạ điện thoại được sắp theo tên, các từ trong từ điển được sắp theo vần, sách trong thư viện được sắp theo mã số, …
+Nhìn chung, có rất nhiều thao tác xử lý dữ liệu cần đến việc sắp xếp các phần tử theo một trình tự nào đó. Trên thực tế, có rất nhiều giải thuật sắp xếp khác nhau, từ đơn giản đến phức tạp. Các giải thuật sắp xếp là một ví dụ điển hình cho sự đa dạng của thuật toán. Cùng một mục đích, nhưng có nhiều cách thực hiện, mỗi cách tối ưu trên một khía cạnh và có một số cách sắp xếp có nhiều ưu điểm hơn những cách khác.
+Thông thường, các giải thuật sắp xếp được chia làm 2 loại. Loại thứ nhất là các giải thuật được cài đặt đơn giản, nhưng kém hiệu quả. Loại thứ hai là các giải thuật được cài đặt phức tạp nhưng hiệu quả hơn về một tốc độ. Đối với tập dữ liệu ít phần tử nên lựa chọn loại thứ nhất. Đối với tập dữ liệu có nhiều phần tử, loại thứ hai sẽ mang lại hiệu quả hơn.
+Các đối tượng dữ liệu cần sắp xếp thường có nhiều thuộc tính, ta cần chọn một thuộc tính làm khóa và sắp xếp dữ liệu theo trường này.
+Tham số để tính toán hiệu quả của giải thuật thường là thời gian thực hiện. Đối với các phương pháp sắp xếp đơn giản, thời gian thực hiện tỷ lệ với N2, trong đó N là số phần tử của tập. Các giải thuật sắp xếp phức tạp, thời gian thực hiện tỷ lệ với NlogN. Ngoài thời gian thực hiện, dung lượng bộ nhớ bị chiếm cũng là một tham số để đánh giá tính hiệu quả của giải thuật.
+Một vấn đề nữa cần phải chú ý khi thực hiện sắp xếp là tính ổn định của giải thuật. Một giải thuật được gọi là ổn định nếu sau khi sắp xếp, nó giữa nguyên vị trí của các phần tử có cùng giá trị khóa. Ví dụ, với danh sách theo vần họ tên các sinh viên trong một lớp. Nếu ta tiến hành sắp danh sách này theo điểm, thì các sinh viên có cùng điểm vẫn được sắp theo vần họ tên. Hầu hết các giải thuật sắp xếp đơn giản có tính ổn định, trong khi các giải thuật sắp xếp phức tạp không có tính chất này.
+7.1.	MỘT SỐ PHƯƠNG PHÁP SẮP XẾP CƠ BẢN
+7.1.1.	Sắp xếp lựa chọn (Selection_Sort)
+Nguyên tắc cơ bản của phương pháp sắp xếp này là: ở lượt thứ i (i=1..n) ta sẽ chọn khóa Km nhỏ nhất trong dãy khóa Ki+1, Ki+2, … Kn và đổi chỗ Km với Ki.
+Như vậy sau j lượt, j khóa nhỏ hơn đã lần lượt ở các vị trí thứ nhất, thứ hai, …, thứ j theo đúng thứ tự sắp xếp. Ví dụ
+ 
+ 
+void	Selection_Sort (int a[ ], int n)
+{	int	i, j, k, tg;
+for (i = 1; i < n; i++)
+{	k = i;
+for (j = i + 1; j <= n; j++) if ( a[j] < a[k])
+k = j; tg = a[i]; a[i] = a[k]; a[k] = tg;
+}
+}
+7.1.2.	Sắp xếp chèn – thêm dần (Insertion_Sort)
+Thoạt đầu K1 được coi như bảng chỉ gồm có một khóa đã sắp xếp. Xét thêm K2, so sánh nó với K1 để xác định vị trí chèn nó, ta sẽ có một bảng gồm 2 khóa đã được sắp xếp. Đơi với K3 lại so sánh nó với K2, K1 và cứ tương tự như vậy đối với K4, K5, … cuối cùng sau khi xét xong Kn thì bảng khóa đã được sắp xếp hoàn toàn.
+Phương pháp này rất thuận lợi khi các khóa của dãy được đưa dần vào miền lưu trữ. Đó cũng chính là không gian nhớ dùng để sắp xếp. Ví dụ
+ 
+ 
+Dấu – chỉ chỗ trống trong miền sắp xếp, dấu ↓ chỉ việc phải dịch chuyển khóa cũ để lấy chỗ chèn khóa mới vào.
+Nếu các khóa đã có mặt ở bộ nhớ trong trước khi sắp xếp ta vẫn có thể thực hiện được ngay tại chỗ, không cần phải chuyển sang miền sắp xếp khác bằng cách làm tương tự, chỉ khác là ta phải đưa khóa mới này ra một chỗ nhớ phụ và sẽ đưa vào vị trí thực của nó sau khi đã đẩy các khóa cần thiết lùi lại. Giải thuật ứng với trường hợp này là
+void  Insertion_Sort (int a[ ], int n)
+{    int   i, j, k, tg;
+for (i = 2; i <= n; i++)
+{	tg = a[i]; j = i – 1;
+while ( (a[j] > tg) && (j >= 1) )
+{	a[j+1] = a[j]; j - - ;
+}
+a[ j+1 ] = tg;
+}
+}
+7.1.3.	Sắp xếp đổi chỗ (Exchange_Sort)
+Bảng khóa sẽ được duyệt từ đáy lên đỉnh. Dọc đường, nếu gặp hai khóa kế cận ngược thứ tự thì đổi chỗ chúng cho nhau. Như vậy trong lượt đầu khóa có giá trị nhỏ
+ 
+nhất sẽ chuyển dần lên đỉnh. Đến lượt thứ 2 khóa có giá trị nhỏ thứ hai sẽ được chuyển lên vị trí thứ hai, … Nếu hình dung dãy khóa được đặt thẳng đứng thì sau từng lượt sắp xếp các giá trị khóa nhỏ sẽ “nổi” dần lên giống như các bọt nước nối lên trong nồi nước đang sôi. Vì vậy phương pháp này thường được gọi bằng cái tên khác là sắp xếp nổi bọt (Buble_Sort)
+
+void	Buble_Sort (int a[ ], int n)
+{	int	i, j, k, tg;
+for (i = 1; i < n; i++)
+for (j = n; j >= i+1; j- -)
+if ( a[j] < a[j-1])
+{	tg = a[j]; a[j] = a[j-1]; a[j-1] = tg;
+}
+}
+So sánh 3 phương pháp
+Đối với phương pháp sắp xếp kiểu lựa chọn và sắp xếp kiểu nổi bọt, ta thấy ở lượt thứ i để tìm khóa nhỏ nhất bao giờ cũng cần Ci = n-i phép so sánh. Số lượng phép so sánh không phụ thuộc vào tình trạng ban đầu của dãy khóa. Từ đó suy ra
+ 
+
+Cmin
+ 
+
+ Cmax
+ 
+
+ Ctb
+ 
+ n 1 (n  i)   n(n  1)
+i 1	2
+ 
+Đối với phương pháp sắp xếp thêm dần thì khác ở chỗ, số lượng phép so sánh phụ thuộc vào dãy khóa ban đầu. Trường hợp thuận lợi nhất ứng với dãy khóa đã được
+n
+ 
+sắp xếp rồi, như vậy ở mỗi lượt chỉ cần 1 phép so sánh:
+ 
+Cmin 1 n  1
+i  2
+ 
+Nếu dãy khóa ban đầu có thứ tự ngược với thứ tự sắp xếp thì ở lượt thứ i cần có
+ 
+
+Ci = i-1 phép so sánh. Vì vậy
+ 
+
+Cmax
+ 
+
+ 
+ 
+i 2
+ 
+(i  1)   n(n  1)
+2
+ 
+Nếu giả sử mọi giá trị khóa đều xuất hiện đồng khả năng thì trung bình ở lượt thứ i có thể coi như Ci = i/2 phép so sánh. Suy ra
+n	i	n2  n  2
+Ctb     
+i2
+7.2.	SẮP XẾP PHÂN ĐOẠN
+7.2.1.	Giới thiệu phương pháp
+Sắp xếp kiểu phân đoạn là một cài tiến của phương pháp sắp xếp kiểu đổi chỗ. Đây là một phương pháp khá tốt, do đó người sáng lập ra nó đã mạnh dạn đặt tên cho nó là sắp xếp “nhanh” – QuickSort.
+Ý chủ đạo của phương pháp như sau: Chọn một khóa ngẫu nhiên nào đó của dãy làm “chốt”. Mọi phần tử nhỏ hơn khóa “chốt” phải được xếp vào vị trí ở trước “chốt” (đầu dãy), mọi phần tử lớn hơn khóa “chốt” phải được xếp vào vị trí sau “chốt” (cuối dãy). Muốn vậy, các phần tử trong dãy sẽ được so sánh với khóa chốt và sẽ đổi vị trí cho nhau, hoặc cho chốt, nếu nó lớn hơn chốt mà lại nằm trước chốt hoặc nhỏ hươn chốt mà lại nằm sau chốt. Khi việc đổi chỗ đã thực hiện xong thì dãy khóa lúc đó được phân làm hai đoạn: một đoạn gồm các khóa nhỏ hơn chốt, một đoạn gồm các khóa lớn hơn chốt, còn khóa chốt thì ở giữa hai đoạn nói trên và đó cũng là vị trí thực của nó trong dãy khi đã được sắp xếp, tới đay coi như kết thúc một lượt sắp xếp.
+Ở các lượt tiếp theo cũng áp dụng một kỹ thuật tương tự đối với các phân đoạn còn lại. Tất nhiên, chỉ có một phân đoạn được xử lý ngay sau đó, còn một phân đoạn phải được “ghi nhớ” lại. Quá trình này được thực hiện tiếp tục cho tới khi gặp một phân đoạn chỉ gồm có một phần tử thì việc ghi nhớ không cần nữa. Lúc đó một phân đoạn mới sẽ được xác định và đối với phân đoạn này quá trình lặp lại tương tự. Sắp xếp sẽ kết thúc khi phân đoạn cuối cùng đã được xử lý xong.
+7.2.2.	Giải thuật
+Quá trình tìm số nhỏ hơn chốt để chuyển về phía trước chốt và khóa lớn hơn chốt để chuyển về phía sau chốt sẽ dựa vào biến chỉ số i và j: biến i để tiến hành duyệt từ bên trái dãy, i sẽ được tăng giá trị lên 1 cho tới khi gặp 1 phần tử lớn hơn hoặc bằng khóa;
+ 
+biến j để tiến hành duyệt từ bên phải dãy, j sẽ được giảm giá trị cho tới khi gặp 1 phần tử nhỏ hơn hoặc bằng khóa. Rõ ràng 2 phần tử này nằm ở những vị trí không phù hợp và chúng cần phải được đổi chỗ cho nhau. Nếu lúc đó i < j thì K[i] và K[j] được đổi chỗ cho nhau. Tiếp tục quá trình cho tới khi i > j lúc đó K[j] và khóa chốt sẽ đổi chỗ cho nhau, quá trình phân đoạn kết thúc.
+Giả sử, ta quy ước khóa “chốt” là khóa đầu tiên của dãy. Với dãy
+42   23   74   11   65   58   94   36   99   87   thì chốt là 42.
+Lượt phân đoạn đầu tiên của dãy khóa trên, có thể minh họa như sau:
+
+void	Quick_Sort (int a[ ], int left, int right)
+{	int	chot, i, j, tg;
+i = left;
+j = right;
+chot = a[left];
+do {	while ( (a[i] < chot) && (i < right) ) i ++; while ( (a[j] > chot) && (j > left) ) j - -; if (i <= j)
+{	tg = a[j];
+a[i] = a[j]; a[j] = tg;
+i ++;
+j - -;
+} while (i <= j);
+if (i < right) Quick_Sort (a, i, right); if (left < j) Quick_Sort (a, left, j);
+}
+ 
+Bảng khóa sau đây sẽ cho kết quả của sắp xếp theo Quick_Sort sau từng lượt đối với dãy khóa trên
+
+7.2.3.	Nhận xét và đánh giá
+Theo giới thiệu chung thì chốt có thể chọn tùy ý trong dãy khóa, tuy nhiên khi theẻ hiện giải thuật ta phải định ra một cách chọn khóa chốt cụ thể. Nếu chốt ta chọn rơi vào đúng khóa nhỏ nhất (hoặc lớn nhất) của phân đoạn, thì sau mỗi lượt ta chỉ tách ra được một phân đoạn con có kích thuwóc nhỏ hơn trước là 1 và chính phân đoạn này sẽ được xử lý tiếp theo, như vậy ta đã quay lại phương pháp sắp xếp nổi bọt. Việc chọn chốt như vậy dẫn đến tình huống xấu nhất của phương pháp. Vì vậy người ta thường chọn khóa chốt là trung vị của ba khóa Kl, K[(l+r)/2], Kr trong đó l và r là chỉ số của khóa đầu và khóa cuối của dãy cho.
+Khi kích thước của các phân đoạn đã khá nhỏ, việc tiếp tục phân đoạn nữa theo Quick_Sort thực ra sẽ không có lợi. Lúc này sử dụng một phương pháp sắp xếp đơn giản lại tiện lợi hơn. Vì vậy, sắp xếp nhanh thường không tiến hành triệt để mà dừng lại ở lúc cần thiết để gọi tới một phương pháp sắp xếp đơn giản (giao cho nó tiếp tục thực hiện sắp xếp với các phân đoạn nhỏ còn lại).
+Trường hợp xấu nhất xảy ra, khi bảng khóa vồn đã có thứ tự sắp xếp, sau khi phân đoạn một trong hai bảng con là rỗng thì độ phức tạp trong trường hợp này là O(n2), không hơn gì các phương pháp sắp xếp cơ bản.
+Trường hợp tốt nhất xảy ra khi bảng khóa luôn luôn được chi đôi, nghĩa là j=(left
++ right)/2 thì độ phức tạp trong trường hợp này là O(nlog2n)
+Trường hợp trung bình, người ta cũng đã chứng minh và ghi nhận độ phức tạp của giải thuật là O(nlog2n)
+Quick_Sort tỏ ra có hiệu lực hơn hẳn các phương pháp sắp xếp cơ bản khi n khá
+lớn.
+ 
+7.3.	SẮP XẾP VUN ĐỐNG
+7.3.1.	Giới thiệu phương pháp
+Sắp xếp kiểu phân đoạn đã cho ta thời gian thực hiện trung bình khá tốt, nhưng trường hợp xấu nhất của nó vẫn là O(n2). Phương pháp sắp xếp kiểu vun đống mà ta sẽ xét sau đây đảm bảo được trong cả hai trường hợp chi phí thời gian đều là O(nlog2n). Với phương pháp sắp xếp này, bảng khóa sẽ có cấu trúc cây nhị phân hoàn chỉnh và được lưu trữ kế tiếp trong máy tính.
+7.3.2.	Định nghĩa “đống”
+Cấu trúc cây đặc biệt được sử dụng trong phương pháp này là cấu trúc đống. Đống là một cây nhị phân hoàn chỉnh mà mỗi nút được gán một giá trị khóa sao cho khóa ở nút cha bao giờ cũng lớn hơn khóa ở nút con của nó. Đống được lưu trữ trong máy bởi một vectơ K mà K[i] thì lưu trữ giá trị khóa ở nút thứ i trên cây nhị phân hoàn chỉnh (theo cách đánh số thứ tự khi lưu trữ kế tiếp)
+
+Hình 7.1. Cây nhị phân hoàn trình theo cấu trúc đống
+Với cây ở hình 7.1 vectơ K lưu trữ trong máy được biểu diễn như sau
+
+Ta thấy, nếu có một đống thì giá trị khóa ở nút gốc – đỉnh đống chính là giá trị khóa lớn nhất trong dãy khóa ứng với đống đó. Từ đó có thể hiểu: việc chọn ra khóa lớn nhất trong dãy khóa cho sẽ thuận lợi hơn nếu ta tạo được ra một đống ứng với dãy khóa này.
+Nếu có dãy khóa biểu diễn trong máy dưới dạng vectơ V như sau:
+
+thì ta có thể dựng được một cây nhị phân hoàn chỉnh dạng
+ 
+ 
+Hình 7.2. Cây nhị phân hoàn chỉnh chưa thỏa cấu trúc đống
+Cây này chưa phải là đống
+7.3.3.	Phép tạo đống
+Xét một cây nhị phân hoàn chỉnh có n nút, mà mỗi nút đã được gán một giá trị khóa. Cây này chưa phải là đống, muốn tạo thành đống ta dựa vào một số nhận xét sau:
+•	Nếu một cây nhị phân hoàn chỉnh đã là đống thì các cây con của các nút (nếu có) cũng là cây nhị phân hoàn chỉnh và cũng là đống
+•	Trên cây nhị phân hoàn chỉnh có n nút thì chỉ có n 2 nút là “cha”
+•	Một nút lá bao giờ cũng có thể coi là đống
+Từ đó ta thấy, có thể thực hiện phép tạo đống theo kiểu “từ đáy lên”, nghĩa là từ
+các cây con mà gốc có số thứ tự là n 2, n 2 1 , n 2 2 … 1. Ta sẽ bắt đầu từ những
+cây mà con của nó là lá, nghĩa là đã là đống. Do đó việc tạo đống này sẽ chỉ cần một phép xử lý chung, ta có thể phát biểu như sau: “Hãy tạo thành đống cho một cây nhị phân hoàn chỉnh có gốc được đánh số thứ tự là i và gốc có 2 cây con đã là đống rồi”
+void  ADJUST (int i, int n);
+{    int k[ ], i, j, key;
+key = k[i];  // key nhận giá trị khóa ở nút gốc i
+j = 2*i;	// ghi nhận số thứ tự nút con trái của i while (j <= n)
+{    if ( (j < n) && (k[j] < k[j+1]) )   // nếu khóa con phải lớn j = j+1;    // hơn thì ghi nhận số thứ tự của nó
+if (key > k[j])
+{  k[  j / 2 ] = key; // khóa cha lớn hơn khóa con return;
+}
+k[  j / 2 ] = k[j]; // đưa khóa con lớn lên j = 2*j;
+}
+k[  j / 2 ] = key;
+ 
+return;
+}
+Với giải thuật ADJUST này, việc tạo thành đống cho một cây nhị phân hoàn chỉnh có n nút sẽ được thực hiện bởi
+for (i = n / 2 ; i >= 1; i - - ) ADJUST (i, n); Với cây ở hình 7.2, quá trình tạo đống như sau:
+ 
+a)	Cấu trúc dữ liệu và	b) Sau khi thực hiện ADJUST(3, 6)
+cấu trúc lưu trữ ban đầu	đổi chỗ k[3] và k[6]
+
+b)	Sau khi thực hiện ADJUST(2, 6)   d) Sau khi thực hiện ADJUST(1, 6) đổi chỗ k[2] và k[5]	đổi chỗ k[1] và k[2]. Cây đã là đống
+7.3.4.	Sắp xếp vun đống
+Sắp xếp kiểu vun đống là một cải tiến của phương pháp sắp xếp kiểu lựa chọn. Tuy nhiên để chọn ra số lớn nhất, ở đây người ta đã dựa vào cấu trúc đống. Để sắp xếp theo thứ tự tăng dần của các giá trị khóa là số, thì khóa lớn nhất sẽ được xếp vào cuối dãy, nghĩa là nó được đổi chỗ với khóa đang ở “đáy đống”, sau phép đổi chỗ này một khóa trong dãy đã vào đúng vị trí của nó trong sắp xếp. Nếu không kể tới khóa này thì phần còn lại của dãy khóa ứng với một cây nhị phân hoàn chỉnh, với số lượng khóa ít hơn 1 và không còn là đống, ta lặp lại bài toán tạo đống mới cho cây này (gọi là “vun đống”) và thực hiện tiếp phép đổi chỗ giữa khóa ở đỉnh đống và khóa ở đáy đống. Quá trình “vun đống” và đổi chỗ được thực hiện đến khi cây chỉ còn là 1 nút thì các khóa đã xếp vào đúng vị trí của nó.
+Sắp xếp kiểu vun đống gồm 2 giai đoạn:
+ 
+•	giai đoạn tạo đống ban đầu
+•	giai đoạn sắp xếp gồm 2 bước: vun đống và đổi chỗ ( được thực hiện n-1 lần) void	Heap_Sort (int k[ ], int n);
+{	int	i, j, tg;
+// Tạo đống ban đầu
+for (i = n / 2 ; i >= 1; i - - ) ADJUST (i, n);
+// Sắp xếp
+for (i = n-1; i >= 1; i - - )
+{	tg = k[1];
+k[1] = k[i+1];
+k[i+1] = tg;
+ADJUST (1, i);
+}
+return;
+}
+Sau đây minh họa giai đoạn sắp xếp đối với đống đã được tạo
+
+ 
+ 
+BÀI TẬP CHƯƠNG 7
+7.1.	Cho dãy khóa: 50  8  34  6  98  17  83  25  66  42  21  59
+Hãy minh họa 3 phương pháp sắp xếp cơ bản qua dãy khóa này
+a)	Theo thứ tự tăng dần
+b)	Theo thứ tự giảm dần
+7.2.	Hãy sửa lại 3 giải thuật sắp xếp cơ bản để thực hiện sắp xếp theo thứ tự giảm dần
+7.3.	Cho dãy khóa:	44	30	50	22	60	55	77	65
+a)	Biểu diễn dãy khóa trên thành một cây nhị phân hoàn chỉnh
+b)	Từ cây nhị phân hoàn chỉnh trên hãy tạo thành “đống”. Thuyết minh cách làm và minh họa các bước thực hiện bằng hình vẽ
+7.4.	Cho dãy khóa như bài 7.1 hãy minh họa hai phương pháp sắp xếp kiểu phân đoạn và kiểu vun đống
+ 
+Chương 8 TÌM KIẾM
+8.1.	TÌM KIẾM TUẦN TỰ VÀ TÌM KIẾM NHỊ PHÂN
+8.1.1.	Bài toán tìm kiếm
+Tìm kiếm là một đòi hỏi rất thường xuyên trong đời sống hàng ngày cũng nhu trong xử lý tin học. Ngay trong chương trước ta cũng thấy xuất hiện các yêu cầu về tìm kiếm. Tuy nhiên, lúc đó vấn đề này đã được xét và giải quyết trong mối quan hệ mật thiết với phép xử lý chính, đó là phép sắp xếp. Trong chương này, bài toán tìm kiếm sẽ được đặt ra một cách độc lập và tổng quát, không liên quan đến mục đích xử lý cụ thể nào khác. Ta có thể phát biểu như sau:
+Cho một bảng gồm n bản ghi R1, R2, … Rn, Mỗi bản ghi Ri (1≤ i ≤ n) tương ứng với một khóa Ki. Hãy tìm bản ghi có giá trị khóa tương ứng bằng X cho trước.
+X được gọi là khóa tìm kiếm hay đối trị tìm kiếm
+Công việc tìm kiếm sẽ hoàn thành khi xảy ra một trong hai tình huống sau:
+•	Tìm được bản ghi có giá trị khóa tương ứng bằng X, lúc đó ta nói: phép tìm kiếm được thỏa
+•	Không tìm thấy bản ghi nào có giá trị khóa bẳng X, ta nói phép tìm kiếm không thỏa. Nếu sau phép tìm kiếm không thỏa, xuất hiện yêu cầu bổ sung thêm bản ghi mới có khóa bằng X vào bảng, khi đó giải thuật thể hiện cả yêu cầu này gọi là giải thuật “tìm kiếm có bổ sung”.
+Tương tự như sắp xếp, khóa của mỗi bản ghi chính là đặc điểm nhận biết của bản ghi đó trong tìm kiếm, ta sẽ coi nó như đại diện cho bản ghi ấy và trong các giải thuật, ví dụ ta cũng chỉ nói tới khóa. Để cho tiện ta coi các khóa ki (1≤ i ≤ n) là các số khác nhau. Ở dây ta cũng chỉ xét tới các phương pháp tìm kiếm cơ bản và phổ dụng, đối với dữ liệu ở bộ nhớ trong, nghĩa là tìm kiếm trong.
+8.1.2.	Tìm kiếm tuần tự
+Tìm kiếm tuần tự là một phương pháp tìm kiếm rất đơn giản, bắt đầu từ bản ghi thứ nhất, lần lượt so sánh khóa tìm kiếm với khóa tương ứng của các bản ghi trong bảng, cho tới khi tìm được bản ghi mong muốn hoặc đã hết bảng mà chưa thấy.
+int   Sequence_Search (int a[ ], int x, int n)
+{    int i;
+for (i = 0; i < n; i ++)
+if (a[i] = = x)	return (i); return (-1);
+}
+ 
+Thủ tục này, tiến hành duyệt từ đầu mảng. Nếu tại vị trí nào đó, giá trị phần tử bằng với giá trị cần tìm thì hàm trả về chỉ số tương ứng của phần tử trong mảng. Nếu không tìm thấy giá trị trong toàn bộ mảng thì hàm trả về giá trị -1.
+Thuật toán tìm kiếm tuần tự có thời gian thực hiện là O(n).
+8.1.3.	Tìm kiếm nhị phân
+Tìm kiếm nhị phân là một phương pháp tìm kiếm khá thông dụng. Nó tương tự như cách thức ta đã làm khi tra số điện thoại của một cơ quan trong bảng danh mục điện thoại hay khi tìm một từ trong từ điển. Chỉ có điều là trong công việc trên để so sánh với khóa tìm kiếm ta chọn hú họa một phần tử, còn với phép tìm kiếm nhị phân thì nó luôn luôn chọn khóa “ở giữa” dãy khóa đang xét để thực hiện so sánh với khóa tìm kiếm.
+Giả sử dãy khóa đang xét là kl, … kr đã được sắp xếp theo thứ tự tăng dần, khóa ở giữa dãy sẽ là ki với i  (l  r) / 2. So sánh ki với x
+•	nếu ki = x quá trình tìm kiếm sẽ kết thúc
+•	nếu ki > x tìm kiếm sẽ được thực hiện tiếp với kl, …, ki-1
+•	nếu ki < x tìm kiếm sẽ được thực hiện tiếp với ki+1, … kr
+•	quá trình tìm kiếm được tiếp tục đến khi tìm thấy khóa mong muốn hoặc dãy khóa xét rỗng (không tìm thấy)
+int	Binary_Search (int a[ ], int x, int n)
+{	int	k, left = 0, right = n-1; do
+{	k = (left + right) / 2;
+if (x < a[k])	right = k -1; else	l = k +1;
+}	while ( (x != a[k]) && (left <= right) ); if (x = = a[k]) return k;
+else	return -1;
+}
+Ví dụ, với dãy khóa
+11	23	36	42	58	65	74	87	94	99
+a) Nếu x = 23 phép tìm kiếm thỏa được và các bước như sau:
+
+[11	23	36	42	58	65	74	87	94	99]
+[11	23	36	42]						
+b) Nếu x = 71 phép tìm kiếm không thỏa và các bước như sau:
+[11	23	36	42	58	65	74	87	94	99]
+	[65	74	87	94	99]
+	[65	74]			
+		[74]			
+ 
+Tìm kiếm nhị phân có thời gian thực hiện là log2n. Tuy nhiên, thuật toán đòi hỏi dãy đã được sắp xếp trước khi tiến hành tìm kiếm, nghĩa là thời gian chi phí cho sắp xếp cũng phải kể đến. Nếu dãy khóa luôn biến động thì lúc đó chi phí cho sắp xếp lại nổi lên rất rõ và chính điều ấy đã bộc lộ nhược điểm của phương pháp tìm kiếm này.
+8.2.	CÂY NHỊ PHÂN TÌM KIẾM
+Để khắc phục nhược điểm vừa nêu đối với tìm kiếm nhị phân và đáp ứng yêu cầu tìm kiếm đối với bảng biến động, một phương pháp mới đã được hình thành dựa trên cơ sở bảng được tổ chức dưới dạng cây nhị phân mà ta gọi là cây nhị phân tìm kiếm.
+Cây nhị phân tìm kiếm ứng với n khóa k1, k2, .., kn là một cây nhị phân mà mỗi nút của nó đều được gán một giá trị khóa nào đó, trong đó các giá trị khóa đã cho và đối với mọi nút trên cây tính chất sau đây luôn được thỏa mãn
+•	Mọi khóa thuộc cây con trái nút đó đều nhỏ hơn khóa ứng với nút đó
+•	Mọi khóa thuộc cây con phải nút đó đều lớn hơn khóa ứng với nút đó
+Ở đây thứ tự chọn, ta quy ước là thứ tự tăng dần đối với số và thứ tự từ điển đối với chữ. Sau đâu là ví dụ về cây nhị phân tìm kiếm đối với khóa là số và chữ:
+
+a)	b)
+Hình 8.1. Cây nhị phân tìm kiếm
+8.2.1.	Tìm kiếm trên cây nhị phân tìm kiếm
+Đối với cây nhị phân tìm kiếm để tìm xem một khóa x nào đó có trên cây đó hay không, ta có thể thực hiện như sau: So sánh x với khóa ở gốc của cây, xảy ra 1 trong 4 tình huống sau:
+•	không có gốc (cây rỗng): x không có trên cây, tìm kiếm không thỏa
+•	x trùng với khóa của nút gốc: tìm kiếm thỏa được
+•	x nhỏ hơn khóa của nút gốc: tìm kiếm được thực hiện tiếp tục bằng cách xét cây con trái của gốc với cách làm tương tự.
+•	x lớn hơn khóa của nút gốc: tìm kiếm được thực hiện tiếp tục bằng cách xét cây
+con phải của gốc với cách làm tương tự. struct  node
+ 
+{	int		item; struct	node *left;
+struct node	*right;
+}
+typedef	struct node	*treenode;
+treenode	Tree_Search (int x, treenode root)
+{	int found = 0;
+treenode	temp = root; while (temp != NULL)
+{	if (x < temp.item) temp = temp.left; else
+if (x > temp.item) temp = temp.right; else break;
+}
+return temp;
+}
+Ví dụ: Tìm nút 68 trên cây nhị phân tìm kiếm hình 8.1 a)
+-	so sánh x với 34: x > 34, ta chuyển sang cây con phải
+-	so sánh x với 66: x > 66, ta chuyển sang cây con phải
+-	so sánh x với 71: x < 71, ta chuyển sang cây con trái
+-	so sánh x với 68: x = 68, vậy tìm kiếm thỏa được Ví dụ: Tìm nút 30 trên cây nhị phân tìm kiếm hình 8.1 a)
+-	So sánh x với 34: x < 34, ta chuyển sang cây con trái
+-	So sánh x với 17: x > 17, ta chuyển sang cây con phải
+-	So sánh x với 25: x > 25, ta chuyển sang cây con phải, nhưng cây con phải rỗng, vì vậy tìm kiếm không thỏa
+8.2.2.	Chèn một phần tử vào cây nhị phân tìm kiếm
+Để chèn một phần tử vào cây nhị phân tìm kiếm, đầu tiên tiến hành quá trình tiềm kiếm nút cần chèn trong cây theo các bước trên. Nếu tìm thấy nút trong cây, nghĩa là cây đã tồn tại một nút có khóa bằng nút cần chèn thì việc chèn nút này vào cây là không hợp lệ. Nếu không tìm thấy nút trong cây thì quá trình tìm kết thúc (tìm kiếm không thỏa), tiến hành chèn nút vào điểm kết thúc của quá trình tìm kiếm.
+treenode	Tree_Insert (int x, treenode root)
+{    treenode    p;
+p = (treenode) malloc (sizeof(struct node)); p.item = x;
+p.left = p.right = NULL;
+ 
+if (root = = NULL)
+root = p;
+else
+{	if (x < root.item)
+Tree_Insert (x, root.left);
+else
+Tree_Insert (x, root.right); }
+}
+Ví dụ: chèn nút 30 vào cây nhị phân tìm kiếm trong hình 8.1 a)
+-	So sánh x với 34: x < 34, ta chuyển sang cây con trái
+-	So sánh x với 17: x > 17, ta chuyển sang cây con phải
+-	So sánh x với 25: x > 25, ta chuyển sang cây con phải, nhưng cây con phải rỗng, vì vậy 30 chính là con phải của nút 25
+Với giải thuật trên ta có thể dựng được cây nhị phân tìm kiếm ứng với một dãy khóa đưa vào bằng cách liên tục bổ sung các nút ứng với từng khóa, bắt đầu từ một cây rỗng. Tất nhiên, ban đầu phải dựng lên nút gốc cây ứng với khóa đầu tiên, sau đó đối với các khóa tiếp theo, tìm trên cây không thấy thì bổ sung vào.
+Với dãy khóa: 42   23   74   11   65   58   94   36   99   87
+ta sẽ dựng được cây nhị phân tìm kiếm như sau:
+
+Nhận xét: Ta thấy dạng cây nhị phân tìm kiếm dựng được hoàn toàn phụ thuộc vào dãy khóa đưa vào. Như vậy có nghĩa là, trong quá trình xử lý động ta không thể biết trước được cây sẽ phát triển ra saom hình dạng của nó sẽ thế nào. Rất có thể đó là một
+cây nhị phân hoàn chỉnh hoặc cây nhị phân gần đầy, có chiều cao log 2 (n  1) nên chi
+phí tìm kiếm có cấp độ lớn chỉ là O(log2n), đó là trường hợp rất thuận lợi mà ta luôn mong đợi. Nhưng cũng có thể đó là một cây nhị phân suy biến (nếu dãy khóa đưa vào vốn đã sắp xếp rồi)
+ 
+8.2.3.	Loại bỏ một nút trên cây nhị phân tìm kiếm
+Để loại bỏ một nút khỏi cây nhị phân tìm kiếm, việc xử lý không còn đơn giản như khi bổ sung nữa vì để đảm bảo được phần cây còn lại vẫn là một cây nhị phân tìm kiếm ta sẽ phải “sửa” lại cây, nghĩa là tìm “nút thay thế nó” để nhận các con trỏ mà trước đây trỏ tới nó và chữa các con trỏ cần thiết khác.
+Ta xét các trường hợp
+-	Loại bỏ 1 nút lá: Thao tác loại bỏ 1 nút không có nút con nào là trường hợp đơn giản nhất. Chỉ cần tiến hành loại bỏ nút này ra khỏi cây, không cần tìm nút thay thế nữa.
+-	Loại bỏ nút “nửa lá”, nghĩa là nút chỉ có cây con trái hoặc cây con phải, tiến hành loại bỏ nút khỏi cây và thay nó bằng nút gốc của cây con trái hoặc cây con phải.
+-	Loại bỏ nút có 2 nút con (có cả cây con trái và cây con phải): Tiến hành loại bỏ nút này và thay thế nó bằng khóa nhỏ hơn ngay trước nó (nút cực phải của cây con trái) hoặc khóa lớn hơn ngay sau nó (nút cực trái của cây con phải)
+
+BÀI TẬP CHƯƠNG 8
+8.1.	Cho cây nhị phân tìm kiếm như sau:
+
+a)	Lần lượt tìm trên cây xem có xuất hiện khóa 9, 16 hay không?
+b)	Lần lượt bổ sung vào cây nút có khóa là 14, 17, 21
+c)	Lần lượt thực hiện phép loại bỏ các nút ứng với các khóa 13, 15, 5, 10. Hãy nêu rõ tình huống xảy ra đối với từng trường hợp và cách giải quyết (Minh họa qua hình vẽ)
+ 
+8.2.	Cho dãy:	23	5	14	3	8	10	21	1	7	4
+a)	Dựng cây nhị phân tìm kiếm ứng với dãy khóa trên
+b)	Với số lượng 10 khóa như trên thì cây nhị phân tìm kiếm có chiều cao nhỏ nhất là bao nhiêu?
+c)	Các khóa phải xuất hiện thế nào để cây nhị phân tìm kiếm dựng được có chiều cao nhỏ nhất?
+d)	Hãy loại bỏ nút có khóa là 5 ra khỏi cây và vẽ lại cây kết quả
+ 
+TÀI LIỆU THAM KHẢO
+1.	Đỗ Xuân Lôi, “Cấu trúc dữ liệu và giải thuật”, Nhà xuất bản giáo dục, 1993
+2.	Lê Xuân Trường, “Giáo trình cấu trúc dữ liệu bằng ngôn ngữ C++”, Nhà xuất bản thống kê, 1999
+3.	Giáo trình Cấu trúc dữ liệu và giải thuật, Học viện công nghệ bưu chính viễn thông

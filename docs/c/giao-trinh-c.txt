@@ -1,0 +1,2933 @@
+BỘ CÔNG THƯƠNG
+TRƯỜNG ĐẠI HỌC CÔNG NGHIỆP VIỆT TRÌ
+
+THS. ĐỖ THỊ HỒNG (Chủ biên) THS. VŨ THỊ KHÁNH VÂN
+
+
+
+
+
+
+
+
+
+
+
+GIÁO TRÌNH
+LẬP TRÌNH CĂN BẢN
+(Lưu hành nội bộ)
+
+
+ 
+THS. ĐỖ THỊ HỒNG (Chủ biên) THS. VŨ THỊ KHÁNH VÂN
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+GIÁO TRÌNH
+LẬP TRÌNH CĂN BẢN
+(Lưu hành nội bộ)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Năm 2025
+ 
+LỜI NÓI ĐẦU
+Ngôn ngữ lập trình đóng vai trò như một công cụ thiết yếu, cho phép con người chuyển hóa những ý tưởng và giải quyết các vấn đề từ thực tế vào thế giới máy tính. Cùng với sự phát triển không ngừng của ngành tin học, các ngôn ngữ lập trình cũng liên tục được cải tiến để đáp ứng những thách thức công nghệ ngày càng phức tạp.
+Vào cuối những năm 1960 và đầu những năm 1970, nhu cầu về một ngôn ngữ lập trình bậc cao, đủ mạnh mẽ để xây dựng các phần mềm hệ thống và hệ điều hành, đã trở nên cấp thiết. Đáp lại lời kêu gọi đó, ngôn ngữ C đã ra đời tại phòng thí nghiệm Bell danh tiếng. Ban đầu, C được Dennis Ritchie thiết kế với mục đích chính là để viết hệ điều hành UNIX. Tuy nhiên, với tính linh hoạt và hiệu quả vượt trội, C nhanh chóng được cộng đồng các nhà tin học và lập trình viên đón nhận, ứng dụng rộng rãi trong việc phát triển phần mềm hệ thống, ứng dụng đa dạng và giải quyết các bài toán khoa học kỹ thuật phức tạ Vào năm 1978, cuốn giáo trình "Ngôn ngữ lập trình C" do chính hai tác giả Dennis Ritchie và Brian W. Kernighan biên soạn đã được xuất bản, góp phần quan trọng vào việc phổ biến ngôn ngữ này trên toàn thế giới.
+Ngôn ngữ lập trình C nổi bật với sức mạnh, sự mềm dẻo và thư viện hàm phong phú được tích hợp sẵn, cho phép người dùng giải quyết hiệu quả nhiều bài toán mà không cần xây dựng lại từ đầu. Hơn nữa, C hỗ trợ đa dạng các phép toán, rất phù hợp cho các bài toán kỹ thuật đòi hỏi sự phức tạp. Ngôn ngữ này cũng cho phép người lập trình tự định nghĩa các kiểu dữ liệu trừu tượng, mở rộng khả năng biểu diễn và xử lý thông tin. Nhờ những ưu điểm đó, C đã trở thành một công cụ lập trình mạnh mẽ, được ứng dụng rộng rãi từ lập trình hệ thống, phát triển ứng dụng cho đến giải quyết các vấn đề trong khoa học và kỹ thuật.
+Nội dung của giáo trình này được trình bày trong 5 chương chính:
+Chương 1: Kiến thức cơ sở của ngôn ngữ C
+Chương 2: Hàm
+Chương 3: Mảng và con trỏ
+Chương 4: Kiểu cấu trúc
+Chương 5: Tập tin và các thao tác vào ra
+Cuốn giáo trình này sẽ trang bị cho sinh viên những kiến thức nền tảng và cốt lõi nhất về ngôn ngữ C. Tuy nhiên, do khuôn khổ có hạn, một số khía cạnh nâng cao như ghép nối C với các môi trường lập trình khác hay lập trình đồ họa chưa được đề cập chi tiết.
+Mặc dù nhóm tác giả đã nỗ lực hết mình trong quá trình biên soạn, nhưng chắc chắn không thể tránh khỏi những thiếu sót. Chúng tôi rất mong nhận được những ý kiến đóng góp quý báu từ quý đồng nghiệp và bạn đọc để giáo trình ngày càng được hoàn thiện hơn.
+ 
+MỤC LỤC
+ 
+Chương 1 KIẾN THỨC CƠ SỞ CỦA NGÔN NGỮ C	6
+1.1.	Giới thiệu chung	6
+1.1.1.	Tổng quan về ngôn ngữ C	6
+1.1.2.	Các ưu điểm của ngôn ngữ C	6
+1.2.	Các thành phần cơ bản của ngôn ngữ C	6
+1.2.1.	Bộ ký tự	6
+1.2.2.	Từ khóa	6
+1.2.3.	Tên	7
+1.2.4.	Các kiểu dữ liệu cơ bản	8
+1.3.	Biến, hằng, biểu thức	11
+1.3.1.	Hằng	11
+1.3.2.	Biến	13
+1.3.3.	Biểu thức	15
+1.4.	Cấu trúc của một chương trình C	22
+1.5.	Câu lệnh nhập xuất dữ liệu	24
+1.5.1.	Câu lệnh	24
+1.5.2.	Câu lệnh xuất	24
+1.5.3.	Câu lệnh nhập	26
+1.6.	Một số hàm hữu ích	27
+1.7.	Các cấu trúc điều khiển chương trình	27
+1.7.1.	Câu lệnh rẽ nhánh	27
+1.7.2.	Câu lệnh lặp	32
+BÀI TẬP CHƯƠNG 1	40
+Chương 2 HÀM	42
+2.1.	Khái niệm về hàm	42
+2.2.	Xây dựng hàm	43
+2.2.1.	Định nghĩa hàm	43
+2.2.2.	Nguyên tắc hoạt động của hàm	44
+2.2.3.	Lời gọi hàm	44
+2.3.	Truyền tham số cho hàm	45
+2.4.	Hàm đệ quy	50
+BÀI TẬP CHƯƠNG 2	52
+Chương 3 CON TRỎ VÀ MẢNG	54
+3.1.	Kiểu mảng	54
+3.1.1.	Khái niệm	54
+3.1.2.	Mảng một chiều	54
+3.1.3.	Mảng nhiều chiều	57
+3.2.	Con trỏ (Pointer)	58
+3.2.1.	Khái niệm và cách khai báo	58
+3.2.2.	Các phép toán trên con trỏ	60
+3.3.	Liên hệ giữa con trỏ và mảng	62
+3.3.1.	Con trỏ và mảng một chiều	62
+3.3.2.	Con trỏ và mảng nhiều chiều	64
+3.4.	Kiểu chuỗi	68
+3.4.1.	Khái niệm	68
+3.4.2.	Các hàm xử lý chuỗi	70
+3.5.	Con trỏ hàm	72
+BÀI TẬP CHƯƠNG 3	74
+Chương 4. KIỂU CẤU TRÚC	76
+4.1.	Khái niệm và định nghĩa	76
+4.2.	Khai báo cấu trúc	76
+4.3.	Thao tác trên biến cấu trúc	77
+4.3.1.	Truy cập các thành phần của struct	77
+4.3.2.	Phép gán struct	78
+4.4.3.	Mảng các struct	79
+4.3.4.	Con trỏ có kiểu struct	80
+4.3.5.	Hàm cấu trúc	81
+4.4.	Danh sách liên kết	83
+4.4.1.	Cấp phát động	83
+4.4.2.	Danh sách liên kết đơn	86
+BÀI TẬP CHƯƠNG 4	89
+Chương 5 TẬP TIN VÀ CÁC THAO TÁC VÀO RA	91
+5.1.	Các khái niệm	91
+5.2.	Các chế độ thao tác trên tập tin	92
+5.3.	Các thao tác cơ bản trên tập tin	94
+5.3.1.	Thao tác với tệp văn bản	94
+5.3.2.	Thao tác với tệp nhị phân	97
+BÀI TẬP CHƯƠNG 5	103
+ 
+Chương 1
+KIẾN THỨC CƠ SỞ CỦA NGÔN NGỮ C
+1.1.	GIỚI THIỆU CHUNG
+1.1.1.	Tổng quan về ngôn ngữ C
+Ngôn ngữ lập trình C ra đời vào những năm đầu của thập niên 70 trong phòng thí nghiệm nổi tiếng vào bậc nhất thế giới – Bell Lab. Ngôn ngữ C được Dennis Ritchie thiết kế với mục đích viết hệ điều hành UNIX. Tuy nhiên nhờ tính linh động và ưu việt của C nên C đã được các nhà tin học chuyên nghiệp cũng như các lập trình viên nghiệp dư sử dụng để lập trình hệ thống, lập trình ứng dụng và giải quyết nhiều bài toán khoa học và kỹ thuật.
+1.1.2.	Các ưu điểm của ngôn ngữ C
+•	C là ngôn ngữ mạnh và mềm dẻo, C được sử dụng để viết hệ điều hành, trình biên dịch của ngôn ngữ khác, trình điều khiển, soạn thảo văn bản, đồ hoạ, …
+•	Một chương trình C khi dịch ra có thể đạt 80% tính năng của chương trình đó viết bằng mã máy. Có khá nhiều chương trình dịch và các tiện ích khác cho C có thể khai thác được.
+•	C là một ngôn ngữ có ít từ khoá.
+•	C là ngôn ngữ có cấu trúc modun thông qua việc sử dụng các hàm.
+1.2.	CÁC THÀNH PHẦN CƠ BẢN CỦA NGÔN NGỮ C
+1.2.1.	Bộ ký tự
+Mọi ngôn ngữ lập trình đều được xây dựng từ một tập ký tự nào đó. Các ký tự này được ghép với nhau đề tạo thành các từ; Sau đó các từ được liên kết lại theo một qui tắc nào đó để tạo thành một câu lệnh. Một chương trình bao gồm nhiều câu lệnh và được diễn đạt theo một thuật toán nào đó nhằm để giải quyết một bài toán cụ thể nào đó.
+Tập ký tự trong ngôn ngữ C, bao gồm:
+-	26 chữ cái hoa : A, B, C, ..., Z
+-	26 chữ cái thường : a, b, c, ..., z
+-	Các chữ số : 0, 1, 2, . .., 9
+-	Các ký hiệu toán học : + - * / = ( )
+-	Ký tự gạch nối : _
+-	Các ký tự khác : . , : ; [ ] {} ! \ & % # $ ...
+-	Ký tự trắng (thanh space) dùng để tách các từ trong một câu lệnh.
+1.2.2.	Từ khóa
+Từ khoá (keyword) là những từ dành riêng của C, mỗi từ khoá có một ý nghĩa và tác dụng cụ thể. Từ khoá không thể định nghĩa lại.
+ 
+Bảng 1.1. Liệt kê các từ khoá thông dụng của C:
+
+auto		double	int	struct
+break		else	long	switch
+case		enum	register	typedef
+char		extern	return	union
+const		float	short	unsigned
+continue		for	signed	void
+default		goto	sizeof	volatile
+do		if	static	while
+Chú ý:
+•	Không được sử dụng từ khóa để đặt tên cho các hằng, biến, mảng, hàm, …
+•	Các từ khóa phải được viết bằng những ký tự thường.
+1.2.3.	Tên
+Trong lập trình, chúng ta cần đặt tên cho các "thực thể" mà mình tạo ra như biến, hằng, hàm, kiểu dữ liệu, v.v. Những cái tên này được gọi chung là tên định danh (hay gọi tắt là tên). Tên giúp chúng ta và trình biên dịch xác định và phân biệt các thành phần khác nhau trong chương trình.
+Quy tắc Đặt tên trong C
+Ngôn ngữ C quy định một số quy tắc bắt buộc khi đặt tên. Nếu vi phạm, chương trình sẽ không thể biên dịch được.
+1.	Một tên là một dãy các ký tự bao gồm:
+o	Chữ cái (hoa và thường: a-z, A-Z).
+o	Chữ số (0-9).
+o	Dấu gạch dưới (_).
+2.	Ký tự đầu tiên của tên phải là một chữ cái hoặc dấu gạch dưới. Không được bắt đầu bằng chữ số.
+3.	Tên không được trùng với bất kỳ từ khóa nào của C (ví dụ: không thể đặt tên biến là int hay for).
+4.	C có phân biệt chữ hoa và chữ thường (case-sensitive). Điều này có nghĩa là myVariable, myvariable, và MYVARIABLE là ba tên hoàn toàn khác nhau.
+Ví dụ 1.1:
+Các tên đúng:Bien_dem, X, _a1, Delta, pt_bac_2 Các tên sai:
+3MN	/* ký tự đầu tiên là số */
+M#2	/* Sử dụng ký tự # */
+ 
+f(x)	/* Sử dụng các dấu ( ) */
+do	/* Trùng với từ khoá */
+te ta	/* Sử dụng dấu trắng */
+Y-3	/* Sử dụng dấu - */
+
+Chú ý:
+•	Trong ngôn ngữ C tên có phân biệt chữ thường và chữ hoa.
+•	Ví dụ tên AB khác với tên ab, tên Delta khác với tên delta.
+•	Tên do người sử dụng đặt ra nên phải được đặt sao cho chúng có ý nghĩa với đối tượng mà chúng hiển thị.
+1.2.4.	Các kiểu dữ liệu cơ bản
+Một kiểu dữ liệu được định nghĩa với 2 điểm chính là:
+-	Một tập hợp các giá trị mà một biến thuộc kiểu đó có thể nhận được.
+-	Trên đó xác định một số phép toán.
+
+
+
+
+
+
+Kiểu vô hướng
+
+
+Kiểu cơ sở
+Kiểu số nguyên Kiểu số thực Kiểu kí tự
+	Kiểu vô hướng tự định nghĩa	Kiểu liệt kê
+
+Kiểu dữ liệu		
+Kiểu dữ liệu có cấu trúc		Kiểu mảng Kiểu struct Kiểu file
+
+Kiểu con trỏ		
+
+a.	Kiểu nguyên
+Trong C cho phép sử dụng số nguyên kiểu int, số nguyên dài kiểu long và số nguyên không dấu kiểu unsigned. Kích cỡ và phạm vi biểu diễn của chúng được chỉ ra trong bảng dưới đây :
+Kiểu dữ liệu	Kích thước	Phạm vi
+short	2 bytes	-32,767 đến 32,767
+unsigned short	2 bytes	0 đến 65,535
+ 
+int	2 bytes	-32,767 đến 32,767
+unsigned int	2 bytes	0 đến 65,535
+long	4 bytes	-2,147,483,647 đến 2,147,483,647
+unsigned long	4 bytes	0 đến 4,294,967,295
+Chú ý:
+Kiểu ký tự cũng có thể xem là một dạng của kiểu nguyên.
+unsigned: Khi sử dụng bổ từ unsigned, kiểu dữ liệu sẽ không lưu trữ giá trị âm, nhưng phạm vi giá trị dương sẽ tăng lên gấp đôi.
+Các phép toán số học trên kiểu nguyên
+
+Phép toán	Kí hiệu	Ví dụ	Ví dụ bằng số
+Phép cộng	+	a+b	
+Phép trừ	-	a-b	
+Phép nhân	*	a*b	
+Chia lấy phần nguyên	/	a/b	3/2 =1
+Phép lấy phần dư	%	a%b	5 % 3=2
+Các phép quan hệ
+
+Kí hiệu	Ý nghĩa	Ví dụ	
+>	So sánh lớn hơn	a>b	4>5 có giá trị 0
+>=	So sánh lớn hơn hoặc bằng	a>=b	6>=2 có giá trị 1
+<	So sánh nhỏ hơn	a<b	6<=7 có giá trị 1
+<=	So sánh nhỏ hơn hoặc bằng	a<=b	8<=5 có giá trị 0
+==	So sánh bằng nhau	a==b	6==6 có giá trị 1
+!=	So sánh khác nhau	a!=b	9!=9 có giá trị 0
+(So sánh bằng nhau gồm hai dấu = liền nhau)
+Bốn phép quan hệ đầu có cùng số thứ tự ưu tiên, hai phép sau có cùng số thứ tự ưu tiên nhưng thứ tự ưu tiên thấp hơn bốn phép đầu.
+Các phép quan hệ có số thứ tự ưu tiên thấp hơn so với các phép toán số học, cho nên biểu thức :i<n-1 được hiểu là i<(n-1).
+Các phép toán lôgic
+
+Phép toán	Ý nghĩa	Ví dụ
+
+&&	
+Phép “và” logic	2 && 3 có giá trị 1
+3<=5 && 5==5 có giá trị 1
+2 && 5==5 có giá trị 1
+2 && 3>5 có giá trị 0
+||	Phép “hoặc” logic	3 ||0 có giá trị 1
+3<=5 || 5==5 có giá trị 1
+ 
+		0 || 5!=5 có giá trị 0
+2 && 3>5 có giá trị 1
+
+!	
+Phép “phủ định” logic	!3 có giá trị 0
+!0 có giá trị 1
+!(3!=5) có giá trị 0
+b.	Kiểu ký tự (char)
+Một giá trị kiểu char chiếm 1 byte (8 bit) và biểu diễn được một ký tự trong bảng mã ASCII.
+Ký tự	Mã ASCII
+0	48
+1	49
+2	50
+A	65
+B	66
+a	97
+b	98
+Có hai kiểu dữ liệu char: kiểu signed char và unsigned char.
+Một hằng kí tự được biểu diễn bằng cách đặt kí tự đó nằm giữa hai dấu nháy đơn: 'a', 'B', '9', '!',...
+Kiểu	Phạm vi biểu diễn	Số ký tự	Kích thước
+char (signed char )	-128 đến 127	256	1 byte
+unsigned char	0 đến 255	256	1 byte
+Minh hoạ sự khác nhau giữa hai kiểu dữ liệu trên:
+Xét đoạn chương trình sau:
+char ch1; unsigned char ch2;
+ch1=200; ch2=200;
+Khi đó thực chất:
+ch1=-56; ch2=200;
+Nhưng cả ch1 và ch2 đều biểu diễn cùng một ký tự có mã 200.
+Phân loại ký tự : Có thể chia 256 ký tự làm ba nhóm .
+-	Nhóm 1: Nhóm các ký tự điều khiển có mã từ 0 đến 31. Chẳng hạn ký tự mã 13 dùng để chuyển con trỏ về đầu dòng, ký tự 10 chuyển con trỏ xuống dòng dưới (trên cùng một cột ). Các ký tự nhóm này nói chung không hiển thị ra màn hình.
+-	Nhóm 2: Nhóm các ký tự văn bản có mã từ 32 đến 126. Các ký tự này có thể được đưa ra màn hình hoặc máy in.
+ 
+-	Nhóm 3: Nhóm các ký tự đồ hoạ có mã số từ 127 đến 255. Các ký tự này có thể đưa ra màn hình nhưng không in ra được.
+Chú ý: Kiểu ký tự cũng có thể xem là một dạng của kiểu nguyên.
+c.	Kiểu số thực
+Trong C cho phép sử dụng số thực kiểu float, double và long double.
+Trong máy tính, các số thực được biểu diễn dưới hai dạng: dạng viết thập phân bình thường và dạng viết có phần số mũ như sau:
+Dạng viết thập phân bình thường
+3.14	3.0	-12.675	-0.675
+Dạng viết có phần số mũ hay còn gọi dạng viết khoa học
+Gồm hai phần: phần định trị và phần mũ viết sau chữ E để biểu diễn số mũ của cơ số 10.
+123.45 = 1.234 * 102 được viết 1.234E+02.
+0.12345 = 1.2345 * 10-1 được viết 1.2345E-01
+Kích cỡ và phạm vi biểu diễn các kiểu số thực được chỉ ra trong bảng dưới đây:
+
+Kiểu	Phạm vi biểu diễn	Kích thước
+float	3.4E-38 -> 3.4E+38	4 byte
+double	1.7E-308 đến 1.7E+308	8 byte
+long double	3.4E-4932 đến 1.1E4932	10 byte
+Giải thích :
+Máy tính có thể lưu trữ được các số kiểu float có giá trị tuyệt đối từ 3.4E-38 đến
+3.4E+38. Các số có giá trị tuyệt đối nhỏ hơn 3.4E-38 được xem bằng 0. Phạm vi biểu diễn của số double được hiểu theo nghĩa tương tự.
+Phép toán số học: +, -, *, /.
+Các phép quan hệ: >, >=, <, <=, ==, !=.
+Ví dụ1.2:	biểu thức 3.54>=5.98 có giá trị 0;
+biểu thức 3!=5 có giá trị 1.
+1.3.	BIẾN, HẰNG, BIỂU THỨC
+1.3.1.	Hằng
+Hằng là các đại lượng mà giá trị của nó không thể thay đổi trong quá trình thực hiện chương trình.
+1.3.1.1.	Khai báo hằng
+Muốn sử dụng một hằng, ta cũng phải khai báo trước với từ khoá const. : const int a=10;
+const float PI=3.14; Mẫu khai báo hằng là:
+const Kiểu_dữ_liệu tên_hằng = giá_trị_hằng ;
+ 
+Khai báo các hằng tượng trưng
+Chúng ta có thể định nghĩa hằng số theo một kiểu khác với từ khoá define:
+Cú pháp:
+#define  tên_ban_đầu Dãy_thay_thế
+Trong đó Dãy_thay_thế có thể là hằng số, hằng xâu kí tự,…
+Trình biên dịch sẽ thay thế tất cả tên_ban_đầu trong chương trình bằng dãy thay thế.
+Ví dụ 1.4:
+#define  Min  100
+Lúc này, tất cả các tên Min trong chương trình xuất hiện sau này đều được thay bằng 100. Vì vậy, ta thường gọi Min là tên hằng (hay macro), nó biểu diễn số 100.
+Lưu ý: không có dấu = và không có dấu ; kết thúc dòng định nghĩa. Sự khác nhau giữa định nghĩa hằng số dùng const và define là:
+-	Với const, đây là hằng số cố định, một hằng số thực sự và chỉ có một hằng số chứa trong ô nhớ.
+-	Với define, khi gặp hằng số, thí dụ PI, chương trình dịch sẽ lắp giá trị hằng số này vào trong biểu thức cần tính với số lần thoải mái. Điều đó có nghĩa mỗi lần gặp chữ PI máy sẽ cấp đủ ô nhớ chứa hằng số PI vào đó.
+1.3.1.1.	Các loại hằng
+a.	Hằng int
+Hằng int là số nguyên có giá trị trong khoảng từ -32768 đến 32767.
+Ví dụ 1.5:
+32, -100, 32767
+b.	Hằng long
+Hằng long là số nguyên có giá trị trong khoảng từ -2147483648 đến 2147483647. Hằng long được viết theo cách thêm L hoặc l vào cuối. Có thể viết 1234L hoặc
+1234l.
+Một số nguyên vượt ra ngoài miền xác định của int cũng được xem là long.
+c.	Hằng int hệ 8
+Hằng int hệ 8 được viết theo cách 0c1c2c3.	ở đây ci là một số nguyên dương
+trong khoảng từ 1 đến 7. Hằng int hệ 8 luôn luôn nhận giá trị dương.
+Ví dụ 1.6: số 0127 là một hằng nguyên hệ 8. Giá trị của nó là: 1* 82 + 2 * 81 + 7 * 80 = 87
+d.	Hằng int hệ 16
+Trong hệ này có 16 ký tự gồm 10 chữ số từ 0 đến 9 và các chữ in A, B, C, D, E, F để biểu diễn các giá trị số tương ứng 10, 11, 12, 13, 14, 15.
+Hằng số hệ 16 có dạng 0xc1c2c3... hoặc 0Xc1c2c3.	ở đây ci là một chữ số trong
+hệ 16.
+ 
+e.	Hằng ký tự
+Hằng ký tự là một ký tự riêng biệt được viết trong hai dấu nháy đơn, ví dụ 'a'. Giá trị của 'a' chính là mã ASCII của chữ a. Như vậy giá trị của 'a' là 97. Hằng ký tự có thể tham gia vào các phép toán như mọi số nguyên khác. Ví dụ:'9'-
+'2' = 57-50 = 7
+Hằng ký tự còn có thể được viết theo cách sau:' \c1c2c3'. Trong đó c1c2c3 là một số hệ 8 mà giá trị của nó bằng mã ASCII của ký tự cần biểu diễn.
+Ví dụ 1.7: chữ a có mã hệ 10 là 97, đổi ra hệ 8 là 0141. Vậy hằng ký tự 'a' có thể viết dưới dạng '\141'.
+Đối với một vài hằng ký tự đặc biệt ta cần sử dụng cách viết sau ( thêm dấu \ ) :
+
+Cách viết	Ký tự
+'\''	'
+'\"'	"
+'\\'	\
+'\n'	\n (chuyển dòng )
+'\0'	\0 ( null )
+'\t'	Tab
+'\b'	Backspace
+'\r'	CR ( về đầu dòng )
+'\f'	LF ( sang trang )
+Chú ý: Cần phân biệt hằng ký tự '0' và '\0'. Hằng '0' ứng với chữ số 0 có mã ASCII là 48, còn hằng '\0' ứng với ký tự \0 ( thường gọi là ký tự null ) có mã ASCII là 0.
+Hằng ký tự là một số nguyên, vì vậy có thể dùng các số nguyên hệ 10 để biểu diễn các ký tự, ví dụ lệnh printf("%c%c",65,66) sẽ in ra AB.
+f.	Hằng xâu ký tự
+Hằng xâu ký tự là một dãy ký tự bất kỳ đặt trong hai dấu nháy kép.
+Ví dụ 1.8:
+"Ha noi", "My name is Giang"
+Xâu ký tự được lưu trữ trong máy dưới dạng một mảng có các phần tử là các ký tự riêng biệt. Trình biên dịch tự động thêm ký tự null \0 vào cuối mỗi xâu (ký tự \0 được xem là dấu hiệu kết thúc của một xâu ký tự ).
+Chú ý: Cần phân biệt hai hằng 'a' và "a". 'a' là hằng ký tự được lưu trữ trong 1 byte, còn "a" là hằng xâu ký tự được lưu trữ trong 1 mảng hai phần tử: phần tử thứ nhất chứa chữ a còn phần tử thứ hai chứa \0.
+1.3.2.	Biến
+Biến được xem như là một vùng nhớ được đặt tên. Mọi biến trước khi sử dụng cần phải được khai báo.
+ 
+Biến là đại lượng có thể thay đổi giá trị. Hằng là đại lượng có giá trị không thay đổi.
+Biến và hằng được lưu trữ trong bộ nhớ và thường được đặt tên để cho dễ sử dụng thay vì phải sử dụng địa chỉ ô nhớ cũng như giá trị cụ thể của chúng, rất khó sử dụng. Trong ngôn ngữ C, ta nói giá trị i được chứa trong ô nhớ có địa chỉ là &i.
+a.	Khai bao biến
+Cú pháp:kiểu_dữ_ liệu tên_biến; Ví dụ 1.9:
+int a; /* khai báo biến a có kiểu dữ liệu là int */ float x; /* khai báo biến x có kiểu dữ liệu là float */
+double y, z; /* khai báo 2 biến y, z có kiểu dữ liệu là double */ long m, n, i; /* khai báo 3 biến m, n, i có kiểu dữ liệu là long */
+Lấy địa chỉ của biến
+Mỗi biến được cấp phát một vùng nhớ gồm một số byte liên tiếp. Số hiệu của byte đầu tiên chính là địa chỉ của biến. Địa chỉ của biến sẽ được sử dụng trong một số hàm như hàm scanf.
+Để lấy địa chỉ của một biến ta sử dụng phép toán:& tên biến float x;
+Biểu thức &x trả về địa chỉ của biến x.
+b.	Vị trí khai báo biến
+Khi lập trình, bạn phải nắm rõ phạm vi của biến. Nếu khai báo và sử dụng không đúng, không rõ ràng sẽ dẫn đến sai sót khó kiểm soát được, vì vậy bạn cần phải xác định đúng vị trí, phạm vi sử dụng biến trước khi sử dụng biến.
+Khai báo biến ngoài (biến toàn cục): Vị trí biến đặt bên ngoài tất cả các hàm, cấu trúc... Các biến này có ảnh hưởng đến toàn bộ chương trình. Thời gian tồn tại của nó là bắt đầu chạy chương trình đến lúc kết thúc chương trình.
+Khai báo biến trong (biến cục bộ): Vị trí biến đặt bên trong hàm, cấu trúc…. Chỉ ảnh hưởng nội bộ bên trong hàm, cấu trúc đó…. Thời gian tồn tại của nó bắt đầu từ lúc hàm, cấu trúc được gọi thực hiện đến lúc thực hiện xong.
+c.	Khởi gán giá trị ban đầu cho biến
+Có thể kết hợp việc khai báo với toán tử gán để biến nhận ngay giá trị cùng lúc với khai báo.
+int main()
+{
+int a, b, c;
+a = 1;
+b = 2;
+ 
+c = 5;
+…
+}
+Vừa khai báo vừa gán giá trị
+int main()
+{
+int a = 1, b = 2, c = 5;
+…
+}
+1.3.3.	Biểu thức
+a.	Khái niệm về biểu thức
+Biểu thức là sự kết hợp giữa các phép toán và các toán hạng dùng để diễn đạt một công thức toán học nào đó.
+Phép toán : +, - ,* , /, … Toán hạng : hằng, biến, …
+Trong biểu thức ta có thể dùng các dấu ngoặc tròn để thể hiện đúng trình tự thực hiện của các phép toán.
+Ví dụ 1.10:
+Biểu thức tính tổng của n số tự nhiên đầu tiên : n*(n+1)/2; Biểu thức tính nửa chu vi của một tam giác : p=(a+b+c)/2;
+Biểu thức tính diện tích của một tam giác : s=sqrt(p*(p-a)*(p-b)*(p-c));
+•	Mỗi biểu thức có một giá trị duy nhất.
+•	Hằng, biến cũng được xem là một biểu thức.
+b.	Các phép toán
+•	Phép toán 2 ngôi :
+
+Phép toán	Ý nghĩa
++	Phép cộng
+-	Phép trừ
+*	Phép nhân
+/	Phép chia
+%	Phép chia lấy phần dư
+Phép toán % chỉ áp dụng cho các số nguyên, nó không sử dụng được cho các số
+thực.
+Ví dụ 1.11: biểu thức 25%3 có giá trị là 1
+•	Phép toán 1 ngôi : - (số âm). Ví dụ : -3
+•	Thứ tự thực hiện các phép toán :
+ 
+-	Các phép toán +, - có cùng độ ưu tiên và có độ ưu tiên nhỏ hơn các phép toán
+*, /, %
+-	Các phép toán *, /, % có cùng độ ưu tiên và có độ ưu tiên nhỏ hơn phép toán một ngôi –
+-	Các phép toán số học có cùng độ ưu tiên thì được thực hiện theo thứ tự từ trái sang phải.
+Các phép toán quan hệ và luận lý
+Các phép toán quan hệ:
+•	Các dữ liệu thuộc kiểu dữ liệu số nguyên, số thực, ký tự có thể được so sánh với nhau bằng các phép toán quan hệ.
+•	Kết quả của phép toán quan hệ cho ta giá trị đúng (bằng 1) hoặc giá trị sai (bằng 0).
+•	Các phép toán:
+
+
+Phép toán	Ýnghĩa
+>	Lớn hơn
+>=	Lớn hơn hay bằng
+<	Nhỏ hơn
+<=	Nhỏ hơn hay bằng
+==	Bằng nhau
+!=	Khác nhau
+
+Ví dụ 1.12:
+5 > 7	có giá trị 0 (sai)
+10 >= 10	có giá trị 1 (đúng)
+6 < 6	có giá trị 0 (sai)
+7 <= 10	có giá trị 1 (đúng)
+12 == 8	có giá trị 0 (sai)
+25 != 9		có giá trị 1 (đúng) 'A' > 'F'	có giá trị 0 (sai)
+(1).	Các phép toán >, >=, <, <= có cùng độ ưu tiên.
+(2).	Các phép toán = =, != có cùng độ ưu tiên
+(3).	Các phép toán ở mục (1) có độ ưu tiên cao hơn các phép toán ở mục (2).
+(4).	Các phép toán quan hệ có độ ưu tiên thấp hơn so với các phép toán số học.
+Các phép toán luận lý:
+Kết quả của phép toán luận lý có giá trị đúng (bằng 1) hoặc giá trị sai (bằng 0).
+Phép phủ định(toán tử một ngôi): toán tử !
+ 
+Phép và(toán tử 2 ngôi): toán tử && Phép hoặc(toán tử 2 ngôi): toán tử ||
+A	B	!A	A && B	A || B
+Đúng (khác 0)	Đúng (khác 0)	Sai (bằng 0)	Đúng (bằng 1)	Đúng (bằng 1)
+Đúng (khác 0)	Sai (bằng 0)	Sai (bằng 0)	Sai (bằng 0)	Đúng (bằng 1)
+Sai (bằng 0)	Đúng (khác 0)	Đúng (bằng 1)	Sai (bằng 0)	Đúng (bằng 1)
+Sai (bằng 0)	Sai (bằng 0)	Đúng (bằng 1)	Sai (bằng 0)	Sai (bằng 0)
+5 && 8	có giá trị 1
+! 12.5	có giá trị 0
+!(9 < 2)	có giá trị 1
+('A' == 'B') || (7 > 3)	có giá trị 1
+('A' > 'Y') && (6 >= 1)	có giá trị 0
+•	Các phép toán quan hệ có độ ưu tiên nhỏ hơn phép toán ! (phủ định), nhưng lớn hơn so với các phép toán && (và), || (hoặc).
+Thứ tự ưu tiên của các phép toán
+1.	! , - (số âm)
+2.	* , / , %
+3.  + , -
+4 . > , >= , < , <=
+5.  = = , !=
+6.  && , ||
+`c. Chuyển đổi kiểu dữ liệu
+Cú pháp:
+(kiểu_ dữ_ liệu)biểu_thức
+Ýnghĩa : kiểu giá trị của biểu thức được đổi thành kiểu giá trị kiểu_dữ_liệu
+Ví dụ 1.13:
+float x; int n=5;
+x=(float)n;	/* giá trị của biến n có kiểu int được đổi sang kiểu float và gán cho biến x */
+Phép ép kiểu có độ ưu tiên như toán tử một ngôi.
+Ví dụ1.14
+(int)1.4*10	có giá trị 10
+(int)(1.4*10)	có giá trị 14 (float)21/6 + 8.0	có giá trị 11.5
+Chuyển đổi kiểu trong biểu thức :
+ 
+Khi 2 toán hạng trong một phép toán có kiểu giá trị khác nhau thì kiểu giá trị thấp hơn sẽ được tự động đổi sang kiểu giá trị cao hơn trước khi thực hiện phép toán. Kết quả của phép toán là một giá trị có kiểu giá trị cao nhất.
+Kiểu int và long thì được đổi thành kiểu long. Kiểu int và kiểu float thì được đổi thành kiểu float.
+Kiểu float và kiểu double thì được đổi thành kiểu double.
+Ví dụ 1.15: Biểu thức
+11/2	có giá trị 5
+1.5*(11/2)	có giá trị 7.5
+1.5*11/2	có giá trị 8.25
+21/6 + 8.0	có giá trị 11.0
+Chuyển đổi kiểu được thực hiện thông qua phép gán:
+Kiểu giá trị của biểu thức bên vế phải được đổi sang kiểu giá trị của biến bên vế trái và đó cũng là kết quả của phép gán.
+Kiểu float được đổi thành kiểu int bằng cách bỏ đi phần sau dấu chấm thập phân. Kiểu double được đổi thành kiểu float bằng cách làm tròn.
+Ví dụ 1.16:
+int n;
+n=(float)20/6 + 8.3;	biến n có giá trị 11
+c.	Phép toán tăng giảm
+Phép toán tăng toán hạng lên một đơn vị : ++
+Phép toán tăng sau (a++): a được tăng lên một đơn vị sau khi giá trị của nó được sử dụng.
+Ví dụ 1.17:
+int n, i=3; n = i++;
+/* giá trị của biến i được gán cho biến n, sau đó biến i được tăng lên một đơn vị; sau khi thực hiện câu lệnh thì n=3 và i=4 */
+•	Phép toán tăng trước (++a): a được tăng lên một đơn vị trước khi giá trị của nó được sử dụng.
+Ví dụ 1.18:
+int n, i=3; n = ++i;
+/* giá trị của biến i được tăng lên một đơn vị, sau đó giá trị của biến i được gán cho biến n; sau khi thực hiện câu lệnh thì n=4 và i=4 */
+Phép toán giảm toán hạng đi một đơn vị: --
+Ví dụ 1.19:
+ 
+int n, i=2; n = i--;
+/* giá trị của biến i được gán cho biến n, sau đó biến i bị giảm đi một đơn vị; sau khi thực hiện câu lệnh thì n=2 và i=1 */
+Ví dụ 1.20:
+int n, i=2; n = --i;
+/* giá trị của biến i bị giảm đi một đơn vị, sau đó giá trị của biến i được gán cho biến n; sau khi thực hiện câu lệnh thì n=1 và i=1 */
+Chú ý: Các phép toán tăng giảm một đơn vị chỉ được sử dụng với biến, mà không sử dụng được với hằng.
+e.	Câu lệnh gán và biểu thức gán
+Câu lệnh gán :
+Giả sử ta có câu lệnh gán sau :
+biến = biến + biểu_thức;
+Ta có thể viết gọn lại :
+biến += biểu_thức;
+Theo cách đó ta có các toán tử gán số học sau: += , -= , *= , /= , %= .
+Ví dụ 1.21:
+int i=5;
+i += 3;	/* nghĩa là i=i+3,sau khi thực hiện câu lệnh thì i=8 */ Ví dụ:
+float x=1.1, y=3.0; y *= x+1;
+/* nghĩa là y=y*(x+1), sau khi thực hiện câu lệnh thì y=6.3 và x=1.1 */
+Biểu thức gán :
+•	Biểu thức gán có dạng : biến = biểu_thức;
+•	Giá trị của biểu thức gán là giá trị của biểu_thức, còn kiểu giá trị của nó là kiểu của biến.
+Ví dụ 1.22:
+int n;
+n = 15;
+/* biểu thức gán n=15 có giá trị bằng 15 và kiểu của nó là int */
+•	Biểu thức gán có thể được dùng trong các phép toán và các câu lệnh của các biểu thức khác.
+Ví dụ 1.23:
+int a,b;
+ 
+a = b = 5;
+/* giá trị của biểu thức gán b=5 được gán cho biến a */
+Ví dụ 1.24:
+int m, n, i;
+m = (n=2)*(i=3);
+/* biểu thức gán n=2 có giá trị 2, biểu thức gán i=3 có giá trị 3 nên m có giá trị 6
+*/
+f.	Toán tử điều kiện
+Biểu thức điều kiện: biểu_thức_1 ? biểu_thức_2 :biểu_thức_3
+Trong đó :
+biểu_thức_1, biểu_thức_2, biểu_thức_3 là các biểu thức.
+Giá trị trả về của biểu thức điều kiện bằng giá trị của biểu_ thức 2 nếu giá trị của biểu_thức_1 khác 0(đúng) và bằng giá trị của biểu_thức 3 nếu giá trị của
+biểu_thức 1 bằng 0 (sai).
+Kiểu trả về của biểu thức điều kiện là kiểu cao nhất trong các kiểu của biểu_ thức_2 và biểu_ thức_3.
+Ví dụ 1.25:	float a=19,b=6,max;
+max=(a > b) ? a:b ; /* max=19
+g.	Toán tử phẩy (,)
+Toán tử dấu, được sử dụng để kết hợp các biểu thức lại với nhau. Bên trái của toán tử dấu, luôn được xem là kiểu void. Điều đó có nghĩa là biểu thức bên phải trở thành giá trị của tổng các biểu thức được phân cách bởi dấu phẩy.
+Ví dụ1.26: x = (y=3,y+1);
+Trước hết gán 3 cho y rồi gán 4 cho x. Cặp dấu ngoặc đơn là cần thiết vì toán tử dấu, có độ ưu tiên thấp hơn toán tử gán.
+h.	Các phép toán trên bit
+Để thao tác trên từng bit của một số nguyên ta có thể dùng các phép toán sau:
+
+PHÉP
+TOÁN	Ý NGHĨA
+&	Phép và theo bit (AND)
+|	Phép hoặc theo bit (OR)
+^	Phép hoặc loại trừ theo bit (XOR)
+<<	Phép dịch trái theo bit
+>>	Phép dịch phải theo bit
+~	Phép lấy phần bù theo bit
+
+Ví dụ 1.27:
+ 
+1 & 1 = 1		1 | 1 = 1		1 ^ 1 = 0
+1 & 0 = 0		1 | 0 = 1		1 ^ 0 = 1
+0 & 1 = 0		0 | 1 = 1		0 ^ 1 = 1
+0 & 0 = 0		0 | 0 = 0		0 ^ 0 = 0
+
+a << n	/*dịch trái giá trị a đi n bit*/ a >> n	/*dịch phải giá trị a đi n bit*/
+~1 = 0	~0 = 1
+Chú ý:
+Các phép toán theo tác trên bit chỉ dùng cho kiểu số nguyên, chứ không dùng cho kiểu số thực (float, double).
+Các phép dịch chuyển được phân thành hai loại : Phép dịch chuyển số học và phép dịch chuyển logic.
+Phép dịch chuyển số học được thực hiện trên giá trị kiểu int, và bảo toàn bit dấu. Phép dịch chuyển logic được thực hiện trên giá trị kiểu unsigned.
+Ví dụ 1.28 :
+0x5b1c & 0x9a = 0x18	0x5b1c | 0x9a = 0x5b9e 0x5b1c ^ 0x9a = 0x5b86	~0x5b1c = 0xa4e3
+int k=0xffe0;	k << 2 = 0xff80 unsigned int m=0x5b1c;	k << 3 = 0xd8e0
+i.	Thứ tự ưu tiên của các phép toán
+
+THỨ
+TỰ	PHÉP TOÁN	TRÌNH TỰ
+KẾT HỢP
+1	() [] -> .	Trái sang phải
+2	! ~ & * - ++ -- (type) sizeof	Phải sang trái
+3	* / %	Trái sang phải
+4	+ -	Trái sang phải
+5	<<>>	Trái sang phải
+6	<<=  >>=	Trái sang phải
+7	==  !=	Trái sang phải
+8	&	Trái sang phải
+9	^	Trái sang phải
+10	|	Trái sang phải
+11	&&	Trái sang phải
+12	||	Trái sang phải
+13	?:	Phải sang trái
+ 
+14	=	+=	-=	*=	/=	%=  <<=
+>>=  &=  ^=	|=	Phải sang trái
+15	,	
+Ví dụ 1.29:
+Cho biết giá trị của biểu thức 5.6+2.7+20/6+8.0 Đáp số : Giá trị của biểu thức là : 19.3
+Ví dụ 1.30:
+Cho biết int x=10, a;
+Hãy cho biết giá trị của các biến x, a sau khi thực hiện câu lệnh:
+a)	a=3* x++ + 8;
+b)	a=3* ++x +8;
+Đáp số :	Câu a) : x=11 và a=38
+Câu b) : x=11 và a=41
+Ví dụ 1.31:
+Hãy viết một câu lệnh để gán giá trị x cho y chỉ khi x nằm trong khoảng từ 1 đến
+20. Không thay đổi y nếu x không thuộc khoảng trên. Đáp số : Câu lệnh y = (x >= 1 && x <= 20) ? x : y;
+1.4.	CẤU TRÚC CỦA MỘT CHƯƠNG TRÌNH C
+Chương trình C là một tập hợp gồm nhiều hàm trong đó phải có một hàm chính gọi là main( )
+Hàm là đoạn mã lệnh độc lập được đặt tên và thực hiện một công việc xác định khi được gọi đến. Một hàm có thể gọi đến nhiều hàm khác nhau.
+Hàm main( ) là hàm được máy tính thực hiện trước tiên. Một chương trình C thường có cấu trúc như sau:
+/* Các chỉ thị tiền xử lý */
+# include …	/*Khai báo các tệp thư viện*/
+#define…	/* Khai báo các hằng*/
+typedef …	/* định nghĩa các kiểu dữ liệu */ Kiểu_dữ_liệu Tên_hàm( tham số)	/* Khai báo nguyên mẫu các hàm */ Khai báo các biến ngoài
+/* Hàm main( )*/ int main( )
+{
+….. /* Các câu lệnh */
+}
+/* Khai báo các hàm */
+Kiểu_dữ_liệu Tên_hàm(các tham số )
+ 
+{ ….  Các câu lệnh
+}
+Trong đó
++ Lời chú thích: Các lời bình luận, các lời giải thích có thể đưa vào ở bất kỳ chỗ nào của chương trình để cho chương trình dễ hiểu, dễ đọc hơn mà không làm ảnh hưởng đến các phần khác. Lời giải thích được đặt giữa hai dấu /* và */.
++ Mỗi câu lệnh được kết thúc bằng dấu chấm phẩy; Chỉ thị #include để sử dụng tập tin thư viện
+Cú pháp: #include <Tên tập tin> // Tên tập tin được đạt trong dấu <> hoặc#include “Tên tập tin”; Ví dụ: #include <stdio.h>; hoặc #include “stdio.h”
+Cấu trúc của hàm main
+Hàm main chính là chương trình chính, gồm các lệnh xử lý, các lời gọi các hàm
+ 
+khác.
+ 
+
+Cú pháp:
+<Kết quả trả về> main( đối số)
+{
+ 
+Các khai báo và các câu lệnh định nghĩa hàm return <kết quả>;
+}
+Ví dụ 1.32:
+int main()
+{
+printf(“Day la chuong trinh chinh”); getch();	return 0;
+}
+Ví dụ 1.33:
+int main() {
+int a=5, b=6,c;
+float x=3.5, y=4.5,z;
+printf(“Day la chuong trinh chinh”); c=tong(a,b);
+printf(“\n Tong cua %d va %d la %d”,a,b,c); z=tong(x,y);
+printf(“\n Tong cua %f và %f là %f”, x,y,z); getch();
+return 0; }
+ 
+1.5.	CÂU LỆNH NHẬP XUẤT DỮ LIỆU
+1.5.1.	Câu lệnh
+Mỗi câu lệnh có thể được viết trên một hoặc nhiều dòng và được kết thúc bằng dấu chấm phẩy (;).
+Khối lệnh là một dãy các câu lệnh được đặt trong các dấu {và }.
+Ví dụ 1.34: khối lệnh
+{
+float x; printf("\nNhap x="); scanf("%f",&x);
+}
+Không được đặt dấu chấm phẩy sau dấu ngoặc kết thúc một khối.
+Khối lệnh tương đương với một câu lệnh riêng lẻ về mặt cú pháp; Nghĩa là nơi nào đặt được một câu lệnh thì nơi đó có thể viết được bằng một khối lệnh.
+Khi khối lệnh chỉ gồm một câu lệnh thì ta có thể bỏ các dấu ngoặc ở đầu và cuối; nghĩa là có thể xem câu lệnh là một trường hợp riêng của khối lệnh.
+1.5.2.	Câu lệnh xuất
+Cú pháp:printf("chuỗi định dạng"[,giá_ trị 1, giá_ trị 2,…]);
+Khi sử dụng hàm phải khai báo tiền xử lý #include <stdio.h>
+-	printf: tên hàm, phải viết bằng chữ thường.
+-	giá_ trị 1, giá_trị 2…: là các giá trị dữ kiện cần in ra màn hình. Các giá trị này có thể là biến, hằng hoặc biểu thức phải được định trị trước khi in ra.
+-	chuỗi định dạng: được đặt trong cặp nháy kép (" "), gồm 3 loại:
++Các ký tự hiển thị.
++ Các ký tự điều khiển: '\n' xuống dòng, '\t' dấu tab.
++ Các đặc tả: %d số nguyên, %f số thực, %c ký tự , %s chuỗi ký tự.
+-	Sau đây là các dấu mô tả định dạng (đặc tả):
+%c	: Ký tự đơn
+%s	: Chuỗi
+%d	: Số nguyên thập phân có dấu
+%f	: Số chấm động (ký hiệu thập phân)
+%u	: Số nguyên thập phân không dấu
+%ld : Số nguyên dài (4 bytes)
+%lf	: Số thực dài (8 bytes)
++ Các ký tự điều khiển và ký tự đặc biệt
+\n	: Nhảy xuống dòng kế tiếp canh về cột đầu tiên.
+\t	: Canh cột tab ngang.
+ 
+\r	: Nhảy về đầu hàng, không xuống hàng.
+\\	: In ra dấu \
+\"	: In ra dấu "
+\'	: In ra dấu '
+%% : In ra dấu %
+Ví dụ 1.36: printf("Bai hoc C dau tien.\n");
+ 
+ 
+
+
+
+Ví dụ 1.37:
+ 
+ký tự điều khiển xuống dòng chuỗi ký tự
+
+Giả sử biến a có giá trị = 5; xuất giá trị biến a printf("So ban vua nhap la:%d\n", a);
+Ký tự điều khiển xuống dòng Định dạng đặc tả của biến a
+ 
+
+
+Ví dụ 1.38:
+ 
+Chuỗi ký tự
+
+
+Giả sử biến a có giá trị = 7 và b có giá trị = 4 xuất giá trị biến a
+xuất giá trị biến b
+xuất giá trị biểu thức a+b
+printf("Tong cua 2 so %d va %d la %d \n", a, b, a+b);
+ 
+Ví dụ 1.39: Giả sử biến a có giá trị là 7.5 biến b có giá trị là 6.0
+Xuất ra giá trị biến a, biến b và giá trị lớn nhất của 2 số a,b (sử dụng biểu thức điều kiện).
+printf("Gia trị max cua 2 so %d va %d la %d \n", a, b, a>b?a:b);
+* Viết số nguyên có quy cách
+printf(“ %nd”, số nguyên);/* n : độ rộng của số nguyên*/ a=5; b=120;
+printf("Tong cua 2 so %6d va %6d la %6d . \n", a, b, a+b);
+* Viết số thực có quy cách
+
+ 
+1.5.3.	Câu lệnh nhập
+Câu lệnh :
+scanf("Chuỗi định dạng",&biến 1,&biến 2, …); Trong đó :
+biến 1, biến 2, … là các biến chứa dữ liệu nhập vào.
+Chuỗi định dạng là các đặc tả:“%d” số nguyên, “%f” số thực, “%c” ký tự.
+Ví dụ 1.40:
+float x;
+scanf("%f",&x);	/* nhập vào biến x một số thực */
+Ví dụ 1.41:
+int n, m;
+scanf("%d%d",&n,&m);	/* nhập hai số nguyên vào các biến n, m*/
+Ví dụ 1.42:
+char ch;
+scanf("%c",&ch);	/* nhập một ký tự vào biến ch */
+Chú ý :
+Khi dùng câu lệnh scanf ta phải đặt ký tự '&' vào trước tên biến. Mỗi biến tương ứng với chuỗi định dạng
+Khi chương trình thực thi đến lệnh này thì dừng lại và đợi chúng ta nhập dữ liệu vào từ bàn phím.
+Ví dụ 1.43: Nhập vào 2 số nguyên. Tính tổng và tích của 2 số #include<stdio.h>
+#include<conio.h> main(){
+int a,b;
+printf(("Nhap vao 2 so:”);
+scanf(“%d%d”,&a,&b);
+printf(“ Tong cua 2 so la:%d”,a+b); printf(“\n Tich cua 2 so la:%d”,a*b); getch();
+}
+Ví dụ 1.44:Viết chương trình nhập vào một số thực x, sau đó tính giá trị của biểu thức (x*x - 5*x + 4) và xuất kết quả ra màn hình.
+#include <stdio.h> #include<conio.h> int main() {
+float x, y;
+ 
+printf("\nNhap x = "); scanf("%f",&x);
+y= x*x-5*x+4;
+printf("Gia tri bieu thuc : %f", y); getch();
+}
+1.6.	MỘT SỐ HÀM HỮU ÍCH
+Các hàm sau khai báo trong stdlib.h
+1.	abs(x): Tính giá trị tuyệt đối của số nguyên x int abs( int x);
+2.	labs(x): Tính giá trị tuyệt đối của số nguyên dài x long int labs( long int x);
+3.	rand(): Cho một giá trị ngẫu nhiên từ 0 đến 32767 int rand (void);
+4.	random(): Cho một giá trị ngẫu nhiên từ 0 đến n-1 int random ( int n);
+5.	randomize(): Khởi đầu bộ số ngẫu nhiên bằng giá trị ngẫu nhiên void randomize ( void);
+Các hàm sau khai báo trong math.h
+6.	exp(x) : Tính e mũ x double exp(double x);
+7.	fabs(x): Tính giá trị tuyệt đối của x double fabs (double x);
+8.	floor(x): Tìm số nguyên ( kiểu double ) lớn nhất dưới x double floor ( double x);
+9.	pow(y,x): Tính y mũ x
+double pow (double y, double x );
+10.	sin(x): Tính sin của x double sin (double x);
+11.	sqrt(x): Tính căn bậc hai của x double sqrt (double x);
+1.7.	CÁC CẤU TRÚC ĐIỀU KHIỂN CHƯƠNG TRÌNH
+1.7.1.	Câu lệnh rẽ nhánh
+a.	Câu lệnh điều kiện if Dạng 1:
+if (biểu_thức_logic) khối_lệnh;
+Trong đó: if là từ khóa; kết quả của biếu thức logic phải đúng ( 0) hoặc sai (= 0)
+ 
+Thực hiện:
+Trước tiên, chương trình tính giá trị của biểu_thức_ logic.Nếu biểu_thức_logiccó giá trị đúng (khác 0) thì máy thực hiện khối_lệnh, sau đó thực hiện câu lệnh viết sau câu lệnh if.
+Nếu biểu_thức_logic có giá trị sai (bằng 0) thì máy không thực hiệnkhối_lệnh và chuyển sang thực hiện câu lệnh viết sau câu lệnh if.
+Sơ đồ khối
+
+
+Chú ý: Nếu khối lệnh từ 2 lệnh trở lên phải đặt trong cặp dấu{}
+Diễn giải:
++ Khối lệnh là một lệnh ta viết lệnh if như sau:
+if (biểu_ thức_logic) lệnh;
++ Khối lệnh bao gồm nhiều lệnh: lệnh 1, lệnh 2..., ta viết lệnh if như sau: if (biểu_ thức_ logic)
+{
+lệnh 1;
+lệnh 2;
+}
+Ví dụ 1.45: Nhập vào 2 số nguyên. Đưa ra giá trị lớn nhất của 2 số nguyên.
+Mô tả quy trình xử lý (giải thuật)
+-	Khai báo 3 biến a, b, max kiểu số nguyên
+-	Nhập vào giá trị a
+-	Nhập vào giá trị b
+-	Gán a cho max
+-	Nếu b > a thì gán b cho max
+-	In ra kết quả max Chương trình #include <stdio.h> #include <conio.h>
+ 
+int main()
+{
+int a,b,max;
+printf("Nhap vao so a: "); scanf("%d", &a); printf("Nhap vao so b: "); scanf("%d", &b);
+max = a; if (b>a) max = b;
+printf("So lon nhat = %d.\n", max); getch();
+}
+Dạng 2: if… else
+if (<biểu_ thức_ logic) khối_ lệnh 1;
+else khối_ lệnh 2
+Thực hiện:
+Trước tiên, máy tính giá trị của biểu_thức_ logic. Nếu biểu_thức_ logic có giá trị đúng (khác 0) thì máy thực hiện khối_ lệnh 1, sau đó thực hiện câu lệnh viết sau câu lệnh if. Nếu biểu_ thức có giá trị sai (bằng 0) thì máy thực hiện khối_lệnh2 và chuyển sang thực hiện câu lệnh viết sau câu lệnh if.
+Sơ đồ khối:
+
+	Nếu biểu_thức_ logic đúng thì
+thực hiện khối_lệnh 1 và thoát khỏi if
+ngược lại thực hiện khối_lệnh 2 và thoát khỏi if.
+ Nếu khối lệnh 1, khối lệnh 2 bao gồm từ 2 lệnh trở lên thì phải đặt trong dấu { }
+Ví dụ1.46: /* Chương trình tìm số lớn nhất từ 2 số nguyên a, b */ #include <stdio.h>
+#include <conio.h> main()
+ 
+{
+int a,b,max;
+printf("Nhap vao so a: "); scanf("%d", &a); printf("Nhap vao so b: "); scanf("%d", &b);
+if (b>a)
+max = a;
+else
+max=b;
+printf("So lon nhat = %d.\n", max); getch();
+}
+* Lệnh else ..if
+Khi muốn thực hiện một trong n quyết định ta có thể sử dụng cấu trúc sau: if (biểu _thức_ logic 1)
+khối_lệnh 1;
+else if (biểu _thức_ logic 2) khối_lệnh 2;
+......
+else if (biểu _thức_ logic n) khối_lệnh n-1;
+else
+khối_lệnh n;
+Ví dụ1.47: Giải phương trình bậc 2 ax2+bx+c=0 #include <stdio.h>
+#include <conio.h> #include <math.h> main()
+{
+float a,b,c,delta,x1,x2; printf("A= ");	scanf("%f",&a);
+printf("B= ");	scanf("%f",&b);
+printf("C= ");	scanf("%f",&c); delta=b*b - 4*a*c;
+if( delta<0)
+printf("Phuong trinh vo nghiem");
+ 
+else
+
+
+else
+ 
+
+if (delta==0)
+printf("Nghiem kep, x= %6.2f",-b/(2*a));
+ 
+{
+printf("Co 2 nghiem phan biet: \n"); x1=(-b-sqrt(delta))/(2*a);
+x2=(-b+sqrt(delta))/(2*a);
+printf("x1= %6.2f\n x2= %6.2f",x1,x2);
+}
+getch();
+}
+b.	Câu lệnh rẽ nhánh switch Cú pháp :
+switch (biểu_thức) {
+case giá_ trị 1 :
+khối_lệnh 1	;	break; case <giá trị 2> :
+khối_lệnh2;	break;
+………
+case giá_trị N-1:
+khối_ lệnh N-1;	break; [default :
+khối_ lệnhN+1; [break;]
+}
+Trong đó :
+•	Giá trị của biểu thức biểu_thức là một số nguyên.
+•	Các giá_trị i là các số nguyên, hằng ký tự, hoặc biểu thức hằng và cần có giá trị khác nhau.
+•	default là thành phần không bắt buộc.
+•	Trước hết giá trị của biểu thức biểu_thức được tính, sau đó được so sánh với các giá trị: giá _trị 1, giá _trị 2, … ,giá _trịN và thực hiện khối lệnh tương ứng.
+•	Khi giá trị biểu_ thức khác tất cả các:giá_trị i và trong câu lệnh có thành phần default thì khối lệnh khối_ lệnhN+1 được thực hiện.
+Ví dụ 1.48 : Giả sử để theo dõi trình độ của cán bộ ta dùng bảng mã sau:
+ 
+Mã số	Trình độ
+1	Sơ cấp
+2	Trung cấp
+3	Đại học
+4	Cao học
+5	Phó tiến sĩ
+6	Tiến sĩ
+Hãy viết chương trình nhập vào mã số học vấn và xuất ra màn hình trình độ học vấn tương ứng.
+#include <stdio.h> int main() {
+int ma;
+printf("\nNhap ma so hoc van : "); scanf("%d",&ma);
+printf("Trinh do hoc van : "); switch (ma) {
+case 1 :
+printf("So cap");	break; case 2 :
+printf("Trung cap"); break; case 3 :
+printf("Dai hoc");	break; case 4 :
+printf("Cao hoc");	break; case 5 :
+printf("Pho tien si");	break; case 6 :
+printf("Tien si");	break;
+}
+}
+1.7.2.	Câu lệnh lặp
+a.	Lệnh lặp for Cú pháp :
+for (biểu_ thức 1 ; biểu_ thức 2 ; biểu_ thức 3) khối_lệnh;
+Sự hoạt động của toán tử for : Bước 1 : Xác định biểu_ thức 1
+ 
+Bước 2 : Xác định biểu_thức 2
+Bước 3 : Tùy thuộc vào giá trị của biểu_thức 2 ta có lựa chọn sau :
+•	Nếu biểu_thức 2có giá trị 0 (sai) thì máy kết thúc lệnh for và thực hiện câu lệnh sau thân for.
+•	Nếu biểu_thức 2 có giá trị khác 0 (đúng) thì máy thực các câu lệnh trong thân for. Khi gặp dấu ngoặc đóng } cuối cùng của thân for hoặc gặp lệnh continue thì máy chuyển sang bước 4.
+Bước 4 : Tính giá trị của biểu_ thức 3, sau đó quay lại thực hiện bước 2 để bắt đầu một vòng lặp mới.
+Chú ý :
+•	biểu_ thức 1 thông thường là một toán tử gán dùng để khởi tạo giá trị ban đầu cho các biến điều khiển và nó chỉ được tính một lần.
+•	biểu_ thức 2 thông thường là một quan hệ logic và là điều kiện để tiếp tục một chu trình.
+•	biểu_thức 3 thông thường dùng để thay đổi giá trị của các biến điều khiển.
+•	Các biểu_thức, biểu_thức 2, biểu_thức 3 có thể vắng mặt trong câu lệnh for. Khi biểu_thức 2 vắng mặt trong câu lệnh thì nó luôn được xem là đúng; Trong trường hợp này để thoát khỏi vòng lặp for ta dùng các câu lệnh break hoặc return.
+•	Trong dấu ngoặc sau từ khoá for có 3 thành phần là biểu_thức 1, biểu_thức 2, biểu_ thức 3 và các phần này ngăn cách với nhau bởi dấu chấm phẩy (;). Trong mỗi phần có thể viết một dãy biểu thức và được phân cách nhau bởi dấu phẩy (,). Khi đó giá trị của biểu_thức 2 được xác định bằng giá trị của biểu thức sau cùng của dãy biểu thức.
+•	Bên trong thân vòng lặp for có thể sử dụng các vòng lặp for khác.
+•	Khi gặp câu lệnh break trong thân vòng lặp for thì máy sẽ thoát khỏi vòng lặp for sâu nhất chứa câu lệnh này.
+•	Trong thân vòng lặp for ta có thể dùng câu lệnh return để kết thúc một hàm nào đó.
+•	Trong thân vòng lặp for ta có thể dùng câu lệnh continue để chuyển đến đầu vòng lặp mới; Nghĩa là máy sẽ bỏ qua những câu lệnh còn lại của thân vòng lặp và chuyển sang xét biểu_thức 3.
+ 
+Lưu đồ:
+
+
+
+
+Ví dụ 1.49:
+Viết chương trình tính tổng S = 1+2+3+ … +n ; trong đó n là số tự nhiên được nhập từ bàn phím.
+#include <stdio.h> int main() {
+int n, i, s;
+printf("\nNhap so tu nhien : "); scanf("%d",&n);
+s=0;
+for (i=1 ; i <= n ; i++)
+s += i;
+printf("Tong cac so tu nhien la : %d", s);
+}
+Ví dụ 1.50:Viết chương trình nhập vào hai số nguyên dương là chiều dài và chiều rộng của hình chữ nhật. Sau đó xuất ra màn hình hình chữ nhật đặc bằng các dấu "*".
+#include <stdio.h> int main() {
+int m, n, i, j ;
+printf("\nNhap 2 kich thuoc cua hinh chu nhat : "); scanf("%d%d", &m, &n);
+for (i=0 ; i < m ; i++) {
+printf("\n");
+for (j=0 ; j < n ; j++) printf("*");
+}
+}
+b.	Lệnh lặp while
+ 
+Cú pháp :
+while (biểu_ thức)
+khối_ lệnh;
+Từ khóa while phải viết bằng chữ thường
+ Nếu khối lệnh bao gồm từ 2 lệnh trở lên thì phải đặt trong dấu { }
+Sự hoạt động của toán tử while :
+Bước 1: Xác định giá trị của biểu_ thức Bước 2 :
+•	Nếu giá trị của biểu_thức là sai (bằng 0) thì máy sẽ thoát khỏi vòng lặp và thực hiện câu lệnh đứng sau lệnh while.
+•	Nếu giá trị của biểu_ thứclà đúng biểu thức (khác 0) thì máy sẽ thực hiện các câu lệnh trong khối_ lệnh. Khi gặp dấu ngoặc đóng } cuối khối_lệnh hoặc gặp lệnh continue thì máy trở lại bước 1.
+Lưu đồ:
+
+
+Ví dụ 1.51: Viết chương trình tìm số nguyên dương nhỏ nhất n, sao cho 1+2+3+…+n > 10000. Xuất ra màn hình tổng tìm được và số n.
+#include <stdio.h> int main() {
+unsigned int n=0, s=0; while (s <= 10000)
+s += ++n;
+printf("\nSo n = %d \t Tong : %d", n, s);
+}
+Ví dụ 1.52: Viết chương trình nhập vào số nguyên dương n > 1, sau đó kiểm tra số n có phải là số nguyên tố hay không?
+#include <stdio.h>
+int main() {
+int n, i;
+ 
+printf("\nNhap so nguyen duong n="); scanf("%d",&n);
+if (n <=1)
+printf("khong xet");
+ 
+else {
+ 
+
+i = 2;
+while (n % i != 0) i++;
+if (i < n)
+printf("So %d khong phai la so nguyen to", n);
+ 
+
+
+
+
+}
+Chú ý:
+ 
+else
+
+};
+ 
+
+printf("So %d la so nguyen to",n);
+ 
+•	biểu_ thức có thể được viết bằng dãy các biểu thức và được phân cách nhau bởi dấu phẩy. Tính đúng sai của dãy biểu thức được xác định bởi biểu thức cuối cùng trong dãy.
+•	Bên trong thân vòng lặp while ta có thể đặt các vòng lặp for hoặc while khác.
+•	Khi gặp câu lệnh break trong thân vòng lặp while thì máy sẽ thoát ra vòng lặp while sâu nhất chứa câu lệnh này.
+•	Trong thân vòng lặp while ta có thể dùng câu lệnh continue để bắt đầu một vòng lặp mới; Nghĩa là khi gặp câu lệnh continue thì máy bỏ qua các câu lệnh còn lại trong thân while để trở lại tính giá trị biểu_ thức.
+•	Trong thân vòng lặp while ta có thể dùng toán tử return để thoát ra khỏi hàm chứa câu lệnh while.
+d.	Lệnh lặp do – while
+Trong các toán tử while và for, việc kiểm tra biểu thức điều kiện kết thúc được đặt ở đầu vòng lặp. Khác với 2 toán tử trên, toán tử do … while thực hiện việc kiểm tra biểu thức điều kiện ở cuối vòng lặp.
+Cú pháp :
+do
+khối_lệnh
+while (biểu_thức);
+	Từ khóa do, while phải viết bằng chữ thường
+ Nếu khối lệnh bao gồm từ 2 lệnh trở lên thì phải đặt trong dấu { }
+Sự hoạt động của toán tử do…while :
+ 
+Bước 1: Thực hiện các câu lệnh trong khối_lệnh
+Bước 2: Xác định giá trị của biểu_thức. Tùy theo giá trị của biểu_thức mà máy sẽ thực hiện rẽ nhánh :
+•	Nếu giá trị của biểu_thức là đúng (khác 0) thì máy quay lại bước 1.
+•	Nếu giá trị của biểu_thức là sai (bằng 0) thì máy kết thúc câu lệnh do…while, và thực hiện câu lệnh sau câu lệnh do…while.
+Lưu đồ:
+
+
+
+
+đúng
+
+
+
+
+
+Ví dụ 1.53:Viết chương trình kiểm tra password
+/* Chuong trinh kiem tra mat khau */
+#include <stdio.h> #include<conio.h>
+# define PASSWORD 12345 main (){
+int n; do
+{
+ 
+
+
+
+
+
+}
+Chú ý :
+ 
+printf("Nhap vao password: "); scanf("%d", &n);
+} while (n != PASSWORD); getch();
+ 
+•	biểu_thức có thể được viết bằng dãy các biểu thức và được phân cách nhau bởi dấu phẩy. Tính đúng sai của dãy biểu thức được xác định bởi biểu thức cuối cùng trong dãy.
+•	Bên trong thân vòng lặp do…while ta có thể đặt các vòng lặp for, while hoặc do…while khác.
+•	Khi gặp câu lệnh break trong thân vòng lặp do…while thì máy sẽ thoát ra vòng lặp do…while sâu nhất chứa câu lệnh này.
+ 
+•	Trong thân vòng lặp do…while ta có thể dùng câu lệnh continue để bắt đầu một vòng lặp mới; Nghĩa là khi gặp câu lệnh continue thì máy bỏ qua các câu lệnh còn lại trong thân do…while để thực hiện việc tính giá trị biểu_thức.
+•	Trong thân vòng lặp do…while ta có thể dùng toán tử return để thoát ra khỏi hàm chứa câu lệnh do…while.
+Ví dụ 1.54:
+Viết chương trình nhập vào 3 cạnh của một tam giác (Nếu giá trị nhập vào không phải là 3 cạnh của 1 tam giác thì yêu cầu nhập lại). Sau đó tính chu vi, diện tích của tam giác và xuất kết quả ra màn hình.
+#include <stdio.h> #include <math.h> int main() {
+float a, b, c, p, chuvi, dientich; do {
+printf("\nNhap 3 canh cua tam giac : "); scanf("%f%f%f",&a,&b,&c);
+}while (a<=0 || b<=0 || c<=0 || a+b-c<=0 || b+c-a<=0 || a+c-b<=0); chuvi=a+b+c;
+p=chuvi/2;
+dientich=sqrt(p*(p-a)*(p-b)*(p-c));
+printf("Chu vi : %f \t Dien tich : %f",chuvi,dientich);
+}
+e.	Lệnh beak, continue Câu lệnh break:
+Câu lệnh break cho phép máy thoát ra khỏi các lệnh for, while, do…while, và switch. Khi chương trình có nhiều câu lệnh lồng nhau thì lệnh break cho phép máy thoát khỏi câu lệnh bên trong nhất chứa nó.
+Ví dụ 1.55:
+#include <stdio.h> int main() {
+int i;
+for (i=0; i<10; i++) {
+if (i == 5) break; printf("%d ",i);
+}
+}
+Chương trình trên xuất ra màn hình các số : 0 1 2 3 4
+ 
+Câu lệnh continue:
+Trong các câu lệnh for, while, do…while ta có thể đặt câu lệnh continue.  Câu lệnh continue cho phép bắt đầu lại một vòng lặp mới của câu lệnh lặp bên trong nhất chứa nó.
+Ví dụ 1.56:
+#include "stdio.h" main() {
+int i;
+for (i=0 ;i <10; i++) {
+if (i%2 == 0) continue; printf("%d ",i);
+}
+}
+Chương trình trên xuất ra màn hình các số : 1 3 5 7 9
+g. Lệnh nhảy goto và nhãn
+Nhãn được đặt tên như tên biến và có thêm dấu : đứng sau. Nhãn có thể được gán cho bất kỳ câu lệnh nào trong chương trình.
+Ví dụ 1.57:
+ts : s+=i;
+thì ts là nhãn của câu lệnh gán s+=i.
+Lệnh goto có dạng:
+goto nhãn;
+Khi gặp lệnh này máy sẽ nhảy tới câu lệnh có nhãn viết sau từ khoá goto.
+Khi dùng toán tử goto cần chú ý:
+-	Câu lệnh goto và nhãn cần nằm trong một hàm, có nghĩa là toán tử goto chỉ cho phép nhảy từ vị trí này đến vị trí khác trong thân một hàm và không thể dùng để nhảy từ một hàm này sang một hàm khác.
+-	Không cho phép dùng toán tử goto để nhảy từ ngoài vào trong một khối lệnh.
+Tuy nhiên việc nhảy từ trong một khối lệnh ra ngoài là hoàn toàn hợp lệ.
+Ví dụ 1.58: như đoạn chương trình sau là sai. goto n1;
+.......
+{	.....
+n1: printf("\n Gia tri cua N la: ");
+.....
+}
+Chú ý: ta nên hạn chế sử dụng lệnh này tới mức tối đa.
+ 
+Ví dụ 1.59: Chương trình tính tổng hai số nhập từ bàn phím, dùng lệnh gotođể thực hiện tính tổng với nhiều cặp số khác nhau.
+#include <stdio.h> #include <conio.h> int main(){
+int a, b; char tt;
+lap: printf("\n Nhap a, b="); scanf("%d%d", &a,&b); printf(" a+b= %d \n", a+b); printf(" Tiep tuc (C/K):"); tt=getche();
+if (tt=='c' || tt=='C') goto lap;
+ 
+}
+
+Nhập xuất dữ liệu
+ 
+
+BÀI TẬP CHƯƠNG 1
+ 
+1.	Viết chương trình đọc và 2 số nguyên và in ra kết quả của phép (+), phép trừ (-), phép nhân (*), phép chia (/). Nhận xét kết quả chia 2 số nguyên.
+2.	Viết chương trình nhập vào bán kính hình cầu, tính và in ra diện tích, thể tích của hình cầu đó. Hướng dẫn: S = 4R2 và V = (4/3)R3.
+3.	Viết chương trình nhập vào một số a bất kỳ và in ra giá trị bình phương (a2), lập phương (a3) của a và giá trị a4.
+4.	Viết chương trình nhập vào 1 số có 3 chữ số. Đưa ra chữ số hàng trăm , hàng chục, hàng đơn vị.
+Các cấu trúc điều khiển rẽ nhánh Sử dụng lệnh if
+1.	Viết chương trình nhập vào số nguyên dương, in ra thông báo số chẵn hay lẻ.
+Hướng dẫn: Nhập vào số nguyên dương x. Kiểm tra nếu x chia chẵn cho hai thì x là số chẵn (hoặc chia cho 2 dư 0) ngược lại là số lẻ.
+2.	Viết chương trình nhập vào 4 số nguyên. Tìm và in ra số lớn nhất.
+Hướng dẫn: Ta có 4 số nguyên a, b, c, d. Tìm 2 số nguyên lớn nhất x, y của 2 cặp (a, b) và (c, d). Sau đó so sánh 2 số nguyên x, y để tìm ra số nguyên lớn nhất.
+3.	Viết chương trình giải phương trình bậc 1: ax +b = 0, với a, b nhập vào từ bàn phím.
+4.	Viết chương trình nhập vào 3 giá trị nguyên dương a, b, c. Kiểm tra xem a, b, c có phải là 3 cạnh của tam giác không? Nếu là 3 cạnh của tam giác thì tính diện tích của tam giác theo công thức sau:
+S =	, với p là 1/2 chu vi của tam giác.
+Hướng dẫn: a, b, c là 3 cạnh của tam giác phải thỏa điều kiện sau:
+ 
+(a + b) > c và (a + c) > b và (b + c) > a
+5.	Viết chương trình nhập vào điểm 3 môn thi: Toán, Lý, Hóa của học sinh. Nếu tổng điểm >= 15 và không có môn nào dưới 4 thì in kết quả đậu. Nếu đậu mà các môn đều lớn hơn 5 thì in ra lời phê "Học đều các môn", ngược lại in ra "Học chưa đều các môn", các trường hợp khác là "Thi hỏng"..
+6.	Viết chương trình nhập số giờ làm và lương giờ rồi tính số tiền lương tổng cộng. Nếu số giờ làm lớn hơn 40 thì những giờ làm dôi ra được tính 1,5 lần.
+Sử dụng lệnh switch
+1.	Viết chương trình nhập vào 2 số x, y và 1 trong 4 toán tử +, -, *, /. Nếu là + thì in ra kết quả x + y, nếu là – thì in ra x – y, nếu là * thì in ra x * y, nếu là / thì in ra x / y (nếu y = 0 thì thông báo không chia được.
+2.	Viết chương trình nhập vào năm Dương lịch, hiển thị năm Âm lịch tương ứng.
+Sử dụng cấu trúc lặp:
+1.	Viết chương trình tính tổng bậc 3 của N số nguyên đầu tiên.
+2.	Viết chương trình nhập vào một số nguyên rồi in ra tất cả các ước số của số đó.
+3.	Viết chương trình vẽ một tam giác cân bằng các dấu *
+4.	Viết chương trình tính tổng nghịch đảo của N số nguyên đầu tiên theo công thức S = 1
++ 1/2 + 1/3 + … + 1/N
+5.	Viết chương trình tính tổng bình phương các số lẻ từ 1 đến N.
+6.	Viết chương trình nhập vào N số nguyên, tìm số lớn nhất, số nhỏ nhất.
+7.	Viết chương trình nhập vào N rồi tính giai thừa của N.
+8.	Viết chương trình tìm USCLN, BSCNN của 2 số.
+9.	Viết chương trình nhập vào một số và kiểm tra xem số đó có phải là số nguyên tố hay không?
+10.	Viết chương trình phân tích một số nguyên N thành tích của các thừa số nguyên tố.
+11.	Viết chương trình tính dân số của một thành phố sau 10 năm nữa, biết rằng dân số hiện nay là 6.000.000, tỉ lệ tăng dân số hàng năm là 1.8% .
+12.	Viết chương trình tìm các số nguyên gồm 3 chữ số sao cho tích của 3 chữ số bằng tổng 3 chữ số. Ví dụ: 1*2*3 = 1+2+3.
+13.	Viết chương trình tìm các số nguyên a, b, c, d khác nhau trong khoảng từ 0 tới 10 thỏa mãn điều kiện a*d*d = b*c*c*c
+ 
+
+
+2.1.	KHÁI NIỆM VỀ HÀM
+ 
+Chương 2 HÀM
+ 
+Hàm cho phép phân chương trình thành những đoạn nhỏ hơn, do đó đơn giản hóa trong việc lập trình và việc cập nhật chương trình.
+Hàm có thể thực hiện những nhiệm vụ của nó mà không cần phải tham chiếu đến những thành phần khác trong chương trình.
+Ví dụ 2.1: Viết hàm tìm số lớn nhất trong hai số thực.
+#include "stdio.h"
+(1)	float max(float x, float y); main() {
+float a,b,gtln;
+printf("\nNhap hai so thuc :"); scanf("%f%f",&a,&b);
+(2)	gtln=max(a,b)
+printf("So lon nhat :%f",gtln);
+}
+(3)	float  max(float x, float y)
+{
+ 
+
+
+
+
+
+Nhận xét:
+ 
+float tam; tam=(x>y)?x:y; return tam;
+}
+ 
+Khai báo nguyên mẫu hàm câu lệnh(1)(gồm giá trị tả về của hàm, tên hàm, kiểu các tham số) ở ngay đầu chương trình. Còn hàmđó làm gì, ta hoàn toàn chưa biết, đợiđến cuối chương trình mới có khai báo hàm thực sự. Phần này không bắt buộc phải có tuy nhiên nên có vì nó cho phép chương trình biên dịch phát hiện lỗi khi gọi hàm hay tựđộng việc chuyển kiểu dữ liệu.
+Trong hàm main() có lời gọi hàm (2) gtln=max(a,b) với các tham số thực sự a,b và sự tương ứng 1-1 với khai báo hàm; a tương ứng với x, b tương ứng với y
++ Định nghĩa hàm (3) float max( float x, float y)
+Tên hàm Các tham số hình thức và kiểu của chúng Kiểu giá trị của hàm
+ 
+Lưu ý:
+Cuối dòng không có dấu chấm phẩy Các tham số cách nhau bởi dấu phẩy (,)
+2.2.	XÂY DỰNG HÀM
+2.2.1.	Định nghĩa hàm
+Kiểu_ giá trị_trả_về Tên_hàm( khai_báo_ các_ đối )
+{
+Khai_ báo_ các_ biến_ cục_ bộ Các_ câu_ lệnh
+[return [biểu_thức];]
+}
+-	Dòng tiêu đề: là dòng đầu tiên của hàm chứa các thông tin về: kiểu hàm, tên hàm, kiểu và tên mỗi đối.
+Ví dụ: floatmax(float a,float b)
+-	Thân hàm: sau dòng tiêu đề là thân hàm. Thân hàm là nội dung chính của hàm bắt đầu bằng dấu { và kết thúc bằng dấu }. Trong thân hàm chứa các câu lệnh cần thiết để thực hiện một yêu cầu nào đó đã đề ra cho hàm.
+Trong thân hàm có thể sử dụng một câu lệnh return, có thể dùng nhiều câu lệnh return ở các chỗ khác nhau và cũng có thể không sử dụng câu lệnh này.
+Dạng tổng quát của nó là: return [biểu thức];
+Giá trị của biểu thức trong câu lệnh return sẽ được gán cho hàm.
+Ví dụ 2.2: Cho các số thực a, b. Lập chương trình tìm u = min(a, b), v = min(ab, a+b), min( u+v2, 3.14).
+Nhận xét: trong bài này chúng ta cần phải tìm giá trị nhỏ nhất của các cặp số (a,b), (ab, a+b), (u+v2, 3.14) vì vậy chúng ta nên xây dựng hàm Min để tìm giá trị nhỏ nhất của 2 số và sử dụng lời gọi hàm này 3 lần.
+Chương trình: #include <stdio.h> #include <conio.h>
+float min(float a, float b); main()
+{ float a, b, u, v;
+printf("Nhap a, b=");	scanf("%f%f", &a, &b); u=min(a,b); v=min(a*b, a+b);
+printf("u= %f v= %f", u, v);
+printf("\n Min(u + v*v,3.14)= %f", min(u+v*v, 3.14));
+}
+ 
+float min(float a, float b)
+{ if (a>b ) return(b); else return(a);
+}
+Một số quy tắc
+-	Đối với các hàm không trả về giá trị, chúng ta sử dụng từ khoá void để khai báo
+kiểu của hàm. Ví dụ: void T(int a, int b)
+-	Với các hàm không có tham số hình thức, chúng ta dùng từ khoá void để mô tả.
+Thí dụ như float T(void) hoặc float T().
+-	Lệnh return có thể trả lại giá trị của một biểu thức và có thể xuất hiện nhiều lần trong hàm. Lệnh return không chỉ cung cấp giá trị cho tên hàm mà còn có tác dụng dừng hàm lại để kết thúc hàm, chuyển về chỗ gọi nó.
+-	Nếu hàm có giá trị trả về thì trong khai báo hàm ta sử dụng câu lệnh return(Biểu_ thức); ngược lại dùng lệnh return; hoặc bỏ qua.
+-	Khai báo nguyên mẫu hàm
+Nếu ta định nghĩa hàm sau hàm main() thì trước hàm main() cần phải thực hiện việc khai báo nguyên mẫu hàm (function prototype).
+kiểu_ giá_trị_trả_về  tên_hàm(danh sách tham số và kiểu của chúng);
+Trong phần khai báo nguyên mẫu hàm không cần phải đặt tên cho tham số. Theo ví dụ trên ta có thể viết: floatmax(float, float)
+2.2.2.	Nguyên tắc hoạt động của hàm
+Khi một hàm được gọi, chương trình có thể truyền những thông tin cho hàm thông qua các đối số. Khi các câu lệnh trong chương trình thực hiện xong, máy sẽ thực hiện câu lệnh ngay sau câu lệnh gọi hàm. Quá trình gọi hàm sẽ diễn ra theo trình tự 4 bước sau :
+•	Cấp phát bộ nhớ cho các đối số và các biến cục bộ.
+•	Gán giá trị của các tham số thực cho các đối số tương ứng.
+•	Thực hiện các câu lệnh bên trong của hàm.
+•	Khi gặp câu lệnh return hoặc gặp dấu } cuối cùng của thân hàm thì máy sẽ xóa các biến cục bộ và thoát ra khỏi hàm.
+2.2.3.	Lời gọi hàm
+Cú pháp :
+Tên_ hàm([danh_sách_các_tham_ số_ thực]) Chú ý :
+•	Số tham số thực phải bằng với số đối số.
+•	Kiểu của tham số thực phải phù hợp với kiểu của các đối số tương ứng.
+ 
+•	Nếu hàm nhận nhiều đối số, các đối số được liệt kê trong hàm gọi được gán cho các tham số của hàm đúng theo thứ tự.
+•	Nếu hàm có giá trị trả về mà ta không cần sử dụng giá trị trả về này, thì giá trị trả về này vẩn có thể được bỏ qua.
+•	Việc truyền đối số thông qua địa chỉ cho phép một hàm thay đổi giá trị một hay nhiều biến của hàm gọi.
+Ví dụ 2.3: Viết 1 hàm để hoán vị giá trị của hai số thực. #include “stdio.h”
+/*nguyên mẫu hàm*/
+void hoanvi(float *px, float *py); main() {
+float x,y;
+printf(“\nNhap hai so thuc :”); scanf(“%f%f”, &x, &y);
+printf(“Gia tri sau khi nhap : x=%.2f \t y=%.2f”, x, y);
+/*lời gọi hàm*/ hoanvi(&x, &y);
+printf(“Gia tri sau khi hoan vi : x=%.2f \t y=%.2f”, x, y);
+}
+/*định nghĩa hàm*/
+void hoanvi(float *px, float *py)
+{
+float tam; tam = *px;
+*px = *py;
+*py = tam;
+}
+
+2.3.	TRUYỀN THAM SỐ CHO HÀM
+-	Lời gọi hàm:
+Tên_hàm ([Danh sách các tham số thực sự])
+Số tham số thực sự trong lời gọi hàm phải bằng số tham số hình thức và các cặp tham số thực sự - tham số hình thức tương ứng phải tương thích về kiểu dữ liệu.
+-	Truyền tham số cho hàm: là cung cấp các giá trị đầu vào cho hàm phù hợp với kiểu và trật tự các tham số hình thức đã khai báo. Các giá trị đầu vào có thể là hằng, biến, biểu thức. Nếu tham số hình thức là địa chỉ biến thì tham số thực sự tương ứng phải là biến và các lệnh trong chương trình con có thể làm thay đổi giá trị của biến này.
+ 
+Ví dụ 2.4:Ví dụ về việc tham số thực sự thay đổi giá trị sau lời gọi hàm bởi các lệnh trong hàm khi nó ứng với tham số hình thức là địa chỉ biến.
+#include <stdio.h> #include <conio.h> void T(int a, int &b)
+{ a+=5; b+=5;
+}
+int main()
+{
+int x=10, y=10;
+printf(" Truoc luc goi ham T thi x= %d, y=%d ", x, y); T(x,y);
+printf("\n Sau loi goi ham T thi x= %d, y= %d", x, y);
+}
+Phạm vi của biến
+Biến toàn cục là các biến được khai báo ở ngoài các hàm (kể cả hàm main), tồn tại trong suốt thời gian làm việc của chương trình. Phạm vi hoạt động của biến toàn cục là từ vị trí khai báo chúng cho đến cuối tệp chương trình. Các hàm có thể làm thay đổi giá trị của biến toàn cục.
+Biến cục bộ: là biến được khai báo bên trong các hàm, nó chỉ tồn tại trong thời gian hàm đó hoạt động (hàm được gọi). Nếu biến cục bộ trùng với biến toàn cục thì trong phạm vi hàm đó biến toàn cục không có tác dụng.
+Ví dụ 2.5:Thực hiện chương trình #include <stdio.h> #include <conio.h>
+int z =20, y=20;	// z là biến toàn cục int tong(int b);
+main( )
+{
+int a =100;	// a là biến cục bộ
+printf("\n Ket qua ham tong(%d) = %d,", a, tong(a)); printf(" \n Gia tri bien toan cuc y =%d, z = %d", y, z);
+}
+int x=30;
+int tong(int b )
+{
+ 
+int y=5; y--; z+=2;
+printf(" Gia tri bien cuc bo y trong ham tong =%d", y); return (x+b+z);
+}
+Nhận xét
+-	Biến z có tác dụng với hàm main và tong, biến x có tác dụng với hàm tong, biến a chỉ có tác dụng với hàm main. Lệnh z+=2 trong hàm tong đã làm thay đổi giá trị của biến toàn cục z.
+-	Khi gặp lời gọi hàm tong(a), máy sẽ truyền giá trị tham số thực a cho đối số b rồi thực hiện các lệnh trong hàm tong. Trong hàm này có lệnh làm thay đổi giá trị biến y nhưng nó tác động lên biến y cục bộ. Vì vậy sau khi thực hiện xong hàm này giá trị biến toàn cục y không thay đổi.
+Chú ý: Về nguyên tắc chúng ta có thể khai báo các biến toàn cục ở nhiều chỗ song vì tính sáng sủa, dễ nhìn, dễ tìm của chương trình, bạn nên khai báo tất cả các biến toàn cục ở ngay đầu chương trình.
+Các biến cục bộ trong khối lệnh: Ta có thể khai báo các biến ở ngay đầu khối lệnh, các biến này là biến cục bộ. Khi máy bắt đầu làm việc với một khối lệnh thì các biến bên trong khối lệnh đó mới được hình thành và cấp phát bộ nhớ. Các biến này chỉ tồn tại trong thời gian máy làm việc với khối lệnh và chúng sẽ được giải phóng khi kết thúc khối lệnh. Vì vậy:
+-	Giá trị các biến hoặc mảng khai báo bên trong khối lệnh không thể đưa ra sử dụng bên ngoài khối lệnh đó.
+-	Ở ngoài khối lệnh không thể can thiệp đế các biến và mảng khai báo trong khối lệnh.
+-	Ở trong khối lệnh có thể sử dụng các biến bên ngoài khối lệnh nếu biến đó không trùng tên với các biến bên trong khối lệnh.
+Một số ví dụ
+ 
+Ví dụ 2.6: Lập chương trình tính Ck
+ 
+	n!
+k!(n  k )!
+ 
+Phân tích: để tính Ckn, chúng ta nên viết hàm (đặt tên hàm là GT) với đối số k để tính k!, sau đó chúng ta dùng lời gọi hàm 3 lần với các tham số thực sự tương ứng là n, k và n-k.
+Chương trình #include "stdio.h" #include "conio.h"
+ 
+long gt(int k); main()
+{ int k, n, c; do
+{ printf("Nhap n, k=");
+scanf("%d%d", &n, &k);
+}
+while (k<=0 || k>n); c=gt(n)/(gt(k)*gt(n-k));
+printf("To hop chap %d cua %d =%d", k, n, c);
+}
+long gt(int k)
+{ long s=1;int i;
+for (i=1; i<=k; i++) s*=i;
+return(s);
+}
+Ví dụ 2.7: Kiểm tra xem 3 số thực a, b, c có là ba cạnh của một tam giáckhông?
+Nếu là 3 cạnh của một tam giác, hãy tính diện tích chu vi tam giác.
+Cách 1: Các hàm có đối số #include <stdio.h> #include <conio.h> #include <math.h>
+void dt_cv(float a, float b, float c); int kt_tg( float a, float b, float c); int main(){
+float a, b, c; char ch;
+tt:
+printf("Nhap 3 canh tam giac :");scanf("%f%f%f", &a,&b,&c); if (kt_tg(a,b,c))
+dt_cv(a,b,c);
+printf(" \n tiep tuc C/K ?");fflush(stdin);ch=getchar(); if (ch=='c' || ch=='C') goto tt;
+}
+int kt_tg(float a, float b, float c){
+if (a<=0 || b<=0|| c<=0|| a+b<=c || a+c<=b || b+c<=a){
+ 
+printf(" %f %f %f khong phai la 3 canh cua mot tam giac ", a,b,c); return (0);
+}
+else {
+printf(" %f %f %f la 3 canh cua mot tam giac ", a,b,c); return (1);
+}
+}
+void dt_cv(float a, float b, float c){ float p,s;
+p=(a+b+c)/2;
+s=sqrt(p*(p-a)*(p-b)*(p-c)); printf("\n Chu vi = %f", 2*p); printf("\n Dien tich =%f",s);
+}
+Cách 2: sử dụng biến toàn cục
+#include "stdio.h" #include "conio.h" #include "math.h" void dt_cv();
+int kt_tg(); float a,b,c; main()
+{
+printf("Nhap 3 canh tam giac :");scanf("%f%f%f", &a,&b,&c); if (kt_tg())
+dt_cv();
+getch();
+}
+int kt_tg( ){
+if (a<=0 || b<=0|| c<=0|| a+b<=c || a+c<=b || b+c<=a){
+printf(" %f %f %f khong phai la 3 canh cua mot tam giac ", a,b,c); return (0);
+}
+else {
+printf(" %f %f %f la 3 canh cua mot tam giac ", a,b,c); return (1);
+ 
+}
+}
+void dt_cv()
+{
+float p,s; p=(a+b+c)/2;
+s=sqrt(p*(p-a)*(p-b)*(p-c)); printf("\n Chu vi = %f", 2*p); printf("\n Dien tich =%f",s); getch() ;
+}
+2.4.	HÀM ĐỆ QUY
+C không những cho phép từ hàm này gọi tới hàm khác, mà nó còn cho phép từ một điểm trong thân của một hàm gọi tới chính hàm đó. Hàm như vậy gọi là hàm đệ qui.
+Khi hàm gọi đệ qui đến chính nó, thì mỗi lần gọi máy sẽ tạo ra một tập các biến cục bộ mới hoàn toàn độc lập với tập các biến cục bộ đã được tạo ra trong các lần gọi trước.
+Có bao nhiêu lời gọi tới hàm thì cũng có bấy nhiêu lần thoát ra khỏi hàm và cứ mỗi lần thoát ra khỏi hàm thì một tập các biến cục bộ bị xoá. Sự tương ứng giữa các lần gọi tới hàm và các lần ra khỏi hàm được thực hiện theo thứ tự ngược lại.
+Phương pháp đệ quy thường áp dụng cho các bài toán phụ thuộc tham số có hai đặc điểm sau:
++ Bài toán dễ dàng giải quyết với một số trường hợp riêng ứng với các giá trị đặc biệt của tham số (gọi là trường hợp suy biến)
++ Trong trường hợp tổng quát bài toán có thể quy về một bài toán cùng dạng nhưng tham số thay đổi. Và sau một số hữu hạn bước biến đổi đệ quy sẽ dẫn tới trường hợp suy biến.
+Cách xây dựng hàm đệ qui :
+Hàm đệ qui thường được xây dựng theo thuật toán sau : if ( trường hợp suy biến)
+{
+Trình bày cách giải bài toán khi suy biến
+}
+else /* Trường hợp tổng quát */
+{
+Gọi đệ qui tới hàm ( đang viết ) với các giá trị khác của tham số
+}
+Ví dụ 2.8:Bài toán dùng đệ qui tìm USCLN của hai số nguyên dương a và b.
+ 
+
+chúng.
+ 
+Trong trường hợp suy biến, khi a=b thì USCLN của a và b chính là giá trị của
+
+Trong trường hợp chung : uscln(a,b)=uscln(a-b,b) nếu a>b uscln(a,b)=uscln(a,b-a) nếu a<b
+ 
+Ta có thể viết chương trình như sau : #include "stdio.h"
+int uscln(int a,int b ); /* Nguyên mẫu hàm*/ main()
+{	int m,n;
+printf("\n Nhap cac gia tri cua a va b :"); scanf("%d%d",&m,&n);
+printf("\n USCLN cua a=%d va b=%d la :%d",m,m,uscln(m,n))
+}
+int uscln(int a,int b)
+{
+if (a==b)
+return a;
+else
+if (a>b)
+return uscln(a-b,b);
+
+else
+return uscln(a,b-a);
+}
+Ví dụ 2.9:
+Dãy số Fibonacci là dãy F1, F2, ..., Fn, ... được tạo ra với công thức F1 = 1, F2 =1
+Fn = Fn-1 + Fn-2 với n>=2
+Hãy lập chương trình dùng chương trình con đệ quy để in ra số hạng thứ n của dãy Fibonaci và n số hạng đầu của dãy Fibonacci
+•	Hàm đệ quy xác định số hạng thứ n của dãy Fibonacci được định nghĩa như sau:
+int fibonacci (int n)
+{ if (n==1 || n==2) return 1;
+else return (fibonacci(n-1)+ fibonacci(n-2));
+ 
+}
+•	Chương trình
+#include "stdio.h" #include "conio.h" int fibonacci(int n); main()
+{
+int n,i;
+printf("Tim so hang thu may cua day ");scanf("%d", &n); printf("\n So hang thu %d cua day la %d ",n,fibonacci(n)); printf("\n Day %d so hang dau cua day fibonacci :",n);
+for (i=1;i<=n;i++) printf("%d ", fibonacci(i)); getch();
+}
+int fibonacci (int n)
+{ if (n==1 || n==2) return 1;
+else return (fibonacci(n-1)+ fibonacci(n-2));
+}
+Ví dụ 2.10:n! được định nghĩa
+-	0! = 1
+-	n!=n * (n-1) !
+Hàm đệ quy tính n! có thể được định nghĩa như sau long gt(int n) {
+if (n==0) return(1) ;
+else return(gt(n-1)*n);
+}
+
+BÀI TẬP CHƯƠNG 2
+1.	Viết hàm tính n!
+2.	Viết hàm tính tổng S = 1+2+….+n.
+3.	Viết hàm kiểm tra số nguyên tố
+4.	Viết hàm tính số hạng thứ n trong dãy Fibonacci.
+5.	Viết hàm kiểm tra 1 số có phải là số chính phương hay không
+ 
+6.	Viết hàm kiểm tra số nguyên dương k có phải là số hoàn hảo không? Sử dụng hàm in ra tất cả các số hoàn hảo thuộc đoạn [m, n].
+7.	In ra tất cả các số nguyên tố thuộc [m, n] (Yêu cầu: viết hàm kiểm tra số nguyên dương k có phải là số nguyên tố không?)
+8.	Tính tổng 1! + 2! +…+n! (Yêu cầu: viết hàm GT(k) để tính k! )
+9.	Viết chương trình đảo các chữ số của một số. Yêu cầu sử dụng chương trình con đệ quy.
+10.	Sử dụng hàm viết chương trình tính an (a:thực, n nguyên dương) dùng đệ qui và không dùng đệ qui.
+Ck
+11.	Tính	n theo 3 cách
+ 
+a.	n
+ 
+	n!
+k!(n  k )!
+1
+ 
+b.	n
+ 
+
+n  k  1  Ck 1
+ 
+	k
+1
+c.	n		k
+ 
+n
+
+
+
+k 1
+ 
+Cn 1  Cn 1
+ 
+
+
+3.1.	KIỂU MẢNG
+3.1.1.	Khái niệm
+ 
+Chương 3
+CON TRỎ VÀ MẢNG
+ 
+•	Mảng (array) là một dãy liên tiếp các phần tử, mỗi phần tử chứa dữ liệu có cùng một kiểu dữ liệu, kiểu dữ liệu đó gọi là kiểu cơ sở của mảng.
+•	Kích thước của mảng là số phần tử của mảng. Kích thước này phải được biết sau khi khai báo mảng.
+•	Mảng có thể có một chiều, hay nhiều chiều.
+3.1.2.	Mảng một chiều
+Khai báo mảng một chiều: kiểu _dữ _liệu tên_ mảng[số_ phần_ tử>];
+Ví dụ 3.1:
+
+int A[10] ; /* mang A có 10 phần tử nguyên : A[0], A[1], …, A[9]; mỗi phần tử là một  số nguyên */
+float B[50];/* Mảng B gồm 50 phần từ nguyên*/
+
+	Khởi tạo giá trị mảng: ta có thể khởi tạo giá trị cho mảng ngay khi khai báo.
+Ví dụ 3.2: int a[4] = {1,3,5,7}; // ta đã gán giá trị a[0]=1, a[1]=3, a[2]=5, a[3]=7; float b[10] ={3, 7, 8};
+Nếu ta không khởi tạo toàn bộ mảng thì các phần tử còn lại của mảng nhận giá trị 0 (đối với mảng nguyên và thực) và nhận giá trị NULL đối với mảng kí tự.
+	Khởi tạo mảng không bao hàm kích thước
+Giả sử ta khai báo int a[] = {50, 25, 10, 5, 1}. Khi đó trình biên dịch sẽ đếm số mục trong danh sách khởi tạo và dùng con số đó làm kích thước mảng. Vậy mảng a có 5 phần tử.
+•	Truy xuất vào các phần tử mảng
+Mỗi phần tử của mảng được truy cập thông qua chỉ số và phần tử đầu tiên có chỉ số bằng 0.
+Chỉ số của mảng có thể là một hằng, một biến hay một biểu thức đại số.
+Một phần tử của mảng là một biến có kiểu dữ liệu là kiểu cơ sở nên các thao tác trên các biến cũng được áp dụng trên các phần tử của mảng.
+ 
+Ví dụ 3.3 : int A[5]	// Khai báo mảng A gồm tối đa 5 phần tử nguyên.
+Chỉ số	0	1	2	3	4
+A[0]	A[1]	A[2]	A[3]	A[4]
+Nhập xuất dữ liệu mảng một chiều
+Nhập dữ liệu cho mảng: nhập dữ liệu từ bàn phím cho các phần tử x[0], x[1],	,
+x[n] của mảng x, các phần tử nhận kiểu int.
+
+int x[100];	/* khai báo mảng số nguyên có 100 phần tử */
+
+
+1)	Nhập dữ liệu:
+int n, i;
+printf("\nSo phan tu cua day so : "); scanf("%d",&n);	/* n là số phần tử của dãy số */
+/* nhập dãy số */
+for (i=0 ; i<n ; i++) {
+printf("Nhap vao phan tu thu %d: ", i + 1); scanf("%d",&x[i]);
+}
+Xuấtdữ liệu cho mảng
+2)	Xuất dữ liệu:
+int i;
+int n; /* n là số phần tử của dãy số */
+/* xuất dãy số */ for (i=0 ; i<n ; i++)
+printf("%6d",x[i]);
+Lưu ý: nếu các phần tử của mảng nhận kiểu dữ liệu khác kiểu int thìở lệnh scan và lệnh printf ta chỉ cần thay kí tựđặc tả tương ứng với kiểu phần tử của mảng.
+Ví dụ 3.4: Viết chương trình nhập xuất mảng một chiều các số nguyên. Tính tổng các số chẵn. Sắp xếp lại dãy số theo chiều tăng dần.
+Chương trình
+ 
+#include <conio.h> #include <stdio.h> int main ( )
+{   int n, i,j, s=0,tg;
+printf("\nSo phan tu cua day so : "); scanf("%d",&n);
+for (i=0 ; i<n ; i++) {
+printf("Nhap vao phan tu thu %d: ", i + 1); scanf("%d",&x[i]);
+}
+for (i=0 ; i<n ; i++)
+printf("%6d",x[i]); for (i=0 ; i<n ; i++)
+if(x[i]%2==0)
+{
+ 
+
+
+
+}
+if(d)
+ 
+s+=a[i]; d++;
+ 
+
+
+else
+ 
+printf("Tong cac phan tu chan la %d: ",s);
+
+
+printf("Khong co so chan !! ",);
+ 
+for (i=0 ; i<n ; i++)
+for (j=i+1; i<n ;j++) if(x[i]>x[j])	{
+tg=x[i]; x[i]=x[j]; x[j]=tg;
+}
+ 
+printf("In ra day so sau khi sap xep:\n ",s); for (i=0 ; i<n ; i++)
+printf("%6d",x[i]);
+getch ();
+}
+3.1.3.	Mảng nhiều chiều
+Khai báo: kiểu_dữ_ liệu	tên_ mảng[số hàng][số cột>];
+Ví dụ 3.5:
+•	Khai báo mảng hai chiều có tên là sn gồm 8 hàng, 14 cột và kiểu cơ sở là int int sn[8][14];
+•	Khai báo mảng hai chiều có tên là st gồm10 hàng, 5 cột và kiểu cơ sở là float float st[10][5];
+Truy xuất phần tử của mảng
+Để truy xuất các thành phần của mảng hai chiều ta phải dựa vào chỉ số dòng và chỉ số cột.
+Ví dụ 3.6:
+int A[3][4] = { {2,3,9,4} , {5,6,7,6} , {2,9,4,7} };
+Với các khai báo như trên ta có :
+A[0][0] = 2; A[0][1] = 3;
+A[1][1] = 6; A[1][3] = 6;
+Với ví dụ trên ta có hình dạng của một ma trận như sau
+
+
+
+Nhập xuất dữ liệu trên mảng nhiều chiều
+ 
+Ta định nghĩa hằng ROWS chứa số hàng và COLUMNS chứa số cột của mảng số nguyên 2 chiều x có kiểu cơ sở là int.
+Khai báo hằng:
+#define ROWS 30
+#define COLUMNS 30 Khai báo mảng số nguyên 2 chiều:
+int x[ROWS][COLUMNS];
+1)	Nhập dữ liệu:
+Biến row chứa số hàng, biến col chứa số cột. int i, j, row, col;
+printf("\nCho biet so hang va so cot : "); scanf("%d%d",&row,&col);
+for (i=0; i<row; i++)
+for (j=0; j<col; j++) {
+printf("x[%d][%d]=", i, j);
+scanf("%d",&x[i][j]);}
+2)	Xuất dữ liệu:
+for (i=0; i<row; i++)
+{ printf("\n");
+for (j=0; j<col; j++) printf("%6d",x[i][j]);}
+3.2.	CON TRỎ (POINTER)
+3.2.1.	Khái niệm và cách khai báo
+a.	Địa chỉ
+Khi ta khai báo một biến trong C, trình biên dịch sẽ cấp cho biến này một khoảng nhớ gồm một dãy các byte liên tiếp. Địa chỉ của biến là số thứ tự của byte đầu tiên của vùng nhớ dành cho biến.
+Ví dụ 3.7: Khi khai báo int b =5;
+Xácđịnh một biến có tên b, có giá trị 5. Máy sẽ cấp phát vùng nhớ gồm 2 byte liên tiếp cho biến này. Số thứ tự của byte đầu tiên làđịa chỉ của biến x.
+ 
+Khi chúng ta khai báo biến kiểu int thì máy dành vùng nhớ 2 byte liên tiếp cho biến này. Nếu ta dùng biến kiểu float thì máy sẽ cấp vùng nhớ 4 byte liên tiếp,	Vì vậy,
+máy sẽ phân biệt các kiểuđịa chỉ: địa chỉ kiểu int, kiểu float, kiểu char, ....
+Phép toán&x cho ta địa chỉ của biến x.
+b.	Con trỏ
+Con trỏ là biến dùngđể chứađịa chỉ. Vì có nhiều loạiđịa chỉ nên có nhiều kiểu con trỏ tương ứng. Con trỏ kiểu int dùngđể chứađịa chỉ biến kiểu int, con trỏ kiểu float dùngđể chứa địa chỉ biến kiểu float, ...
+c.	Khai báo
+	Kiểu_dữ_liệu *Tên_con_trỏ;
+Ví dụ 3.8: int b, *p;	/* p là con trỏ kiểu int */
+	Khởi tạo con trỏ: tên_con_trỏ = & tên_biến; Trong đó & là toán tử lấyđịa chỉ.
+Chú ý: kiểu củađịa chỉ phải phù hợp với kiểu con trỏ. p=&b;	/* p trỏ tới biến b */
+	Hằng con trỏNULL
+NULL là một giá trị hằngđặc biệt dành cho các biến con trỏ và nóđược dùngđể báo rằng con trỏ không trỏ vàođâu cả. NULL có thểdùng để gán cho bất cứ biến con trỏnào.
+	Sử dụng con trỏ
+Giả sử p=&b; khi đó các cách viết b và*p là tương đương trong mọi ngữ cảnh. Vì vậy, *p và b đều chỉ nội dung của biến b.
+p và&b đều chỉđịa chỉ của biến b.
+Ví dụ 3.9: printf("%d ", b); tương đương với lệnhprintf("%d ", *p); b=5; tương đương với lệnh *p=5;
+Tóm lại: với p là biến con trỏ thì *p là dữ liệu của vùng nhớ do p trỏ tới (*p là dữ liệu được chứa trong địa chỉ p).
+Ví dụ 3.10: trình tự thực hiệnđoạn lệnh int b=5, *p;
+p=&b;
+printf("%d ", *p); như sau:
+-	Máy cấp phát 2 byte cho biến b và lưu giá trị 5 vàoô nhớ này. Giả sử byte đầu tiên cóđịa chỉ là 1203.
+-	Cung cấp 2 byteđể lưu giữđịa chỉ của biến nguyên và vùng nhớđó có tên là p, giả sử bắtđầu tạiđịa chỉ 2017.
+-	Sau lệnh p=&b thìô nhớ p chứađịa chỉ biến b.
+ 
+-	Thực hiện lệnhprintf("%d ", *p); sẽ in ra màn hình nội dung củaô nhớ cóđịa chỉ chứa trong biến p (nội dung củaô nhớ cóđịa chỉ 1203).
+Kết quả in ra màn hình: 5 Địa chỉ vùng nhớ:
+ 	 
+Ví dụ 3.11: Thực hiện chương trình #include <stdio.h>
+#include <conio.h> main()
+{ int x, y, *px, *py; px=&x; py=&y; x=10;
+y=5;
+printf(" *px= %d, *py=%d", *px, *py);
+*px+=*py ; printf("\n x=%d", x); y*=4;
+printf("\n *py= %d", *py);
+}
+Ví dụ 3.12: hiển thịđịa chỉ và giá trị của biến #include <stdio.h>
+#include <conio.h> main()
+{ int x, *p; p=&x;
+*p=10;
+printf("Dia chi bien x: %p, gia tri bien x=%d ", p, x);
+}
+3.2.2.	Các phép toán trên con trỏ
+	Phép gán
+ 
+Ta có thể gán hai con trỏ cùng kiểu cho nhau. Muốn gán các con trỏ khác kiểu thì phải dùng phép ép kiểu.
+Cú pháp: Con_trỏ_1=Con_trỏ_2;
+Sau lệnh này Con_trỏ_1 và Con_trỏ_2 cùng trỏ vào một vùng nhớ.
+Ví dụ 3.13: int *p,*q, x; char *r;
+p=q;		/* phép gán hai con trỏ cùng kiểu */ r = (char*)q;	/* ép kiểu */
+Ví dụ 3.14: Thực hiện chương trình #include "stdio.h"
+#include "conio.h" main()
+{
+int x, *p, *q; x = 10;
+p = &x;
+q = p;
+printf("Gia tri o nho do q tro toi = %d", *q);
+}
+Ví dụ 3.15: Về phép ép kiểu #include "stdio.h"
+#include "conio.h" int main()
+{ int *p; char *q;
+*p=0x4139;
+q=(char*)(p);	/* q trỏ vào byte đầu tiên của vùng nhớ do p trỏ tới */ printf(" Gia tri luu o vung nho do q tro toi bieu dien trong he hexa la: %x",*q);
+return;
+}
+Phép tăng giảm địa chỉ
+Ví dụ 3.16:
+int x;	char *ch; x=0xA4B6 ;
+ch=(char *)&x; // ch trỏ vào byte thứ nhất của vùng nhớ dành cho biến x và
+// *ch=0xB6
+ch++; //ch trỏ vào byte tiếp theo của vùng nhớ dành cho biến x và *ch=0xA4.
+Lệnh ch++ là phép tăng địa chỉ được thực hiện trên 1 byte, sau lệnh này ch trỏ vào byte tiếp theo.
+ 
+Với kiểu địa chỉ int là kiểu địa chỉ 2 byte (mỗi giá trị int chứa trong 2 byte) nên phép toán tăng giảm được thực hiện trên 2 byte. Với địa chỉ kiểu float, phép tăng giảm thực hiện trên 4 byte.
+	Phép truy nhập bộ nhớ
+Nguyên tắc: con trỏ float truy nhập tới 4 byte, con trỏ int truy nhập 2 byte, con trỏ char truy nhập 1 byte.
+Ví dụ 3.17: int *p; float *q;
+-	Nếu p trỏ đến byte 1100 thì *p biểu thị vùng nhớ 2byte liên tiếp từ byte 1100 đến byte 1101.
+-	Nếu q trỏ đến byte 1100 thì *q biểu thị vùng nhớ 4 byte liên tiếp từ byte 1100 đến byte 1103.
+	Phép so sánh: cho phép so sánh các con trỏ cùng kiểu. Nếu p1, p2 là 2 con trỏ cùng kiểu thì:
+-	p1<p2 nếu địa chỉ p1 trỏ tới thấp hơn địa chỉ p2.
+-	p1=p2 nếu địa chỉ p1 trỏ tới bằng địa chỉ p2 trỏ tới.
+	Con trỏ kiểu void
+Con trỏ kiểu void được khai báo: void *tên_con_trỏ;
+Đây là con trỏđặc biệt, nó có thể nhận bất kỳđịa chỉ kiểu nào.
+Chú ý: các phép tang giảmđịa chỉ, so sánh và truy nhập bộ nhớ không dùng trên con trỏ void.
+Cách dùng: con trỏ void thường dùng làmđối sốđể nhận bất kỳđịa chỉ kiểu nào từ tham số thực sự.
+3.3.	LIÊN HỆ GIỮA CON TRỎ VÀ MẢNG
+3.3.1.	Con trỏ và mảng một chiều
+Trong ngôn ngữ C có mối quan hệ chặt chẽ giữa con trỏ và mảng: các phần tử của mảng có thể được xác định nhờ chỉ số hoặc thông qua con trỏ.
+Phép toán lấy địa chỉ:
+Phép toán này chỉ áp dụng cho các phần tử của mảng một chiều. Giả sử ta có khai báo: double b[20];
+Khi đó phép toán: &b[9]sẽ cho địa chỉ của phần tử b[9]. Tên mảng là một hằng địa chỉ :
+Khi khai báo: float a[10];
+máy sẽ bố trí bố trí cho mảng a mười khoảng nhớ liên tiếp, mỗi khoảng nhớ là 4 byte. Như vậy, nếu biết địa chỉ của một phần tử nào đó của mảng a, thì ta có thể dễ dàng suy ra địa chỉ của các phần tử khác của mảng.
+Với ngôn ngữ C ta có:
+a tương đương với &a[0]
+ 
+a+i tương đương với &a[i]
+*(a+i) tương đương với a[i]
+Con trỏ trỏ tới các phần tử của mảng một chiều: Khi con trỏ pa trỏ tới phần tử a[k] thì:
+pa+i trỏ tới phần tử thứ i sau a[k], có nghĩa là nó trỏ tới a[k+i]. pa-i trỏ tới phần tử thứ i trước a[k], có nghĩa là nó trỏ tới a[k-i].
+*(pa+i) tương đương với pa[i].
+Như vậy, sau hai câu lệnh : float a[20],*p;
+p=a;
+thì bốn cách viết sau có tác dụng như nhau : a[i]	*(a+i)	p[i]	*(p+i)
+Ví dụ 3.18:Vào số liệu của các phần tử của một mảng và tính tổng của chúng : Cách 1:
+#include "stdio.h" main()
+{
+float a[4],tong; int i;
+for (i=0;i<4;++i)
+{
+printf("\n a[%d]=",i);
+scanf("%f",a+i);
+}
+ 
+
+
+
+
+
+}
+Cách 2 :
+ 
+tong=0;
+for (i=0;i<4;++i)
+tong+=a[i];
+printf("\n Tong cac phan tu mang la :%8.2f ",tong);
+ 
+#include "stdio.h" main()
+{
+float a[4],tong, *troa; int i;
+troa=a;
+for (i=0;i<4;++i)
+ 
+{
+printf("\n a[%d]=",i);
+scanf("%f",&troa[i]);
+}
+ 
+
+
+
+
+
+}
+Cách 3 :
+ 
+tong=0;
+for (i=0;i<4;++i)
+tong+=troa[i];
+printf("\n Tong cac phan tu mang la :%8.2f ",tong);
+ 
+#include "stdio.h" main()
+{
+float a[4],tong,*troa; int i;
+troa=a;
+for (i=0;i<4;++i)
+{
+printf("\n a[%d]=",i);
+scanf("%f",troa+i);
+}
+tong=0;
+for (i=0;i<4;++i)
+tong+=*(troa+i);
+printf("\n Tong cac phan tu mang la :%8.2f ",tong);
+}
+Chú ý:Mảng một chiều và con trỏ tương ứng phải cùng kiểu.
+3.3.2.	Con trỏ và mảng nhiều chiều
+Việc xử lý mảng nhiều chiều phức tạp hơn so với mảng một chiều. Không phải mọi qui tắc đúng với mảng một chiều đều có thể áp dụng cho mảng nhiều chiều.
+Phép lấy địa chỉ:
+Phép lấy địa chỉ đối với các phần tử mảng nhiều chiều chỉ có thể áp dụng khi các phần tử mảng nhiều chiều có kiểu nguyên, còn lại thì phép lấy địa chỉ cho các phần tử mảng nhiều chiều là không thực hiện được.Ví dụ như ta có thể lấy địa chỉ &a[1][2] khi a là mảng nguyên.
+Phép cộng địa chỉ trong mảng nhiều chiều:
+ 
+Giả sử ta có mảng hai chiều a[2][3] có 6 phần tử ứng với sáu địa chỉ liên tiếp trong bộ nhớ được xếp theo thứ tự sau :
+Phần tử	a[0][0]	a[0][1]	a[0][2]	a[1][0]	a[1][1]	a[1][2]
+Địa chỉ	1	2	3	4	5	6
+Tên mảng a biểu thị địa chỉ đầu tiên của mảng. Phép cộng địa chỉ ở đây được thực hiện như sau:
+Ngôn ngữ C coi mảng hai chiều là mảng (một chiều) của mảng, như vậy khai báo
+float a[2][3];thì a là mảng mà mỗi phần tử của nó là một dãy 3 số thực (một hàng của mảng).
+Vì vậy:
+a trỏ phần tử thứ nhất của mảng: phần tử a[0][0]
+a+1 trỏ phần tử đầu hàng thứ hai của mảng: phần tử a[1][0]
+........
+Con trỏ và mảng nhiều chiều:
+Để lần lượt duyệt trên các phần tử của mảng hai chiều ta có thể dùng con trỏ như minh hoạ ở ví dụ sau:
+float *pa,a[2][3]; pa=(float*)a;
+lúc đó :
+pa trỏ tới a[0][0] pa+1 trỏ tới a[0][1] pa+2 trỏ tới a[0][2] pa+3 trỏ tới a[1][0] pa+4 trỏ tới a[1][1] pa+5 trỏ tới a[1][2] Ví dụ 3.19:
+Dùng con trỏ để vào số liệu cho mảng nhiều chiều.
+Cách 1 :
+#include "stdio.h" main()
+{
+float a[2][3],*pa; int i; pa=(float*)a;
+for (i=0;i<6;++i) scanf("%f",pa+i);
+}
+ 
+Cách 2 :
+#include "stdio.h" main()
+{
+float a[2][3],*pa; int i;
+for (i=0;i<6;++i) scanf("%f",(float*)a+i);
+}
+* Truyền mảng cho hàm
+Nếu tham số thực là tên mảng a một chiều kiểu int(float, double,..) thìđối số pa tương ứng phải là con trỏ kiểu int(float, double,..). Đối pa có thể khai báo kiểu con trỏ:
+int *pa; float *pa; …
+hoặc cũng có thể khai báo như một mảng hình thức int pa[]; float pa[],..
+Khi hàm bắtđầu làm việc thì giá trị của a được truyền cho pa. Vì a là hằngđịa chỉ biểu diễnđịa chỉđầu của mảng nên con trỏ pa chứađịa chỉ phần tửđầu tiên của mảng. Khi đóđể truy cập phần tử a[i] ta có thể viết *(pa+i) hoặc pa[i].
+Ví dụ 3.20: Xây dựng chương trình gồm các hàm sau: Nhập vào dãy số nguyên, hiển thị dãy số nguyên, tính tổng các số chẵn, đưa ra giá trị lớn nhất của dãy số, sắp xếp lại dãy số theo chiều tăng dần.
+#include <conio.h> #include <stdio.h> #define MAX 100
+void NhapMang (int a[], int &n)
+{	int i; for(i=0;i<n;i++)
+{
+printf("a[%d]=",i+1);
+scanf("%d",&a[i]);
+}
+}
+void XuatMang (int a[], int n)
+{
+printf ("\nNoi dung mang: "); for (int i = 0; i < n; i ++)
+printf (" %d \t ", a[i]);
+ 
+}
+int tong(int a[], int n)
+{int s=0,i;
+for(i=0;i<n;i++) if(a[i]%2==0)
+s=s+a[i]; return s;
+}
+int max( int a[], int n)
+{int		max=a[0],i; for( i=1;i<n;i++) if(max<a[i])
+max=a[i]; return max;
+}
+void sapxep(int a[], int n)
+{int tg,i,j;
+for( i=0;i<n-1;i++) for( j=i+1;j<n;j++) if(a[i]>a[j])
+{
+ 
+
+
+
+
+
+}
+main ( )
+{
+ 
+tg=a[i]; a[i]=a[j]; a[j]=tg;
+}
+ 
+int a[MAX] , n;
+printf ("Nhap so phan tu: "); scanf ("%d", &n); NhapMang(a,n); XuatMang(a,n);
+printf("\n Tong cac so chan:%d",tong(a,n)); printf(" \n Gia tri max:%d",max(a,n)); printf("\n Sap xep lai day so:\n"); XuatMang(a,n);
+ 
+getch ( );
+}
+3.4.	KIỂU CHUỖI
+3.4.1.	Khái niệm Xâu kí tự
+Xâu kí tự trong C được xem như là một mảng một chiều gồm các phần tử có kiểu char. Kết thúc xâu kí tự bằng kí tự '\0' hay còn có tên là kí tự NULL trong bảng ASCII.
+Ví dụ: xâu "Ngon ngu C" được lưu trữ như sau:
+
+N	g	o	n		n	g	u		C	\0
+	Khai báo xâu kí tự
+Khai báo char ht[30]thì xâu ht có thể chứa tối đa 30 kí tự gồm cả kí tự kết thúc xâu
+'\0'
+Chúng ta có thể khai báo:
+char ht[] = "Nguyen Van A"
+Nghĩa là khai báo xâu kí tự được khởi tạo giá trị luôn và không có thông báo kích thước cực đại. Khi này chương trình dịch tự động bố trí đủ một mảng ô nhớ để chứa dãy kí tự trên cộng thêm một ô chứa kí hiệu kết thúc '\0'.
+char ht[30] = "Nguyen Van A"là khai báo có khởi tạo giá trị và cung cấp 30 byte để lưu trữ xâu ht.
+Ví dụ 3.21: Nhập và in ra tên #include "stdio.h" #include "conio.h" main()
+{ char Ten[7];
+printf("Cho biet ten cua ban:"); scanf("%s", Ten); printf("Chao ban: %s", Ten);
+}
+Lưu ý: không cần sử dụng toán tử địa chỉ & trước Ten trong lệnh scanf("%s",Ten), vì bản thân Ten đã là địa chỉ.
+Dùng hàm scanf để nhập chuỗi có hạn chế như sau: Khi bạn thử lại chương trình trên với dữ liệu nhập vào là Mai Lan, nhưng khi in ra bạn chỉ nhận được Mai. Vì hàm scanf nhận vào dữ liệu đến khi gặp khoảng trắng thì kết thúc.
+	Hàm nhập (gets) và hàm xuất (puts) xâu kí tự Hàm gets( ): nhận một chuỗi kí tự từ sdtin.
++ Dạng hàm: char *gets(char *s)
+Đối s là con trỏ kiểu char trỏ tới vùng nhớ chứa dãy kí tự nhận được.
+ 
++ Công dụng: nhận dãy kí tự từ sdtin cho đến khi gặp kí tự ‘\n’. Kí tự ‘\n’ bị loại khỏi stdin nhưng không được đặt vào chuỗi. Chuỗi được bổ sung thêm kí tự kết thúc ‘\0’ và đặt vào vùng nhớ do s trỏ tới. Hàm trả về địa chỉ chuỗi nhận được.
+Ví dụ 3.22:
+char ht[30];
+printf(" Nhap ho ten: ); gets(ht);
+Hàm puts( ): đưa một chuỗi kí tự ra stdout.
++ Dạng hàm: int puts(const char *s);
+Đối s là con trỏ kiểu char trỏ tới vùng nhớ chứa dãy kí tự nhận được.
++ Công dụng: đưa chuỗi s và kí tự ‘\n’ lên stdout. Khi thành công, hàm trả về ký tự cuối cùng được xuất (chính là ‘\n’). Khi có lỗi hàm trả về EOF.
+Ví dụ 3.23:
+char ht[30] ="Nguyen Van Anh" ;
+puts(ht) ; // trên màn hình hiển thị: Nguyen Van Anh
+Ví dụ 3.24: Nhập từ bàn phím họ và tên, quê quán của một người và in các giá trị vừa nhập lên màn hình trên cùng một dòng.
+#include <stdio.h> #include <conio.h> main()
+{   char ht[30],qq[50];
+printf("Nhap ho va ten:");gets(ht); printf("nhap que quan:");gets(qq); printf(" %s	%s", ht,qq); getch();
+}
+Chú ý: với khai báo char ht[30], câu lệnh ht="Nguyen Van A" là không hợp lệ.
+Ví dụ: 3.25:
+/* Chuong trinh nhap thang (so) và in ra thang (chu) tuong ung*/ #include <stdio.h>
+#include <conio.h> int main()
+{
+char cthang[12][15] = {"January", "February", "March", "April", "May",
+"June","July", "August", "September", "October", "November", "December"}; int ithang;
+printf("Nhap vao thang (1-12): "); scanf("%d", &ithang);
+ 
+printf("%s.\n", cthang[ithang-1]);
+}
+Con trỏ kí tự
+Khai báo con trỏ kí tự: char * tên_biến;
+Khi đó ta có thể gán một xâu kí tự cho con trỏ kiểu char. char * st;
+st= "Ha noi "
+Sau khi thực hiện câu lệnh này, con trỏ st sẽ có địa chỉ đầu của mảng (kiểu char) đang chứa xâu ký tự bên phải. Khi đó các câu lệnh:
+puts("Ha noi"); puts(xau);
+sẽ có cùng một tác dụng là cho hiện lên màn hình dòng chữHa noi.
+Ví dụ 3.26: về con trỏ và xâu kí tự
+/* Chuong trinh nhap va in ra ho ten*/ #include <stdio.h>
+#include <conio.h> void main(void)
+{ char *cgreeting = "Chao ban"; char ht[30]; puts("Cho biet ten cua ban: ");
+gets(ht);
+puts(cgreeting); puts(ht);
+}
+3.4.2.	Các hàm xử lý chuỗi
+Các hàm này khai báo trong string.h
+a.	Hàm strcat
+char *strcat(char *dest, const char *src);
+Thêm chuỗi src vào sau chuỗi dest.
+Ví dụ 3.27: thực hiện chương trình #include <stdio.h>
+#include <string.h> main()
+{ char xau1[50]="Ngon ngu", xau2[]=" lap trinh C"; strcat(xau1, xau2);
+puts(xau1);
+}
+b.	Hàm strcpy
+char *strcpy(char *dest, const char *src);
+ 
+Hàm sao chuỗi src vào vùng dest..
+Ví dụ 3.28: Thực hiện đoạn lệnh sau ta nhận được st= "Borland C" char st[25];
+char *st1 = "Borland C"; // có thể viết char st1[]="Borland C"; strcpy(st, st1);
+c.	Hàm strlen
+int strlen(char *s) Hàm cho độ dài chuỗi Ví dụ 3.29:
+char st[50]="Nguyen Van A"; char *s = "Borland C";
+int len_s;
+printf("%d", strlen("abdthc")); // hiển thị lên màn hình: 6 printf("\n%d", strlen(st));	// 12
+len_s = strlen(s);	// kết quả len_s = 9
+d.	Hàm strcmp
+int *strcmp(const char *s1, const char *s2);
+So sánh chuỗi s1 với chuỗi s2. Hàm trả về:
+-	Giá trị âm nếu chuỗi s1 bé thua chuỗi s2.
+-	Giá trị 0 nếu chuỗi s1 bằng chuỗi s2.
+-	Giá trị dương nếu chuỗi s1 lớn hơn chuỗi s2.
+Ví dụ 3.30:
+char *buf1 = "aaa", *buf2 = "bbb", *buf3 = "aaa"; printf("%d \n", strcmp(buf1, buf2)); // kết quả trả về - 1 printf("%d\n",strcmp(buf1, buf3)); // kết quả trả về 0 printf("%d\n",strcmp(buf2, buf3)); // kết quả trả về 1
+e.	Hàm strcmpi
+int *strcmp(const char *s1, const char *s2);
+So sánh chuỗi s1 với chuỗi s2 không phân biệt chữ hoa, chữ thường. Kết quả trả về:
+-	Giá trị âm nếu chuỗi s1 bé thua chuỗi s2.
+-	Giá trị 0 nếu chuỗi s1 bằng chuỗi s2.
+-	Giá trị dương nếu chuỗi s1 lớn hơn chuỗi s2.
+Ví dụ 3.31: char *buf1 = "aaa", *buf2 = "AAA"; int i= strcmp(buf1, buf2); // kết quả i=0
+f.	Hàm strlwr
+char *strlwr(char *s);
+ 
+Chuyển chuỗi s sang chữ thường Ví dụ: char *s = "Borland C";
+s = strlwr(s); //kết quả s = "borland c"
+g.	Hàm strupr
+char *strupr(char *s);
+Chuyển chuỗi s sang chữ hoa
+Ví dụ 3.32: char *s = "Borland C";
+s = strlwr(s); // kết quả s = "BORLAND C"
+3.5.	CON TRỎ HÀM
+Cách khai báo con trỏ hàm và mảng con trỏ hàm
+Ta sẽ trình bày quy tắc khai báo thông qua các ví dụ.
+Ví dụ 3.33:
+Câu lệnh: float (*f)(float), (*mf[50])(int); Để khai báo:
+•	f là con trỏ hàm kiểu float có đối là float
+•	mf là mảng con trỏ hàm kiểu float có đối kiểu int (có 50 phần tử )
+Ví dụ 3.34
+Câu lệnh:  double (*g)(int, double), (*mg[30])(double, float); Để khai báo:
+•	g là con trỏ hàm kiểu double có các đối kiểu int và double
+•	mg là mảng con trỏ hàm kiểu double có các đối kiểu double và float ( có 30 phần tử )
+Tác dụng của con trỏ hàm
+Con trỏ hàm dùng để chứa địa chỉ của hàm. Muốn vậy ta thực hiện phép gán tên hàm cho con trỏ hàm. Để phép gán có ý nghĩa thì kiểu hàm và kiểu con trỏ phải tương thích. Sau phép gán, ta có thể dùng tên con trỏ hàm thay cho tên hàm.
+Ví dụ 3.35:
+#include <stdio.h> #include <conio.h> int uscln(int a, int b);
+int (*f)(int, int)=uscln;	// f là con trỏ hàm chứa địa chi hàm uscln main()
+{	int x, y,z;
+printf("nhap x, y,z =");
+scanf("%d%d%d",&x,&y,&z); printf("Uscln( %d, %d)=%d", x, y, f(x,y));
+printf(" \n Uscln( %d, %d, %d)=%d", x, y,z, f(f(x,y),z));
+ 
+getch();
+}
+int uscln(int a,int b)
+{	int r;
+r= a % b; while (r!=0)
+{ a=b;b=r;r=a%b;} return(b);
+}
+Lưu ý: Ta có thể thay khai báo vừa khởi tạo int (*f)(int, int)=uscln; bởi khai báo int (*f)(int, int); và trong hàm main( ) bổ sung thêm lệnh f=uscln trước các lệnh printf.
+Đối con trỏ hàm
+Ngôn ngữ C cho phép thiết kế các hàm mà tham số thực trong lời gọi tới nó lại là tên của một hàm khác. Khi đó tham số hình thức tương ứng phải là một con trỏ hàm.
+Cách dùng con trỏ hàm trong thân hàm:
+Nếu đối được khai báo: double (*f)(double, int); thì trong thân hàm ta có thể dùng các cách viết sau để xác định giá trị của hàm (do con trỏ f trỏ tới ):
+f(x, m) hoặc (f)(x, m) hoặc (*f)(x, m)
+ở đây x là biến kiểu double còn m là biến kiểu int.
+Ví dụ 3.36 :Tìm ước số chung lớn nhất và bội số chung nhỏ nhất có đối số là con trỏ hàm.
+#include <stdio.h> #include <conio.h> int uscln(int a,int b);
+int bscnn(int a, int b, int (*f)(int, int)); main(){
+int x, y,z;
+printf("nhap x, y,z =");
+scanf("%d%d%d",&x,&y,&z);
+printf("Uscln( %d, %d)=%d", x, y, uscln(x,y));
+printf("\n BSCNN(%d, %d)=%d", x, y, bscnn(x,y,uscln));
+printf(" \n Uscln( %d, %d, %d)=%d", x, y,z, uscln(uscln(x,y),z)); printf(" \n Bscln( %d, %d, %d)=%d", x, y,z,
+bscnn(bscnn(x,y,uscln),z,uscln)); getch();
+}
+int uscln(int a,int b){
+ 
+int r;
+r= a % b; while (r!=0){
+a=b;b=r;r=a%b;
+}
+return(b);
+}
+int bscnn(int a, int b, int (*f)(int, int)){
+return(a*b/f(a,b));
+}
+ 
+
+
+tố).
+ 
+BÀI TẬP CHƯƠNG 3
+1.	Tìm số nguyên tố thứ n của tập số tự nhiên N (dùng mảng để lưu các số nguyên
+
+2.	Sử dụng hàm viết chương trình nhập, sắp xếp và hiển thị mảng 1 chiều gồm 10
+ 
+số nguyên. Nhập 1 số nguyên và kiểm tra xem số đó có nằm trong mảng không.
+3.	Sử dụng hàm viết chương trình tính tổng các số dương, tổng bình phương của các số âm trong mảng 1 chiều.
+4.	Nhập mảng 1 chiều, nhập số n và kiểm tra xem trong mảng có chuỗi con (gồm n phần tử liên tiếp) tăng hay không.
+5.	Xây dựng chuỗi con (liên tiếp) tăng dài nhất từ mảng 1 chiều.
+6.	Kiểm tra số x có lớn hơn (nhỏ hơn) giá trị lớn nhất (nhỏ nhất) của mảng 1 chiều hay không.
+7.	Kiểm tra các phần tử của mảng 1 chiều có đôi một phân biệt hay không.
+8.	Nhập vào 1 dãy số, kiểm tra xem dãy đó có tăng dần hay giảm dần không.
+9.	Tìm phần tử trong mảng có giá trị gần số x nhất.
+10.	Tìm các phần tử xi sao cho tồn tại cặp phần tử xi, xk thoả mãn : xi = xj + xk
+11.	Nhập m,n; xóa phần tử thứ m và thứ n trong 1 mảng 1 chiều.
+12.	Xóa các phần tử bằng 0 trong mảng 1 chiều.
+13.	Nhập ma trận, tìm xem cột nào có nhiều số dương nhất.
+14.	Sử dụng hàm viết chương trình cộng, nhân hai ma trận
+15.	Sử dụng hàm viết chương trình nhập, chuyển vị và hiển thị ma trận.
+16.	Nhập ma trận vuông n*n, các phần tử là các số nguyên. Xuất ra màn hình :
+-	Ma trận đó có đối xứng qua đường chéo chính không ?
+-	Có 2 cột nào tỉ lệ với nhau không, có 2 hàng nào bằng nhau hay không
+-	Tính tổng các phần tử trên đường chéo phụ.
+17.	Tạo ma trận X[1..10, 1..10].
+a.	Hãy lập chương trình tạo ra 100 giá trị ngẫu nhiên nằm trong đoạn [1, 10].
+ 
+b.	Tính tổng của tất cả các phần tử nằm trên đường chéo chính
+c.	Tính tổng bình phương của các số trên hàng chẵn.
+d.	Tính tổng căn bậc hai các số ở cột lẻ.
+e.	Có bao nhiêu phần tử của ma trận có giá trị nằm trong đoạn [4, 6].
+18.	Đếm số lần xuất hiện của các kí tự trong xâu kí tự.
+19.	Thay các dấu tab trong xâu kí tự bằng các khoảng trắng.
+20.	Thay thế các chuỗi khoảng trắng bằng 1 lượng dấu tab và khoảng trắng ít nhất.
+21.	Tách từ đầu tiên và từ cuối cùng của chuỗi.
+22.	Đếm số từ trong xâu ( các từ chỉ chứa các kí tự alphabet, được ngăn cách nhau bởi khoảng trắng, dấu tab).
+23.	Xâu gọi là palindrone nếu nó không thay đổi khi ta đảo ngược thứ tự trong nó (ví dụ “madam”). Kiểm tra xâu có tính chất palindrone không.
+24.	Nhập vào 1 chuỗi, xoá các khoảng trắng và in ra màn hình.
+25.	Nhập vào 1 chuỗi, sau đó thay thế các khoảng trắng bằng 1 khoảng trắng và in ra màn hình.
+26.	Đảo ngược thứ tự các từ trong chuỗi.
+Ví dụ : “con chó con cắn con mèo con” thành “con mèo con cắn con chó con”.
+27.	Nhập chuỗi, đổi kí tự đầu mỗi từ thành chữ hoa, các từ còn lại của từ thành chữ thường.
+ 
+Chương 4. KIỂU CẤU TRÚC
+4.1.	KHÁI NIỆM VÀ ĐỊNH NGHĨA
+Kiểu cấu trúc (struct) bao gồm nhiều thành phần dữ liệu có kiểu khác nhau và được nhóm chung lại với nhau.
+Định nghĩa kiểu cấu trúc
+struct <tên kiểu struct>
+{
+<khai báo các thành phần của struct>
+};
+Trong đó: Khai báo các thành phần cấu trúc như các kiểu dữ liệu.
+Ví dụ 4.1:
+Xây dựng kiểu cấu trúc (struc) có tên là NgayThang gồm các thành phần sau: ngày, tháng, năm
+struct  NgayThang
+{
+int ngay; int thang; int nam;
+};
+Xây dựng kiểu cấu trúc (struct) có tên là DiemThi gồm các thành phần sau:Mã số sinh viên, Mã số môn học, Lần thi, điểm thi.
+struct DiemThi
+{
+char masv[8];  /* mã số sinh viên */ char mamh[5];   /* mã số môn học */ int lanthi;	/* lần thi */
+float diem;	/* điểm thi */
+};
+
+4.2.	KHAI BÁO CẤU TRÚC
+a)	Cách 1 :
+Khai báo :
+struct <tên kiểu struct><danh sách các biến struct>;
+Ví dụ 4. 2: Khai báo 2 biến ngay1, ngay2 có kiểu NgayThang. struct NgayThang ngay1, ngay2;
+Ví dụ 4.3: Khai báo 3 biến x, y, z có kiểu DiemThi struct DiemThi x, y, z;
+ 
+b)	Cách 2 :
+Khai báo :
+struct  <tên kiểu struct>
+{
+<các thành phần của struct>
+} <danh sách các biến struct>;
+Ví dụ 4.4. Khai báo 2 biến ngay1, ngay2 có kiểu NgayThang. struct NgayThang
+{
+int ngay; int thang; int nam;
+} ngay1, ngay2;
+Ví dụ 4.5: Khai báo 3 biến x, y, z có kiểu DiemThi
+struct DiemThi
+{
+char masv[8]; char mamh[5]; int lanthi; float diem;
+} x, y, z;
+Ví dụ 4.6:Khai báo cấu trúc lồng nhau.
+Thông tin của một sinh viên bao gồm: mã số sinh viên, họ lót, tên, ngày sinh, nơi sinh, địa chỉ. Trong đó, ngày sinh là kiểu struct đã được định nghĩa trước đó.
+struct  SinhVien
+{
+char masv[8]; char holot[30]; char ten[10];
+struct NgayThang ngaysinh;
+char noisinh[50]; char diachi[50];
+} sv1, sv2;
+4.3.	THAO TÁC TRÊN BIẾN CẤU TRÚC
+4.3.1.	Truy cập các thành phần của struct
+Cú pháp :
+<tên biến struct>.<tên thành phần của struct>
+ 
+Ví dụ 4.7:
+Để xuất ra màn hình tên của sinh viên sv1, ta thực hiện câu lệnh sau : printf("%s", sv1.ten);
+Để xuất ra màn hình ngày sinh của sinh viên sv1, ta thực hiện câu lệnh sau : printf("%d-%d-%d",sv1.ngaysinh.ngay,sv1.ngaysinh.thang, sv1.ngaysinh.nam); Ví dụ 4.8:
+Viết chương trình nhập vào điểm của một sinh viên, sau đó xuất kết quả nhập được lên màn hình.
+#include "stdio.h" #include "conio.h" struct DiemThi
+{
+char masv[8]; char mamh[5]; int lanthi; float diem;
+};
+int main() {
+struct DiemThi sv; printf("\nNhap diem :"); printf("\nMa so sinh vien : "); gets(sv.masv);
+printf("Ma mon hoc : "); gets(sv.mamh); printf("Lan thi : ");
+scanf("%d",&sv.lanthi);
+printf("Diem thi : ");
+scanf("%f",&sv.diem); printf("\nXuat diem :");
+printf("\nMa so sinh vien : %s",sv.masv); printf("\nMa mon hoc : %s",sv.mamh); printf("\nLan thi : %d",sv.lanthi); printf("\nDiem thi : %2.2f",sv.diem); getch();
+}
+4.3.2.	Phép gán struct
+Ta có thể thực hiện phép gán trên 2 biến struct có cùng kiểu cho nhau.
+ 
+Ví dụ 4.9:
+struct DiemThi
+{
+char masv[8]; char mamh[5]; int lanthi; float diem;
+} sv1,sv2;
+Khi đó ta có thể thực hiện phép gán : sv1=sv2;
+4.4.3.	Mảng các struct
+Ví dụ 4.10:
+Để có được danh sách điểm thi của sinh viên (có chứa tối đa 100 mẫu tin), ta khai báo một mảng các biến struct.
+struct DiemThi sv[100];
+Ví dụ 4.11:
+Viết chương trình nhập vào điểm thi cho các sinh viên. #include "stdio.h"
+#include "conio.h" struct DiemThi
+{
+char masv[8]; char mamh[5]; int lanthi; float diem;
+};
+main() {
+struct DiemThi sv[100]; int n,i;
+float tam;
+printf("\nNhap so mau tin : "); scanf("%d%*c", &n); printf("\nNhap diem :");
+for (i=0; i<n; i++) {
+printf("\nMa so sinh vien : "); gets(sv[i].masv);
+printf("Ma mon hoc : ");
+ 
+gets(sv[i].mamh);
+printf("Lan thi : "); scanf("%d%*c", &sv[i].lanthi); printf("Diem thi : "); scanf("%f%*c", &tam); sv[i].diem=tam;
+}
+printf("\nXuat diem :"); for (i=0; i<n; i++) {
+printf("\nMa so sinh vien : %s", sv[i].masv); printf("\nMa mon hoc : %s", sv[i].mamh); printf("\nLan thi : %d", sv[i].lanthi); printf("\nDiem thi : %2.2f", sv[i].diem);
+}
+getch();
+}
+4.3.4.	Con trỏ có kiểu struct
+Ví dụ 4.13:
+struct DIEM {
+char masv[8]; char mamh[5]; int lanthi; float diem;
+};
+struct DIEM *p, x;
+/* p là con trỏ kiểu struct và x là biến struct */ p=&x;	/* con trỏ p chứa địa chỉ của biến x */
+Để truy cập đến các thành phần của struct thông qua con trỏ ta dùng một trong hai cách sau:
+Cách 1:
+Cú pháp:	<tên con trỏ> -><tên thành phần> printf("%f", p->diem);
+Cách 2:
+Cú pháp:	(*<tên con trỏ>).<tên thành phần>
+printf("%f", (*p).diem);
+Ví dụ 4.14:
+Viết chương trình nhập vào điểm, và xuất kết quả ra màn hình.
+ 
+#include "stdio.h" #include "conio.h" struct DIEM {
+char masv[8]; char mamh[5]; int lanthi; float diem;
+};
+main() {
+struct DIEM x,*p; float tam;
+p=&x;
+printf("\nNhap ma so sinh vien :"); gets(p->masv);
+printf("Nhap ma mon hoc : "); gets(p->mamh);
+printf("Lan thi :");
+scanf("%d", &p->lanthi);
+printf("diem :");
+scanf("%f", &tam); p->diem=tam; printf("\nKet qua:");
+printf("\nMa so sinh vien :%s", (*p).masv); printf("\nMa mon hoc : %s", (*p).mamh); printf("\nLan thi :%d", (*p).lanthi); printf("\ndiem :%.2f", (*p).diem);
+getch();
+}
+4.3.5.	Hàm cấu trúc
+Ví dụ 4.15:
+Thông tin về điểm của một sinh viên bao gồm : mã số sinh viên, mã số môn học, lần thi, và điểm môn học. Viết hàm nhập và xuất điểm của một sinh viên.
+#include "stdio.h" #include "conio.h" struct DIEMTHI {
+char masv[8]; char mamh[5];
+ 
+int lanthi; float diem;
+};
+void nhap(struct DIEMTHI *px); void xuat(struct DIEMTHI x);
+
+main() {
+struct DIEMTHI x; printf("\nNhap diem thi"); nhap(&x);
+printf("\nXuat diem thi"); xuat(x);
+getch();
+}
+void xuat(struct DIEMTHI x) { printf("\nMa sinh vien :%s", x.masv); printf("\nMa mon hoc:%s", x.mamh); printf("\nLan thi:%d", x.lanthi); printf("\nDiem thi:%.2f", x.diem);
+}
+void nhap(struct DIEMTHI *px) { float tam;
+printf("\nMa sinh vien :"); gets(px->masv); printf("Ma mon hoc:"); gets(px->mamh); printf("Lan thi:");
+scanf("%d%*c", &px->lanthi); printf("Diem thi:"); scanf("%f%*c", &tam);
+px->diem=tam;
+}
+ 
+4.4.	DANH SÁCH LIÊN KẾT
+4.4.1.	Cấp phát động
+4.4.1.1.	Toán tử sizeof
+Toán tử sizeof cho ta biết kích thước (tính theo byte) của một kiểu dữ liệu hay một đối tượng dữ liệu.
+Kiểu dữ liệu có thể là kiểu chuẩn (như : int, float,…) hay kiểu dữ liệu được định nghĩa trong chương trình (như : typedef, enum, struct, union…).
+Đối tượng dữ liệu bao gồm tên biến, tên mảng, biến struct, … Khai báo :
+sizeof(<đối tượng dữ liệu>) sizeof(<kiểu dữ liệu>)
+Ví dụ 4.16:
+typedef float KieuThuc; struct DiemThi {
+char masv[8]; char mamh[5]; int lanthi;
+float diem;
+} x;
+sizeof(int)	cho trị 2 sizeof(KieuThuc) cho trị 4 sizeof(x)	cho trị 19
+4.4.1.2.	Các hàm cấp phát vùng nhớ
+a.	Hàm malloc:
+Cú pháp:
+void* malloc(unsigned n);
+Hàm cấp phát vùng nhớ n byte. Nếu thành công hàm trả về địa chỉ đầu vùng nhớ được cấp phát. Khi không đủ vùng nhớ để cấp phát hàm trả về trị NULL.
+Ví dụ 4.17:
+float *p; p=(float*)malloc(10*sizeof(float));
+/* khai báo một mảng động có 10 phần tử, các phần tử có kiểu float và do con trỏ p chỉ đến*/
+Ví dụ 4.18:
+char *pStr; pStr=(char*)malloc(50*sizeof(char));
+ 
+/*khai báo một mảng động có 50 phần tử, các phần tử có kiểu char và do con trỏ pStr chỉ đến*/
+b.	Hàm calloc:
+Cú pháp:
+void* calloc(unsigned n, unsigned size);
+Cấp phát vùng nhớ n*size byte. Nếu thành công hàm trả về địa chỉ đầu vùng nhớ được cấp phát. Khi không đủ bộ nhớ để cấp phát hàm trả về giá trị NULL.
+c.	Hàm realloc:
+Cú pháp:
+ 
+
+Trong đó:
+ 
+void* realloc(void *ptr, unsigned size);
+
+•	ptr : trỏ đến đến vùng nhớ đã được cấp phát trước đó.
+•	size : là số byte cần cấp phát lại.
+ 
+Hàm thay đổi kích thước vùng nhớ đã cấp phát trước đó. Vùng nhớ mới có thể có địa chỉ khác so với vùng nhớ cũ. Phần dữ liệu trên vùng nhớ cũ được chuyển đến vùng nhớ mới.
+d.	Hàm free:
+Cú pháp:
+void free(void* ptr);
+Hàm giải phóng vùng nhớ (đã được cấp phát bởi hàm calloc hoặc malloc) do ptr trỏ đến.
+e.	Các ví dụ:
+Ví dụ 4.19: Viết chương trình nhập vào một dãy số, tính tổng và xuất kết quả ra màn hình.
+#include "stdio.h" #include "conio.h" #include "alloc.h" int main() {
+float *p ,s; int n, i;
+do {
+printf("\nNhap so phan tu cua day so :"); scanf("%d",&n);
+if (n>0) {
+p=(float*)malloc(n*sizeof(float));
+if (p!=NULL) {
+for (i=0; i<n; i++) {
+ 
+printf("x[%d]=", i);
+scanf("%f", p+i);
+}
+for (s=0, i=0; i<n; i++) s+=*(p+i);
+printf("Tong cua day so :%f" ,s);
+}
+free(p);
+}
+} while (n>0);
+}
+Ví dụ 4.20: Viết chương trình nhập vào một ma trận có các phần tử là những số nguyên, sau đó xuất ra màn hình các phần tử là tổng của các cột.
+#include <stdio.h> #include <conio.h> #include <alloc.h> int main() {
+int **mt, s; int n, m, i, j;
+printf("\nCho biet so dong va so cot:"); scanf("%d%d", &n, &m);
+/* cấp phát vùng nhớ cho ma trận */ mt=(int**)malloc(n*sizeof(int*)); for (i=0; i<n; i++)
+mt[i]=(int*)malloc(m*sizeof(int)); printf("Nhap ma tran\n");
+for (i=0; i<n; i++)
+for (j=0; j<m; j++) {
+printf("x[%d][%d]=", i, j);
+scanf("%d", &mt[i][j]);
+}
+printf("\nTong cua cac cot:"); for (j=0; j<m; j++) {
+for (s=0,i=0; i<n; i++)
+s+=mt[i][j];
+printf("\t%d", s);
+}
+ 
+getch();
+}
+4.4.2.	Danh sách liên kết đơn Các khái niệm:
+Danh sách liên kết đơn là một danh sách mà các phần tử được kết nối với nhau thông qua một vùng liên kết. Các phần tử trong danh sách liên kết có thể được chứa trong những vùng nhớ không kế tiếp nhau trong bộ nhớ và chúng được kết nối với nhau thông qua vùng liên kết: vùng liên kết của phần tử thứ nhất chứa địa chỉ của phần tử thứ hai, vùng liên kết của phần tử thứ hai chứa địa chỉ của phần tử thứ ba và cứ tiếp tục như thế…
+Biểu diễn danh sách liên kết đơn:
+Mỗi phần tử của danh sách liên kết bao gồm hai vùng chính: vùng thứ nhất chứa thông tin (info) và vùng thứ hai là vùng liên kết (link). Để quản lý danh sách liên kết đơn, ta phải có một con trỏ chứa địa chỉ của phần tử đầu của danh sách liên kết đơn (first).
+Khai báo kiểu dữ liệu:
+typedef int INFO;
+typedef struct POINTER* TYPEPOINTER; struct POINTER {
+INFO info; TYPEPOINTER link;
+};
+TYPEPOINTER first;
+Các phép toán trên danh sách liên kết đơn:
+a.	Phép khởi tạo:
+void khoitao(void) {
+first=NULL;
+}
+b.	Tìm kiếm một mẫu tin :
+TYPEPOINTER timkiem(INFO x) { TYPEPOINTER p;
+p=first;
+while (p!=NULL && p->info!=x)
+p=p->link;
+return p;
+}
+c.	Thêm một mẫu tin:
+ 
+void chencuoi(INFO x) { TYPEPOINTER p,q;
+p=(TYPEPOINTER)malloc(sizeof(struct POINTER)); p->info=x;
+p->link=NULL; if (first==NULL)
+first=p;
+ 
+else {
+
+
+
+
+}
+}
+ 
+
+q=first;
+while (q->link!=NULL) q=q->link; q->link=p;
+ 
+d.	Loại bỏ một mẫu tin:
+int loaibo(INFO x) {
+TYPEPOINTER p,q;
+p=timkiem(x); if (p!=NULL) {
+if (p==first)
+first=first->link;
+ 
+else {
+
+
+
+
+
+}
+ 
+
+q=first;
+while (q->link!=p)
+q=q->link; q->link=p->link;
+ 
+free(p); return 1;
+}
+return 0;
+}
+Ví dụ 4.21:
+#include "stdio.h" #include "conio.h" #include "alloc.h" typedef int INFO;
+typedef struct POINTER* TYPEPOINTER;
+ 
+struct POINTER {
+INFO info; TYPEPOINTER link;
+};
+TYPEPOINTER first;
+void khoitao(void); TYPEPOINTER timkiem(INFO x); void chencuoi(INFO x);
+int loaibo(INFO x);
+void xuatdanhsach(void); void huybo(void);
+int main() {
+int chon,ok; INFO x;
+khoitao(); do {
+printf("\n0.Ket thuc"); printf("\n1.Them vao cuoi"); printf("\n2.Loai bo"); printf("\n3.Xuat danh sach");
+printf("\nBan hay lua chon:[0,1,2,3]?"); scanf("%d",&chon);
+switch (chon) {
+case 1:
+ 
+
+
+
+
+
+case 2:
+
+
+
+
+
+
+
+
+
+case 3:
+ 
+printf("\nNhap phan tu them :"); scanf("%d",&x);
+chencuoi(x); break;
+
+printf("\nNhap phan tu xoa :"); scanf("%d",&x); ok=loaibo(x);
+if (ok) printf("\nDa loai bo %d",x); else printf("\nkhong tim thay %d",x); getch();
+break;
+ 
+
+
+
+
+
+}
+} while (chon!=0); huybo();
+}
+ 
+printf("\nDanh sach:"); xuatdanhsach(); getch();
+break;
+ 
+void xuatdanhsach(void) { TYPEPOINTER p;
+p=first;
+while (p!=NULL) {
+printf("%6d",p->info); p=p->link;
+}
+}
+void huybo(void) {
+TYPEPOINTER p;
+while (first!=NULL) { p=first; first=first->link; free(p);
+}
+}
+BÀI TẬP CHƯƠNG 4
+1.	Định nghĩa 1 dãy cấu trúc có thể được dùng làm danh bạ điện thoại, gồm có tên, địa chỉ, số điện thoại, với số mẫu tin tối đa là 40. Viết chương trình với các chức năng sau: nhập thông mới, tìm kiếm số điện thoại, in danh sách theo quận.
+2.	Viết chương trình nhận vào các thông tin sau: Tên đội bóng, số trận thắng, số trận hòa, số trận thua. In ra đội bóng có số điểm cao nhất (với 1 trận thắng = 3 điểm, 1 trận hòa = 1 điểm và 1 trận thua = 0 điểm).
+3.	Xây dựng cấu trúc gồm: Họ tên, ngày sinh, trường, số báo danh, điểm thi. Trong đó, điểm thi là cấu trúc gồm 3 môn: Toán, Lý, Hóa. Nhập liệu vào khoảng 10 thí sinh, tìm và in ra các thí sinh có tổng điểm 3 môn >= 15.
+4.	Viết chương trình tạo lập và tìm kiếm dữ liệu. Nội dung yêu cầu gồm: Nhập họ và tên, địa chỉ (gồm: Quận, phường, tổ), tuổi, lương. Tìm kiếm những người ở Quận 3 có tuổi dưới 30 thu nhập từ 500.000đ trở lên và in ra màn hình.
+ 
+Viết chương trình sử dụng con trỏ cấu trúc thể hiện ngày, tháng, năm ra màn hình, và tính khoảng cách giữa 2 ngày.
+6.	Viết chương trình khai báo kiểu dữ liệu thể hiện một số phức. Sử dụng kiểu này để viết hàm tính tổng, hiệu, tích của hai số phức.
+7.	Viết chương trình khai báo kiểu dữ liệu để biểu diễn một phân số. Hãy viết hàm thực hiện những công việc sau:
+•	Tính tổng, hiệu, tích, thương hai phân số.
+•	Rút gọn phân số.
+•	Qui đồng hai phân số.
+8.	Tổ chức dữ liệu để quản lí sinh viên bằng cấu trúc mẫu tin trong một mảng N phần tử, mỗi phần tử có cấu trúc như sau:
+-	Mã sinh viên.
+-	Tên.
+-	Năm sinh.
+-	Điểm toán, lý, hoá, điểm trung bình.
+Viết chương trình thực hiện những công việc sau:
+•	Nhập danh sách các sinh viên cho một lớp học.
+•	Xuất danh sách sinh viên ra màn hình.
+•	Tìm sinh viên có điểm trung bình cao nhất.
+•	Sắp xếp danh sách lớp theo thứ tự tăng dần của điểm trung bình.
+9.	Viết chương trình quản lý lớp học của một trường. Các thông tin của một lớp học như sau : Tên lớp,Sĩ số,Danh sách các sinh viên trong lớp.
+•	Nhập vào danh sach các lớp với thông tin yêu cầu như trên.
+•	In danh sách các lớp có trên 5 sinh viên có điểm trung bình loại giỏi.
+•	Tìm lớp có nhiều sinh viên nhất.
+•	Tìm lớp có ít sinh viên nhất.
+•	Tìm sinh viên có điểm trung bình cao nhất.
+ 
+Chương 5
+TẬP TIN VÀ CÁC THAO TÁC VÀO RA
+5.1.	CÁC KHÁI NIỆM
+Tệp hay tệp dữ liệu là một tập hợp các dữ liệu có liên quan với nhau và có cùng kiểu được nhóm lại với nhau tạo thành một dãy. Chúng thường được chứa trong một thiết bị nhớ ngoài của máy tính (ví dụ đĩa cứng, ...) với một cái tên nào đó.
+Tệp dữ liệu với dữ liệu hiểu theo nghĩa rộng: có thể đó là chương trình, có thể là số liệu, có thể là các dữ liệu khác như kí tự, văn bản, ...
+Với các kiểu dữ liệu mà chúng ta đã học như số nguyên, số thực, mảng, bản ghi, ... được tổ chức trên bộ nhớ trong (RAM) của máy tính nên một khi kết thúc chạy chương trình hay mất điện thì các dữ liệu này cũng mất luôn. Vì vậy, với những dữ liệu nào cần lưu trữ (như hồ sơ cán bộ, kết quả học tập của sinh viên, thông tin về hàng hoá trong kho, ...) thì ta bắt buộc phải dùng đến tệp.
+Tệp là một kiểu dữ liệu có cấu trúc. Định nghĩa của tệp có phần nào giống mảng ở chỗ chúng đều là tập hợp các phần tử có cùng kiểu. Song mảng được định nghĩa và khai báo trong chương trình với số phần tử đã xác định còn tệp không được xác định khi định nghĩa.
+Kiểu nhị phân:
+•	Trong quá trình nhập xuất dữ liệu thì dữ liệu không bị thay đổi và giống như trong bộ nhớ.
+•	Trong khi đọc, nếu đến cuối file thì ta nhận được mã kết thúc file là EOF (định nghĩa trong stdio.h là -1) và hàm feof() trả về giá trị khác 0.
+Kiểu văn bản:
+Kiểu văn bản chỉ khác kiểu nhị phân khi xử lý ký tự về đầu dòng LF (có mã ASCII bằng 10) và ký tự có mã ASCII là 26. Đối với những ký tự khác thì hai kiểu đều đọc ghi như nhau.
+Ký tự xuống dòng:
+•	Khi ghi ký tự về đầu dòng LF lên file thì nó được chuyển thành 2 ký tự: ký tự CR (xuống dòng và có mã ASCII bằng 13) và ký tự LF (về đầu dòng có mã ASCII bằng 10).
+•	Khi đọc 2 ký tự CR và LF liên tiếp từ file thì chỉ cho ta một ký tự LF.
+Ký tự có mã ASCII bằng 26:
+Khi đọc dữ liệu từ file, nếu gặp ký tự có mã ASCII là 26 hoặc là cuối file ta nhận được mã kết thúc file là EOF (định nghĩa trong stdio.h là -1) và hàm feof() trả về trị khác 0.
+ 
+5.2.	CÁC CHẾ ĐỘ THAO TÁC TRÊN TẬP TIN
+Các hàm dùng chung cho cả hai kiểu tệp nhị phân và văn bản
+1.	Hàm fopen:
+Cú pháp:
+FILE* fopen(const char* <tên file>, const char* <cách truy cập>); Trong đó : <các truy cập> có thể có các giá trị sau:
+
+Cách truy cập	Ý nghĩa
+"r" hoặc "rt"	Mở một file để đọc theo kiểu văn bản. File cần tồn tại
+nếu không sẽ có lỗi
+"w" hoặc "wt"	Mở một file mới để ghi theo kiểu văn bản. Nếu file đã
+tồn tại nó sẽ bị xóa
+"a" hoặc "at"	Mở một file để thêm vào cuối file theo kiểu văn bản.
+Nếu file chưa tồn tại thì tạo file mới.
+"rb"	Mở một file để đọc theo kiểu nhị phân. File cần tồn tại
+nếu không sẽ có lỗi.
+"wb"	Mở một file mới để ghi theo kiểu nhị phân. Nếu file đã
+tồn tại nó sẽ bị xóa
+"ab"	Mở một file để thêm vào cuối file theo kiểu nhị phân.
+Nếu file chưa tồn tại thì tạo file mới.
+"r+" hoặc "r+t"	Mở một file để đọc/ghi theo kiểu văn bản. File cần tồn
+tại nếu không sẽ có lỗi
+"w+" hoặc
+"w+t"	Mở một file mới để đọc/ghi theo kiểu văn bản. Nếu file
+đã tồn tại nó sẽ bị xóa
+"a+" hoặc "a+t"	Mở một file để đọc/ghi bổ xung theo kiểu văn bản. Nếu
+file chưa tồn tại thì tạo file mới.
+"r+b"	Mở một file để đọc/ghi theo kiểu nhị phân. File cần tồn
+tại nếu không sẽ có lỗi.
+"w+b"	Mở một file mới để đọc/ghi theo kiểu nhị phân. Nếu file
+đã tồn tại nó sẽ bị xóa
+"a+b"	Mở một file để đọc/ghi bổ xung theo kiểu nhị phân. Nếu
+file chưa tồn tại thì tạo file mới.
+Công dụng: Hàm dùng để mở một file. Nếu thành công hàm trả về con trỏ kiểu FILE ứng với file vừa mở. Nếu có lỗi hàm trả về giá trị NULL.
+2.	Hàm fclose:
+Cú pháp:
+int fclose(FILE* pf);
+ 
+Công dụng: hàm dùng để đóng một file tương ứng với con trỏ file pf. Nếu thành công hàm trả về giá trị 0, ngược lại hàm cho trị EOF.
+Quá trình đóng file bao gồm các bước:
+•	Đẩy dữ liệu còn trong vùng đệm lên đĩa.
+•	Xoá vùng đệm.
+•	Giải phóng con trỏ pf.
+3.	Hàm fcloseall:
+Cú pháp:
+int fcloseall(void);
+Công dụng: hàm dùng để đóng tất cả các file đang mở. Nếu thành công hàm cho giá trị nguyên bằng số file đóng được, ngược lại hàm cho trị EOF.
+4.	Hàm fflush:
+Cú pháp:
+int fflush(FILE* pf);
+Công dụng: hàm dùng để làm sạch vùng đệm của file tương ứng với con trỏ file pf. Nếu thành công hàm trả về giá trị 0, ngược lại hàm trả về trị EOF.
+5.	Hàm fflushall:
+Cú pháp:
+int fflushall(void);
+Công dụng: hàm dùng để làm sạch vùng đệm của tất cả các file đang mở. Nếu thành công hàm trả về số nguyên bằng số file đang mở, ngược lại hàm trả về trị EOF.
+6.	Hàm feof:
+Cú pháp:
+int feof(FILE* pf);
+Công dụng: hàm dùng để kiểm tra cuối một file tương ứng với con trỏ file pf.
+Hàm trả về giá trị khác 0 nếu gặp cuối file khi đọc, ngược lại hàm trả về giá trị 0.
+7.	Hàm unlink và remove:
+a.	Hàm unlink:
+Cú pháp:
+int unlink(const char* <tên file>);
+Công dụng: hàm dùng để xóa một file trên đĩa. Nếu thành công hàm trả về giá trị 0, ngược lại hàm trả về trị EOF.
+b.	Hàm remove:
+Cú pháp:
+remove(const char* <tên file>);
+Công dụng: hàm dùng để xoá một file trên đĩa.
+ 
+5.3.	CÁC THAO TÁC CƠ BẢN TRÊN TẬP TIN
+5.3.1.	Thao tác với tệp văn bản
+1.	Hàm fprintf:
+Cú pháp:
+int fprintf(FILE* pf, const char* <chuỗi điều khiển>, [<đối số>,…]);
+Công dụng: Giá trị của các đối số được ghi lên file tương ứng với con trỏ file pf theo khuôn dạng được xác định trong chuỗi điều khiển. Nếu thành công hàm trả về giá trị là một số nguyên bằng số byte ghi được lên file; Ngược lại hàm trả về trị EOF.
+2.	Hàm fscanf:
+Cú pháp:
+int fscanf(FILE* pf, const char* <chuỗi điều khiển>, [<đối số>,…]);
+Công dụng: Hàm dùng để đọc dữ liệu từ file tương ứng với con trỏ file pf, dữ liệu đọc được định khuôn dạng trong chuỗi điều khiển và kết quả được lưu vào các đối số. Hàm trả về giá trị là một số nguyên bằng số trường đọc được.
+3.	Hàm fputs:
+Cú pháp:
+int fputs(const char* s, FILE* pf);
+Công dụng: Hàm dùng để ghi chuỗi s lên file tương ứng với con trỏ file pf. Khi thành công hàm trả về giá trị là ký tự cuối cùng được ghi lên file; Nếu có lỗi hàm trả về giá trị EOF.
+4.	Hàm fgets:
+Cú pháp:
+char* fgets(char* s, int n, FILE* pf);
+Công dụng: Hàm dùng để đọc một dãy ký tự từ file tương ứng với con trỏ file pf và chứa trong vùng nhớ do con trỏ s chỉ đến. Việc đọc kết thúc khi:
+•	Đọc được (n-1) ký tự.
+•	Gặp dấu xuống dòng (CR và LF), khi đó ký tự có mã CR được đưa vào dãy ký tự.
+•	Kết thúc file.
+Chuỗi ký tự đọc được sẽ được bổ xung thêm ký tự kết thúc chuỗi '\0'. Khi thành công hàm trả về địa chỉ của vùng nhận kết quả; Nếu có lỗi hoặc gặp cuối file thì hàm trả về giá trị NULL.
+CÁC THIẾT BỊ CHUẨN:
+Ngôn ngữ C định nghĩa các file và các con trỏ file ứng với các thiết bị chuẩn như
+sau:
+
+File	con trỏ	thiết bị
+in	stdin	Thiết bị vào chuẩn (bàn phím)
+ 
+out	stdout	Thiết bị ra chuẩn (màn hình)
+err	stderr	Thiết bị lỗi chuẩn (màn hình)
+prn	stdprn	Thiết bị in chuẩn (máy in)
+Chúng ta có thể dùng các hàm nhập xuất văn bản trên các thiết bị chuẩn. Khi chương trình C bắt đầu làm việc thì các file này tự động được mở, cho nên ta có thể dùng các con trỏ để nhập xuất trên các thiết bị chuẩn.
+Ví dụ 5.1:
+#include "stdio.h" #include "conio.h" #include "string.h"
+void nhap(char *tenfile); void xuat(char *tenfile); void them(char *tenfile); main() {
+char tenfile[50]; int chon;
+do {
+printf("\n0.Ket thuc"); printf("\n1.Nhap");
+printf("\n2.Xuat");
+printf("\n3.Them");
+printf("\nBan hay lua chon:[0,1,2,3]?"); scanf("%d",&chon);
+switch (chon) {
+case 1:
+ 
+
+
+
+
+
+case 2:
+
+
+
+
+
+
+case 3:
+ 
+printf("\nNhap ten file:"); gets(tenfile); nhap(tenfile);
+break;
+
+printf("\nNhap ten file:"); gets(tenfile); xuat(tenfile);
+getch(); break;
+
+printf("\nNhap ten file:");
+ 
+
+
+
+
+}
+} while (chon!=0);
+}
+ 
+gets(tenfile); them(tenfile); break;
+ 
+void nhap(char *tenfile) { char chuoitam[100];
+FILE* pf=fopen(tenfile,"wt"); printf("\nNhap du lieu vao file\n"); do {
+gets(chuoitam);
+if (strlen(chuoitam)!=0) fprintf(pf,"%s\n",chuoitam);
+else break;
+} while (1); fclose(pf);
+}
+void xuat(char *tenfile) { char chuoitam[10]; char* p;
+FILE* pf=fopen(tenfile,"rt"); printf("\nDoc du lieu tu file\n"); while (1) {
+p=fgets(chuoitam,10,pf); if (p!=NULL)
+printf("%s",chuoitam); else break;
+};
+fclose(pf);
+}
+void them(char *tenfile) { char chuoitam[100];
+FILE* pf=fopen(tenfile,"at"); printf("\nNhap them du lieu vao file\n"); do {
+gets(chuoitam);
+ 
+if (strlen(chuoitam)!=0) fprintf(pf,"%s\n",chuoitam);
+else break;
+} while (1); fclose(pf);
+}
+5.3.2.	Thao tác với tệp nhị phân
+1.	Hàm putw:
+Cú pháp:
+int putw(int n, FILE* pf);
+Công dụng: hàm dùng để ghi giá trị n là số nguyên 2 byte lên file tương ứng với con trỏ file pf. Nếu thành công hàm trả về số nguyên được ghi, ngược lại hàm trả về giá trị EOF.
+2.	Hàm getw:
+Cú pháp:
+int getw(FILE* pf);
+Công dụng: hàm trả về giá trị là một số nguyên 2 byte được đọc từ file. Nếu thành công hàm trả về số nguyên đọc được; Khi có lỗi hoặc ở cuối file thì hàm trả về giá trị EOF.
+3.	Hàm fwrite:
+Cú pháp:
+int fwrite(void* ptr, int size, int n, FILE* pf);
+Công dụng: hàm dùng để ghi n mẫu tin và mỗi mẫu tin có kích thước size byte từ vùng nhớ do ptr chỉ đến lên file tương ứng với con trỏ file pf. Hàm trả về giá trị là một số nguyên cho biết số mẫu tin thực sự ghi được lên file.
+4.	Hàm fread:
+Cú pháp:
+int fread(void* ptr, int size, int n, FILE* pf);
+Công dụng: hàm dùng để đọc n mẫu tin và mỗi mẫu tin có kích thước size byte từ file tương ứng với con trỏ file pf lên vùng nhớ do ptr chỉ đến. Hàm trả về giá trị là một số nguyên cho biết số mẫu tin thực sự đọc được từ file.
+Các hàm di chuyển con trỏ định vị:
+Mỗi file đang mở đều có một con trỏ định vị dùng để xác định vị trí đọc hoặc ghi trên file.Việc nhập hoặc xuất dữ liệu được bắt đầu từ vị trí hiện tại của con trỏ định vị và sau khi hoàn thành thì con trỏ định vị dịch chuyển một số byte chính bằng số byte đã đọc hoặc ghi được.
+1.	Hàm rewind:
+ 
+Cú pháp:
+void rewind(FILE* pf);
+Công dụng: hàm dùng để chuyển con trỏ định vị của file tương ứng với con trỏ file pf về đầu file.
+2.	Hàm fseek:
+Cú pháp:
+int fseek(FILE* pf, long sb, int xp);
+trong đó:
+•	pf là con trỏ file.
+•	sb là số byte cần dịch chuyển.
+•	xp cho biết vị trí xuất phát mà việc dịch chuyển được bắt đầu từ đó. Đối số xp có thể nhận các giá trị sau:
+-	SEEK_SET (hay 0): xuất phát từ đầu file.
+-	SEEK_CUR (hay 1): xuất phát từ vị trí hiện tại của con trỏ định vị.
+-	SEEK_END (hay 2): xuất phát từ cuối file.
+Công dụng: hàm dùng để di chuyển con trỏ định vị của file tương ứng với con trỏ file pf từ vị trí được xác định bởi xp qua một số byte bằng giá trị tuyệt đối của sb. Chiều di chuyển về cuối file nếu sb dương, trái lại di chuyển về phía đầu file. Khi thành công hàm trả về giá trị 0, ngược lại hàm trả về giá trị khác 0.
+3.	Hàm ftell:
+Cú pháp:
+long ftell(FILE* pf);
+Công dụng: hàm cho biết vị trí hiện tại của con trỏ định vị. Khi thành công hàm trả về giá trị là một số nguyên cho biết số thứ tự của byte thứ bao nhiêu trên file pf. Số thứ tự của byte được tính từ 0. Khi có lỗi hàm trả về giá trị -1L.
+Ví dụ 5.2: Viết chương trình xác định kích thước của một file. #include "stdio.h
+"#include "conio.h"
+typedef char kieutenfile[100];
+long kichthuoc(kieutenfile tenfile); int main() {
+kieutenfile tenfile; long kt;
+printf("\nNhap ten file:"); gets(tenfile); kt=kichthuoc(tenfile);
+ 
+if (kt==-1L)
+printf("\nKhong tim thay file %s",tenfile); else
+printf("kich thuoc cua file %s la %ld",tenfile,kt); getch();
+}
+long kichthuoc(kieutenfile tenfile)
+{
+long kt;
+FILE* pf=fopen(tenfile,"rb"); if (pf==NULL)
+kt=-1L;
+else {
+fseek(pf,0L,SEEK_END); kt=ftell(pf);
+fclose(pf);
+}
+return kt;
+}
+Ví dụ 5.3: Viết chương trình quản lý điểm của sinh viên, bao gồm: tạo mới, xem, thêm và sửa dữ liệu.
+#include "stdio.h "#include "conio.h "#include "string.h"
+typedef char kieutenfile[100]; typedef char kieumasinhvien[8]; typedef
+struct {
+char masv[8]; char mamh[5]; int lanthi; float diem;
+} diemthi;
+
+int nhap(kieutenfile tenfile); int xuat(kieutenfile tenfile); int them(kieutenfile tenfile);
+ 
+int sua(kieumasinhvien masinhvien,kieutenfile tenfile); main() {
+char masinhvien[8]; kieutenfile tenfile; int chon;
+do {
+printf("\n0.Ket thuc"); printf("\n1.nhap");
+printf("\n2.xuat");
+printf("\n3.them");
+printf("\n4.sua");
+printf("\nBan hay lua chon [0,1,2,3,4]?"); scanf("%d%*c",&chon);
+switch (chon) {
+case 1:
+ 
+
+
+
+
+
+case 2:
+
+
+
+
+
+
+
+
+case 3:
+
+
+
+
+
+case 4:
+ 
+printf("Nhap ten file:"); gets(tenfile); nhap(tenfile);
+break;
+
+printf("Nhap ten file:"); gets(tenfile);
+if (xuat(tenfile)==-1)
+printf("Khong tim thay file %s",tenfile); getch();
+break;
+
+printf("Nhap ten file:"); gets(tenfile); them(tenfile);
+break;
+
+printf("Nhap ten file:"); gets(tenfile);
+printf("Nhap ma so sinh vien:"); gets(masinhvien); sua(masinhvien,tenfile);
+ 
+break;
+}
+} while (chon!=0);
+}
+int sua(kieumasinhvien masinhvien,kieutenfile tenfile) { diemthi x;
+int dem,spt; long kt;
+kieumasinhvien tam;
+FILE* pf=fopen(tenfile,"r+b"); if (pf==NULL)
+dem=-1;
+else {
+dem=0; do{
+spt=fread(&x,sizeof(diemthi),1,pf);
+if (spt==1 && strcmp(masinhvien,x.masv)==0) { printf("\n%10s%10s%10d%10.1f",x.masv,x.mamh,x.lanthi,x.diem);
+printf("\nMa so sinh vien:"); gets(tam);
+if (strlen(tam)!=0) { dem++; strcpy(x.masv,tam);
+printf("Ma so mon hoc:"); gets(x.mamh); printf("Lan thi:");
+scanf("%d%*c",&x.lanthi); printf("Diem thi:");
+scanf("%f%*c",&x.diem);
+fseek(pf,-(long)sizeof(diemthi),SEEK_CUR); fwrite(&x,sizeof(diemthi),1,pf);
+}
+}
+} while (spt==1); fclose(pf);
+}
+return dem;
+ 
+}
+int xuat(kieutenfile tenfile) { diemthi x;
+int dem; long kt;
+FILE* pf=fopen(tenfile,"rb"); if (pf==NULL)
+dem=-1;
+ 
+else {
+
+
+
+
+
+
+
+
+
+
+
+
+}
+ 
+
+dem=0; do{
+kt=fread(&x,sizeof(diemthi),1,pf); if (kt==1) {
+printf("\n%10s%10s%10d%10.1f",x.masv,x.mamh,x.lanthi,x.diem); dem++;
+} else break;
+} while (1); fclose(pf);
+ 
+return dem;
+}
+int nhap(kieutenfile tenfile) { char tam[8];
+diemthi x; int dem=0;
+FILE* pf=fopen(tenfile,"wb"); do {
+printf("\nMa so sinh vien:"); gets(tam);
+if (strlen(tam)!=0) {
+strcpy(x.masv,tam); printf("Ma so mon hoc:"); gets(x.mamh); printf("Lan thi:");
+scanf("%d%*c",&x.lanthi); printf("Diem thi:");
+scanf("%f%*c",&x.diem);
+ 
+fwrite(&x,sizeof(diemthi),1,pf); dem++;
+} else break;
+} while (1); fclose(pf); return dem;
+}
+int them(kieutenfile tenfile) { char tam[8];
+diemthi x; int dem=0;
+FILE* pf=fopen(tenfile,"ab"); do {
+printf("\nMa so sinh vien:"); gets(tam);
+if (strlen(tam)!=0) { strcpy(x.masv,tam); printf("Ma so mon hoc:"); gets(x.mamh); printf("Lan thi:");
+scanf("%d%*c",&x.lanthi); printf("Diem thi:");
+scanf("%f%*c",&x.diem); fwrite(&x,sizeof(diemthi),1,pf); dem++;
+}else break;
+} while (1); fclose(pf); return dem;
+}
+BÀI TẬP CHƯƠNG 5
+1.	Viết chương trình tạo tập tin văn bản SO.OUT gồm n số nguyên,các số của dãy được tạo ngẫu nhiên có giá trị tuyệt đối không vượt quá M( n, M đọc từ tập tin SO.INP). Kết quả chương trình là 1 tập tin văn bản có dòng thứ nhất ghi số n; n dòng tiếp theo ghi các số tạo được, mỗi số trên một dòng.
+2.	Viết chương trình tạo tập tin văn bản chứa 1 dãy số nguyên bất kỳ.
+ 
+3.	Viết chương trình phát sinh ngẫu nhiên ma trận a kích thước 5x6, lưu ma trận này vào file test.inp. Đọc lại file test.inp đưa dữ liệu vào ma trận b và xuất ra màn hình xem kết quả lưu đúng không? Cấu trúc của file test.inp như sau:
+-	Dòng đầu lưu 2 số nguyên: m, n thể hiện số dòng và số cột của matrận.
+-	m dòng tiếp theo, mỗi dòng gồm n phần tử là giá trị các phần tử trên một dòng của ma trận.
+4.	Viết chương trình nhập từ bàn phím và ghi vào 1 tập tin tên là DMHH.DAT với mỗi phần tử của tập tin là 1 cấu trúc bao gồm các trường: Ma (mã hàng: char[5]), Ten (Tên hàng: char[20]).Kết thúc việc nhập bằng cách gõ ENTER vào Ma.
+5.	Viết hàm đọc/ ghi một danh sách sinh viên của một lớp vào tập tin SV.DAT
+6.	Viết chương trình nhập và lưu hồ sơ của sinh viên vào một file có tên là “DSSV.TXT”. Sau đó đọc file “DSSV.TXT” và cất vào mảng, hãy sắp xếp các hồ sơ sinh viên theo thứ tự giảm dần theo điểm trung bình môn học rồi in ra màn hình hồ sơ các sinh viên theo thứ tự đó ra màn hình có thông tin như sau :
+-	Mã số sinh viên.
+-	Họ và tên sinh viên.
+-	Điểm trung bình kiểm tra.
+-	Điểm thi hết môn.
+-	Điểm trung bình môn học (tính bằng (điểm TBKT+điểm thi)/2).
+ 
+TÀI LIỆU THAM KHẢO
+1.	Phạm Văn Ất (2010), Lập trình C, Nhà xuất bản Khoa học và Kỹ thuật, Hà Nội.
+2.	Nguyễn Thanh Thủy(2010), Nhập môn Lập trình ngôn ngữ C, Nhà xuất bản Khoa học và Kỹ thuật, Hà Nội.
+3.	Nguyễn Thanh Thủy, Nguyễn Quang Huy(2010), Bài tập Lập trình ngôn ngữ C, Nhà xuất bản Khoa học và kỹ thuật, Hà Nội.

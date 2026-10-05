@@ -135,7 +135,7 @@ function scrollDown() {
   el.scroll.scrollTop = el.scroll.scrollHeight;
 }
 
-function appendMessage(role, text, kind) {
+function appendMessage(role, text, kind, sources) {
   const row = document.createElement("div");
   row.className = `row row--${role}` + (kind ? ` row--${kind}` : "");
   if (role === "bot") {
@@ -148,6 +148,21 @@ function appendMessage(role, text, kind) {
   body.className = "bubble";
   if (role === "bot" && kind !== "error") renderMarkdown(body, text);
   else body.textContent = text;
+  if (sources && sources.length) {
+    const box = document.createElement("div");
+    box.className = "sources";
+    const label = document.createElement("span");
+    label.textContent = "Nguồn:";
+    box.appendChild(label);
+    sources.forEach((s, i) => {
+      const tag = document.createElement("span");
+      tag.className = "source";
+      tag.textContent = `[${i + 1}] ${s.heading} (${s.file})`;
+      box.appendChild(tag);
+    });
+    body.appendChild(box);
+  }
+
   row.appendChild(body);
   el.thread.appendChild(row);
   scrollDown();
@@ -203,7 +218,10 @@ function renderThread() {
   const chat = currentChat();
   const empty = !chat || chat.messages.length === 0;
   el.welcome.hidden = !empty;
-  if (!empty) chat.messages.forEach((m) => appendMessage(m.role, m.text));
+  if (!empty)
+    chat.messages.forEach((m) =>
+      appendMessage(m.role, m.text, undefined, m.sources),
+    );
   scrollDown();
 }
 
@@ -226,15 +244,9 @@ async function sendMessage(raw) {
 
   let chat = currentChat();
   const isNew = !chat;
-  if (isNew)
-    chat = {
-      id: String(Date.now()),
-      title: text.slice(0, 40),
-      updated: Date.now(),
-      messages: [],
-    };
+  if (isNew) chat = { id: String(Date.now()), title: text.slice(0, 40), updated: Date.now(), messages: [] };
 
-  const history = chat.messages.slice(-12); // chỉ gửi các lượt đã trả lời thành công
+  const history = chat.messages.slice(-12);   // chỉ gửi các lượt đã trả lời thành công
   el.welcome.hidden = true;
   appendMessage("user", text);
   el.input.value = "";
@@ -245,45 +257,31 @@ async function sendMessage(raw) {
     const res = await fetch("/api/chat", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ message: text, history }),
+      body: JSON.stringify({ message: text, history })
     });
     let data = {};
-    try {
-      data = await res.json();
-    } catch {
-      /* phản hồi không phải JSON */
-    }
+    try { data = await res.json(); } catch { /* phản hồi không phải JSON */ }
     typing.remove();
 
     if (!res.ok || !data.reply) {
-      appendMessage(
-        "bot",
-        data.error || "Có lỗi xảy ra, thử lại nhé.",
-        "error",
-      );
-      el.input.value = text; // trả câu hỏi về ô nhập để gửi lại
+      appendMessage("bot", data.error || "Có lỗi xảy ra, thử lại nhé.", "error");
+      el.input.value = text;                  // trả câu hỏi về ô nhập để gửi lại
     } else {
+      // Chỉ lưu và hiển thị khi server đã trả lời thành công
       chat.messages.push(
         { role: "user", text },
-        { role: "bot", text: data.reply },
+        { role: "bot", text: data.reply, sources: data.sources }
       );
       chat.updated = Date.now();
-      if (isNew) {
-        chats.push(chat);
-        currentId = chat.id;
-      }
+      if (isNew) { chats.push(chat); currentId = chat.id; }
       saveChats();
-      appendMessage("bot", data.reply);
+      appendMessage("bot", data.reply, undefined, data.sources);
       renderHistory();
     }
   } catch (err) {
     console.error("Lỗi gọi /api/chat:", err);
     typing.remove();
-    appendMessage(
-      "bot",
-      "Không kết nối được tới Stick. Kiểm tra server đang chạy chưa nhé.",
-      "error",
-    );
+    appendMessage("bot", "Không kết nối được tới Stick. Kiểm tra server đang chạy chưa nhé.", "error");
     el.input.value = text;
   } finally {
     busy = false;
