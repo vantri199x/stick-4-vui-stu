@@ -13,8 +13,6 @@ console.log(`Đã nạp ${loaded.chunks} đoạn tài liệu từ ${loaded.files
 if (loaded.chunks === 0)
   console.warn("Chưa có tài liệu nào trong thư mục docs/.");
 
-const NO_DOC_REPLY =
-  "Mình chưa tìm thấy nội dung này trong tài liệu môn học. Bạn thử hỏi cụ thể hơn, ví dụ về con trỏ, stack, queue, đệ quy... nhé.";
 const app = express();
 const PORT = process.env.PORT || 3000;
 
@@ -60,29 +58,16 @@ app.post("/api/chat", async (req, res) => {
 
   // Tìm tài liệu. Ghép cả câu hỏi trước để câu nối tiếp ("cho ví dụ đi") vẫn tìm đúng chủ đề
   const hits = search(prevUser + " " + message);
-  if (hits.length === 0) {
-    return res.json({ reply: NO_DOC_REPLY, sources: [] }); // không gọi AI, đỡ tốn hạn mức
-  }
 
   try {
-    const reply = await askStick(turns, hits);
-    res.json({
-      reply,
-      sources: hits.map((h) => ({ file: h.file, heading: h.heading })),
-    });
+    const reply = await askStick(turns, hits);   // luôn gọi AI, kể cả khi hits rỗng
+    res.json({ reply, sources: hits.map((h) => ({ file: h.file, heading: h.heading })) });
   } catch (err) {
     console.error("Lỗi gọi Gemini:", err?.status, err?.message);
     if (err?.status === 429) {
-      return res
-        .status(429)
-        .json({
-          error:
-            "Stick đang quá tải hoặc hết hạn mức, thử lại sau ít phút nhé.",
-        });
+      return res.status(429).json({ error: "Stick đang quá tải hoặc hết hạn mức, thử lại sau ít phút nhé." });
     }
-    res
-      .status(500)
-      .json({ error: "Stick đang gặp sự cố, bạn thử lại sau nhé." });
+    res.status(500).json({ error: "Stick đang gặp sự cố, bạn thử lại sau nhé." });
   }
 });
 
