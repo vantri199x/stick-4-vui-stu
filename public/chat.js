@@ -157,7 +157,7 @@ function appendMessage(role, text, kind, sources) {
     sources.forEach((s, i) => {
       const tag = document.createElement("span");
       tag.className = "source";
-      tag.textContent = `[${i + 1}] ${s.heading} (${s.file})`;
+      tag.textContent = `[${s.n ?? i + 1}] ${s.heading} (${s.file})`;
       box.appendChild(tag);
     });
     body.appendChild(box);
